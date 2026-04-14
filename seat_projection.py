@@ -149,23 +149,43 @@ def compute_swings(
 
 # ── Riding projection ─────────────────────────────────────────────────────────
 
+def incumbency_bonus(baseline: dict[str, float], winner: str) -> float:
+    """
+    Scale the incumbency bonus proportionally to the winner's actual 2025 margin.
+
+    A 1-vote win gets ~0pp bonus; a dominant 20pp+ win gets the full INCUMBENCY_BONUS.
+    Uses a sigmoid-like ramp: bonus = INCUMBENCY_BONUS × tanh(margin / 10).
+
+    Examples at INCUMBENCY_BONUS = 4pp:
+      margin  0pp → bonus  0.0pp
+      margin  5pp → bonus  1.9pp
+      margin 10pp → bonus  3.1pp
+      margin 20pp → bonus  3.9pp
+    """
+    sorted_shares = sorted(baseline.values(), reverse=True)
+    runner_up = sorted_shares[1] if len(sorted_shares) > 1 else 0.0
+    margin = baseline.get(winner, 0.0) - runner_up
+    margin = max(margin, 0.0)
+    return INCUMBENCY_BONUS * math.tanh(margin / 10.0)
+
+
 def project_riding(
     baseline: dict[str, float],
     swing: dict[str, float],
     incumbent_party: str,
 ) -> dict[str, float]:
     """
-    Apply swing to a riding baseline, add incumbency bonus, renormalise.
-    Returns {party: projected_pct} summing to ~100.
+    Apply swing to a riding baseline, add margin-scaled incumbency bonus,
+    renormalise. Returns {party: projected_pct} summing to ~100.
     """
     projected = {}
     for p in PARTIES:
         val = baseline.get(p, 0.0) + swing.get(p, 0.0)
         projected[p] = max(val, 0.0)
 
-    # Incumbency bonus
+    # Margin-scaled incumbency bonus
     if incumbent_party in projected:
-        projected[incumbent_party] += INCUMBENCY_BONUS
+        projected[incumbent_party] += incumbency_bonus(baseline, incumbent_party)
 
     # Renormalise
     total = sum(projected.values())
