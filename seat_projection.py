@@ -79,6 +79,27 @@ def load_regional(path: Path) -> dict[str, dict | None]:
     return data.get("regions", {})
 
 
+def load_elasticity(path: Path = Path("riding_elasticity.csv")) -> dict[str, dict[str, float]]:
+    """
+    Load per-riding swing elasticity from riding_elasticity.csv.
+    Returns {riding_code: {party: elasticity}}.
+    Falls back to {} (all elasticities default to 1.0) if file missing.
+    """
+    if not path.exists():
+        return {}
+    result = {}
+    with open(path, newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            code = row["riding_code"]
+            result[code] = {}
+            for p in PARTIES:
+                try:
+                    result[code][p] = float(row.get(f"{p}_e", 1.0) or 1.0)
+                except ValueError:
+                    result[code][p] = 1.0
+    return result
+
+
 # ── Regional 2025 baseline ────────────────────────────────────────────────────
 
 def compute_2025_regional_baselines(
@@ -173,14 +194,17 @@ def project_riding(
     baseline: dict[str, float],
     swing: dict[str, float],
     incumbent_party: str,
+    elasticity: dict[str, float] | None = None,
 ) -> dict[str, float]:
     """
-    Apply swing to a riding baseline, add margin-scaled incumbency bonus,
-    renormalise. Returns {party: projected_pct} summing to ~100.
+    Apply swing (scaled by per-riding elasticity) to a riding baseline,
+    add margin-scaled incumbency bonus, renormalise.
+    Returns {party: projected_pct} summing to ~100.
     """
+    e = elasticity or {}
     projected = {}
     for p in PARTIES:
-        val = baseline.get(p, 0.0) + swing.get(p, 0.0)
+        val = baseline.get(p, 0.0) + swing.get(p, 0.0) * e.get(p, 1.0)
         projected[p] = max(val, 0.0)
 
     # Margin-scaled incumbency bonus
@@ -239,6 +263,7 @@ def run_simulations(
     national_polling: dict[str, dict],
     regional_2025: dict[str, dict[str, float]],
     national_2025_pcts: dict[str, float],
+    elasticity_map: dict[str, dict[str, float]] | None = None,
 ) -> tuple[dict[str, list[int]], dict[str, dict[str, int]]]:
     """
     Run N_SIMULATIONS Monte Carlo draws.
@@ -247,6 +272,7 @@ def run_simulations(
       party_seat_counts: {party: [seat_count_per_sim]}  (length N_SIMULATIONS)
       riding_wins:       {riding_code: {party: win_count}}
     """
+    emap = elasticity_map or {}
     rng = random.Random(42)
     party_seat_counts: dict[str, list[int]] = {p: [] for p in PARTIES}
     riding_wins: dict[str, dict[str, int]] = {
@@ -267,7 +293,8 @@ def run_simulations(
         for riding in ridings:
             region = riding["region"]
             sw = swings.get(region, swings.get("Atlantic", {}))
-            proj = project_riding(riding["baseline"], sw, riding["winner"])
+            elasticity = emap.get(riding["code"])
+            proj = project_riding(riding["baseline"], sw, riding["winner"], elasticity)
             winner = max(PARTIES, key=lambda p: proj.get(p, 0.0))
             sim_seats[winner] += 1
             riding_wins[riding["code"]][winner] += 1
@@ -310,6 +337,13 @@ def main() -> None:
     }
     print("2025 national avg:", {p: round(v, 1) for p, v in national_2025_pcts.items()})
 
+    # Per-riding elasticity (optional — falls back to 1.0 if file missing)
+    elasticity_map = load_elasticity()
+    if elasticity_map:
+        print(f"Loaded elasticity for {len(elasticity_map)} ridings.")
+    else:
+        print("No riding_elasticity.csv found — using uniform swing (elasticity=1.0).")
+
     # Deterministic swing (for point estimate)
     det_swings = compute_swings(
         regional_polling, national_polling, regional_2025, national_2025_pcts
@@ -318,7 +352,7 @@ def main() -> None:
     # Monte Carlo
     party_seat_counts, riding_wins = run_simulations(
         ridings, regional_polling, national_polling,
-        regional_2025, national_2025_pcts
+        regional_2025, national_2025_pcts, elasticity_map
     )
 
     # Aggregate seat statistics
@@ -338,7 +372,8 @@ def main() -> None:
     for riding in ridings:
         region = riding["region"]
         sw = det_swings.get(region, det_swings.get("Atlantic", {}))
-        proj = project_riding(riding["baseline"], sw, riding["winner"])
+        elasticity = elasticity_map.get(riding["code"])
+        proj = project_riding(riding["baseline"], sw, riding["winner"], elasticity)
         det_winner = max(PARTIES, key=lambda p: proj.get(p, 0.0))
 
         wins = riding_wins[riding["code"]]

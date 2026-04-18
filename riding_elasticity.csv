@@ -1,0 +1,344 @@
+riding_code,riding_name,province,region,LPC_e,CPC_e,NDP_e,BQ_e,GPC_e,PPC_e,n_obs
+10001,Avalon,Newfoundland and Labrador,Atlantic,1.0258,0.8158,0.347,1.0,0.5959,0.7228,2
+10002,Cape Spear,Newfoundland and Labrador,Atlantic,1.0,1.0,1.0,1.0,1.0,1.0,0
+10003,Central Newfoundland,Newfoundland and Labrador,Atlantic,1.0,1.0,1.0,1.0,1.0,1.0,0
+10004,Labrador,Newfoundland and Labrador,Atlantic,0.6609,0.8626,0.6266,1.0,0.4898,0.9663,2
+10005,Long Range Mountains,Newfoundland and Labrador,Atlantic,0.1033,1.9877,0.3144,1.0,0.5369,1.0699,2
+10006,St. John's East/St. John's-Est,Newfoundland and Labrador,Atlantic,1.9843,0.8081,0.6654,1.0,0.4355,0.7482,2
+10007,Terra Nova--The Peninsulas/Terra Nova--Les Péninsules,Newfoundland and Labrador,Atlantic,1.0,1.0,1.0,1.0,1.0,1.0,0
+11001,Cardigan,Prince Edward Island,Atlantic,0.7094,0.8922,1.4577,1.0,1.2137,0.9276,2
+11002,Charlottetown,Prince Edward Island,Atlantic,1.1129,1.3866,0.4325,1.0,2.001,0.7063,2
+11003,Egmont,Prince Edward Island,Atlantic,1.2278,0.6866,1.2576,1.0,1.7359,1.2707,2
+11004,Malpeque,Prince Edward Island,Atlantic,0.8532,1.3057,0.9926,1.0,1.9532,0.8755,2
+12001,Acadie--Annapolis,Nova Scotia,Atlantic,1.0,1.0,1.0,1.0,1.0,1.0,0
+12002,Cape Breton--Canso--Antigonish,Nova Scotia,Atlantic,1.0,1.0,1.0,1.0,1.0,1.0,0
+12003,Central Nova/Nova-Centre,Nova Scotia,Atlantic,0.5238,1.1428,1.3344,1.0,0.6788,0.7891,2
+12004,Cumberland--Colchester,Nova Scotia,Atlantic,0.5156,1.4219,0.7149,1.0,0.9305,0.9596,2
+12005,Dartmouth--Cole Harbour,Nova Scotia,Atlantic,1.5695,1.1492,2.1701,1.0,0.9212,1.9513,2
+12006,Halifax,Nova Scotia,Atlantic,0.9449,0.8278,2.0955,1.0,1.0068,0.6378,2
+12007,Halifax West/Halifax-Ouest,Nova Scotia,Atlantic,0.7421,0.9241,1.9922,1.0,0.9341,0.8539,2
+12008,Kings--Hants,Nova Scotia,Atlantic,0.9701,1.0562,1.3399,1.0,0.8549,0.9336,2
+12009,Sackville--Bedford--Preston,Nova Scotia,Atlantic,1.0,1.0,1.0,1.0,1.0,1.0,0
+12010,South Shore--St. Margarets,Nova Scotia,Atlantic,0.5704,1.5821,1.7212,1.0,0.8796,0.2052,2
+12011,Sydney--Glace Bay,Nova Scotia,Atlantic,1.0,1.0,1.0,1.0,1.0,1.0,0
+13001,Acadie--Bathurst,New Brunswick,Atlantic,1.4802,0.6835,0.3028,1.0,1.0178,1.257,2
+13002,Beauséjour,New Brunswick,Atlantic,1.4797,1.2199,1.6133,1.0,1.5864,1.4666,2
+13003,Fredericton--Oromocto,New Brunswick,Atlantic,1.0,1.0,1.0,1.0,1.0,1.0,0
+13004,Fundy Royal,New Brunswick,Atlantic,0.7321,0.8768,1.7927,1.0,1.1565,1.4058,2
+13005,Madawaska--Restigouche,New Brunswick,Atlantic,0.9288,0.788,0.396,1.0,1.1791,1.3051,2
+13006,Miramichi--Grand Lake,New Brunswick,Atlantic,0.873,1.4035,0.2453,1.0,0.9501,1.0762,2
+13007,Moncton--Dieppe,New Brunswick,Atlantic,1.0,1.0,1.0,1.0,1.0,1.0,0
+13008,Saint John--Kennebecasis,New Brunswick,Atlantic,1.0,1.0,1.0,1.0,1.0,1.0,0
+13009,Saint John--St. Croix,New Brunswick,Atlantic,1.0,1.0,1.0,1.0,1.0,1.0,0
+13010,Tobique--Mactaquac,New Brunswick,Atlantic,0.5832,0.8364,1.3744,1.0,1.1172,1.5482,2
+24001,Abitibi--Baie-James--Nunavik--Eeyou,Quebec,QC,1.2805,0.7595,1.2642,0.9544,0.8789,1.6009,2
+24002,Abitibi--Témiscamingue,Quebec,QC,0.7313,0.6367,1.6618,0.7059,0.8642,1.5007,2
+24003,Ahuntsic-Cartierville,Quebec,QC,0.9844,0.959,0.65,1.0629,1.0163,1.1824,2
+24004,Alfred-Pellan,Quebec,QC,0.9028,1.1749,0.6284,1.1221,0.8375,0.1184,2
+24005,Argenteuil--La Petite-Nation,Quebec,QC,1.0126,1.2528,0.8709,1.7142,1.2432,2.0592,2
+24006,Beauce,Quebec,QC,0.9055,2.1805,0.5463,0.7364,0.8148,1.2857,2
+24007,Beauharnois--Salaberry--Soulanges--Huntingdon,Quebec,QC,1.0,1.0,1.0,1.0,1.0,1.0,0
+24008,Beauport--Limoilou,Quebec,QC,1.0543,0.7934,1.002,0.8288,0.8842,0.0465,2
+24009,Bécancour--Nicolet--Saurel--Alnôbak,Quebec,QC,1.0646,0.7974,0.6258,1.3033,0.8268,1.027,2
+24010,Bellechasse--Les Etchemins--Lévis,Quebec,QC,1.1631,0.4077,0.5702,1.0037,0.8055,-0.0393,2
+24011,Beloeil--Chambly,Quebec,QC,1.0601,0.9915,1.8402,1.0333,0.9603,0.9232,2
+24012,Berthier--Maskinongé,Quebec,QC,1.0036,0.8809,1.4521,0.6188,0.7054,1.1594,2
+24013,Bourassa,Quebec,QC,0.5176,0.9848,0.5268,0.7399,0.7988,1.4541,2
+24014,Brome--Missisquoi,Quebec,QC,1.1958,0.9988,1.0992,1.1912,0.999,1.3796,2
+24015,Brossard--Saint-Lambert,Quebec,QC,0.9633,0.981,0.5821,1.1921,1.2912,1.0611,2
+24016,Charlesbourg--Haute-Saint-Charles,Quebec,QC,1.2661,0.9964,1.057,1.1302,0.8362,0.6333,2
+24017,Châteauguay--Les Jardins-de-Napierville,Quebec,QC,1.0,1.0,1.0,1.0,1.0,1.0,0
+24018,Chicoutimi--Le Fjord,Quebec,QC,1.1757,0.5892,1.0691,0.7974,0.8682,0.7329,2
+24019,Compton--Stanstead,Quebec,QC,1.0023,1.0105,1.2374,0.9786,0.9229,1.4573,2
+24020,Côte-du-Sud-Rivière-du-Loup-Kataskomiq-Témiscouata,Quebec,QC,1.0,1.0,1.0,1.0,1.0,1.0,0
+24021,Côte-Nord--Kawawachikamach--Nitassinan,Quebec,QC,1.0,1.0,1.0,1.0,1.0,1.0,0
+24022,Dorval--Lachine--LaSalle,Quebec,QC,0.9113,1.1184,0.6202,0.8781,0.9603,1.671,2
+24023,Drummond,Quebec,QC,1.0332,0.8708,1.9249,0.9427,1.0523,-0.0036,2
+24024,Gaspésie--Les Îles-de-la-Madeleine--Listuguj,Quebec,QC,0.2371,0.7201,0.7461,0.2,0.9923,0.8356,2
+24025,Gatineau,Quebec,QC,1.0704,1.0039,1.3743,1.2333,0.9429,1.724,2
+24026,Hochelaga--Rosemont-Est,Quebec,QC,1.0,1.0,1.0,1.0,1.0,1.0,0
+24027,Honoré-Mercier,Quebec,QC,0.6085,1.2089,0.8649,0.9059,0.7615,1.7206,2
+24028,Hull--Aylmer,Quebec,QC,1.0319,0.9929,1.059,0.9678,1.1591,1.4609,2
+24029,Joliette--Manawan,Quebec,QC,1.0,1.0,1.0,1.0,1.0,1.0,0
+24030,Jonquière,Quebec,QC,0.8253,1.368,1.7772,0.7678,0.656,0.0585,2
+24031,La Pointe-de-l'Île,Quebec,QC,0.8401,0.7523,1.0415,0.9185,1.059,1.3212,2
+24032,La Prairie--Atateken,Quebec,QC,1.0,1.0,1.0,1.0,1.0,1.0,0
+24033,Lac-Saint-Jean,Quebec,QC,0.9396,0.6399,0.9919,1.0055,0.6294,0.0631,2
+24034,Lac-Saint-Louis,Quebec,QC,1.1094,1.1112,0.7065,0.7525,1.1044,1.147,2
+24035,LaSalle--Émard--Verdun,Quebec,QC,0.9552,0.866,0.6316,0.6754,1.1071,1.4394,2
+24036,Laurentides--Labelle,Quebec,QC,1.0498,1.0106,0.6772,1.097,0.9176,1.5283,2
+24037,Laurier--Sainte-Marie,Quebec,QC,1.2321,0.845,0.9058,1.0468,1.1097,0.8711,2
+24038,Laval--Les Îles,Quebec,QC,0.6358,1.4732,0.9774,1.0037,0.9696,2.0029,2
+24039,Les Pays-d'en-Haut,Quebec,QC,1.0,1.0,1.0,1.0,1.0,1.0,0
+24040,Lévis--Lotbinière,Quebec,QC,1.2621,0.9379,0.6259,0.7929,0.8215,0.4558,2
+24041,Longueuil--Charles-LeMoyne,Quebec,QC,1.0009,1.0507,0.6692,1.3706,1.0457,1.187,2
+24042,Longueuil--Saint-Hubert,Quebec,QC,0.7192,0.9489,0.7388,0.7364,1.7315,1.1595,2
+24043,Louis-Hébert,Quebec,QC,1.3656,0.8713,0.847,1.123,0.7788,0.0601,2
+24044,Louis-Saint-Laurent--Akiawenhrahk,Quebec,QC,1.0,1.0,1.0,1.0,1.0,1.0,0
+24045,Marc-Aurèle-Fortin,Quebec,QC,0.953,1.1982,0.674,1.2459,1.1044,1.3484,2
+24046,Mégantic--L'Érable--Lotbinière,Quebec,QC,1.0,1.0,1.0,1.0,1.0,1.0,0
+24047,Mirabel,Quebec,QC,1.0404,1.4347,0.6858,1.1957,1.023,1.6593,2
+24048,Mount Royal/Mont-Royal,Quebec,QC,0.303,1.3699,0.5968,0.6529,0.9723,1.2365,2
+24049,Mont-Saint-Bruno--L'Acadie,Quebec,QC,1.0,1.0,1.0,1.0,1.0,1.0,0
+24050,Montcalm,Quebec,QC,0.9194,1.4252,0.6347,1.193,0.8469,1.8967,2
+24051,Montmorency--Charlevoix,Quebec,QC,1.0,1.0,1.0,1.0,1.0,1.0,0
+24052,Notre-Dame-de-Grâce--Westmount,Quebec,QC,1.0583,1.0538,0.7836,0.6287,1.4954,1.3623,2
+24053,Outremont,Quebec,QC,1.0395,0.8582,0.9769,0.8745,1.7809,1.0758,2
+24054,Papineau,Quebec,QC,0.7201,0.8467,0.4882,0.4627,1.1578,1.0358,2
+24055,Pierre-Boucher--Les Patriotes--Verchères,Quebec,QC,1.1797,0.6922,0.4998,1.3338,1.2485,0.9049,2
+24056,Pierrefonds--Dollard,Quebec,QC,0.7823,1.3671,0.6164,0.8243,1.2899,1.4717,2
+24057,Pontiac--Kitigan Zibi,Quebec,QC,1.0,1.0,1.0,1.0,1.0,1.0,0
+24058,Portneuf--Jacques-Cartier,Quebec,QC,1.2097,1.1701,0.8395,1.1329,1.0764,0.5669,2
+24059,Québec Centre/Québec-Centre,Quebec,QC,1.0,1.0,1.0,1.0,1.0,1.0,0
+24060,Repentigny,Quebec,QC,1.0977,0.974,0.5091,1.4496,1.067,0.1484,2
+24061,Richmond--Arthabaska,Quebec,QC,1.4077,0.6329,0.6727,0.3694,1.3125,1.3747,2
+24062,Rimouski--La Matapédia,Quebec,QC,1.0,1.0,1.0,1.0,1.0,1.0,0
+24063,Rivière-des-Mille-Îles,Quebec,QC,1.0632,1.1033,1.0689,1.2926,1.0483,1.0717,2
+24064,Rivière-du-Nord,Quebec,QC,1.0189,0.9969,0.6343,1.3518,1.3432,1.7234,2
+24065,Rosemont--La Petite-Patrie,Quebec,QC,0.9763,0.7826,0.5545,0.8772,1.067,0.3132,2
+24066,Saint-Hyacinthe--Bagot--Acton,Quebec,QC,1.091,0.6085,2.0742,0.9203,1.0844,1.1668,2
+24067,Saint-Jean,Quebec,QC,0.8751,0.8682,0.8081,0.7498,0.9896,0.1319,2
+24068,Saint-Laurent,Quebec,QC,0.5906,1.1425,0.5781,0.8018,1.3152,1.2482,2
+24069,Saint-Léonard--Saint-Michel,Quebec,QC,0.419,0.8979,0.2677,0.687,0.9469,1.4753,2
+24070,Saint-Maurice--Champlain,Quebec,QC,0.9364,1.0146,0.649,1.3966,0.8402,0.033,2
+24071,Shefford,Quebec,QC,0.858,0.7189,0.7905,0.7624,0.979,1.4009,2
+24072,Sherbrooke,Quebec,QC,1.2169,0.6793,2.0145,0.809,0.8242,1.2504,2
+24073,Terrebonne,Quebec,QC,1.0077,1.215,0.886,0.818,0.9029,1.2106,2
+24074,Thérèse-De Blainville,Quebec,QC,1.0775,1.1179,0.7583,1.3921,0.9576,1.1991,2
+24075,Trois-Rivières,Quebec,QC,1.1546,0.7441,1.8815,0.7696,0.7548,0.8723,2
+24076,Vaudreuil,Quebec,QC,1.0,1.0,1.0,1.0,1.0,1.0,0
+24077,Ville-Marie--Le Sud-Ouest--Île-des-Soeurs,Quebec,QC,1.1895,1.2094,0.8303,0.9149,1.1818,1.2027,2
+24078,Vimy,Quebec,QC,0.7631,1.4151,0.4961,1.1436,1.1111,1.7695,2
+35001,Ajax,Ontario,ON,0.5207,0.9213,1.3584,1.0,0.9078,0.3574,2
+35002,Algonquin--Renfrew--Pembroke,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35003,Aurora--Oak Ridges--Richmond Hill,Ontario,ON,0.0715,0.5484,0.7445,1.0,0.5183,0.8377,2
+35004,Barrie South--Innisfil/Barrie-Sud--Innisfil,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35005,Barrie--Springwater--Oro-Medonte,Ontario,ON,0.8589,1.5865,1.3583,1.0,1.076,1.229,2
+35006,Bay of Quinte,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35007,Beaches--East York,Ontario,ON,0.8295,0.7678,1.0843,1.0,1.0397,0.7449,2
+35008,Bowmanville--Oshawa North/Bowmanville--Oshawa-Nord,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35009,Brampton Centre/Brampton-Centre,Ontario,ON,0.3925,1.7547,0.4677,1.0,0.444,0.259,2
+35010,Brampton--Chinguacousy Park,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35011,Brampton East/Brampton-Est,Ontario,ON,0.0012,1.6237,0.4514,1.0,0.5216,0.4556,2
+35012,Brampton North--Caledon/Brampton-Nord--Caledon,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35013,Brampton South/Brampton-Sud,Ontario,ON,0.191,1.2873,0.417,1.0,0.7098,0.9162,2
+35014,Brampton West/Brampton-Ouest,Ontario,ON,-0.0157,1.8018,0.3933,1.0,0.4221,0.7096,2
+35015,Brantford--Brant South--Six Nations/Brantford--Brant-Sud--Six Nations,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35016,Bruce--Grey--Owen Sound,Ontario,ON,1.4661,1.0262,1.1742,1.0,1.0738,1.2558,2
+35017,Burlington,Ontario,ON,1.0818,1.1583,0.7916,1.0,1.0797,0.8286,2
+35018,Burlington North--Milton West/Burlington-Nord--Milton-Ouest,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35019,Cambridge,Ontario,ON,0.8556,1.5597,0.4424,1.0,1.1917,1.1525,2
+35020,Carleton,Ontario,ON,1.4072,0.8451,1.2413,1.0,0.9696,0.6719,2
+35021,Chatham-Kent--Leamington,Ontario,ON,0.9734,0.6745,0.4943,1.0,0.7403,2.1284,2
+35022,Davenport,Ontario,ON,1.0818,0.9785,1.2322,1.0,0.8556,0.7856,2
+35023,Don Valley North/Don Valley-Nord,Ontario,ON,0.1073,0.5426,0.9929,1.0,0.826,0.751,2
+35024,Don Valley West/Don Valley-Ouest,Ontario,ON,1.0977,1.0238,0.7798,1.0,0.7712,0.6168,2
+35025,Dufferin--Caledon,Ontario,ON,0.9086,1.7451,0.3298,1.0,1.6511,1.0992,2
+35026,Eglinton--Lawrence,Ontario,ON,1.0581,1.3108,0.7807,1.0,1.1109,0.7092,2
+35027,Elgin--St. Thomas--London South/Elgin--St. Thomas--London-Sud,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35028,Essex,Ontario,ON,1.4904,0.9037,0.7369,1.0,0.8947,1.5599,2
+35029,Etobicoke Centre/Etobicoke-Centre,Ontario,ON,1.0753,0.7889,1.2402,1.0,0.7403,1.2859,2
+35030,Etobicoke--Lakeshore,Ontario,ON,1.2844,1.1509,1.1586,1.0,1.2645,0.8734,2
+35031,Etobicoke North/Etobicoke-Nord,Ontario,ON,0.4554,1.37,0.4761,1.0,0.3606,0.6583,2
+35032,Flamborough--Glanbrook--Brant North/Flamborough--Glanbrook--Brant-Nord,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35033,Guelph,Ontario,ON,0.5716,1.3872,1.964,1.0,1.2857,0.8894,2
+35034,Haldimand--Norfolk,Ontario,ON,0.3987,0.8536,0.3606,1.0,0.7286,1.6313,2
+35035,Haliburton--Kawartha Lakes,Ontario,ON,1.2379,1.0705,0.5754,1.0,1.5088,1.1585,2
+35036,Hamilton Centre/Hamilton-Centre,Ontario,ON,1.0209,1.0113,1.5472,1.0,1.1091,1.0844,2
+35037,Hamilton East--Stoney Creek/Hamilton-Est--Stoney Creek,Ontario,ON,0.921,1.5273,0.6244,1.0,1.2213,1.2156,2
+35038,Hamilton Mountain,Ontario,ON,0.4733,0.8231,0.596,1.0,1.2356,1.1305,2
+35039,Hamilton West--Ancaster--Dundas/Hamilton-Ouest--Ancaster--Dundas,Ontario,ON,1.0495,1.0211,1.2981,1.0,1.147,0.852,2
+35040,Hastings--Lennox and Addington--Tyendinaga,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35041,Humber River--Black Creek,Ontario,ON,0.3323,1.1979,0.3628,1.0,0.8136,0.7778,2
+35042,Huron--Bruce,Ontario,ON,1.7481,0.8795,1.3886,1.0,0.4539,1.2685,2
+35043,Kanata,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35044,Kapuskasing--Timmins--Mushkegowuk,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35045,Kenora--Kiiwetinoong,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35046,Kingston and the Islands/Kingston et les Îles,Ontario,ON,1.659,1.3062,2.1102,1.0,1.1724,0.6974,2
+35047,King--Vaughan,Ontario,ON,0.4874,1.2463,0.475,1.0,0.7229,0.8893,2
+35048,Kitchener Centre/Kitchener-Centre,Ontario,ON,1.949,0.8464,1.9116,1.0,0.4897,1.1438,2
+35049,Kitchener--Conestoga,Ontario,ON,0.7447,0.5928,1.0461,1.0,1.8117,1.2115,2
+35050,Kitchener South--Hespeler/Kitchener-Sud--Hespeler,Ontario,ON,1.026,1.1474,1.5246,1.0,1.3368,1.1547,2
+35051,Lanark--Frontenac,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35052,Leeds--Grenville--Thousand Islands--Rideau Lakes,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35053,London Centre/London-Centre,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35054,London--Fanshawe,Ontario,ON,1.1131,0.8725,1.4954,1.0,0.7836,1.4308,2
+35055,London West/London-Ouest,Ontario,ON,1.7522,1.2785,1.7199,1.0,0.6299,0.9748,2
+35056,Markham--Stouffville,Ontario,ON,0.1536,1.5056,1.1391,1.0,0.771,0.7585,2
+35057,Markham--Thornhill,Ontario,ON,-0.0595,0.6338,0.8576,1.0,1.037,0.5051,2
+35058,Markham--Unionville,Ontario,ON,0.0995,0.4223,0.5555,1.0,1.0578,0.3092,2
+35059,Middlesex--London,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35060,Milton East--Halton Hills South/Milton-Est--Halton Hills-Sud,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35061,Mississauga Centre/Mississauga-Centre,Ontario,ON,0.6115,0.6623,1.0546,1.0,0.9985,0.85,2
+35062,Mississauga East--Cooksville/Mississauga-Est--Cooksville,Ontario,ON,0.8129,0.625,0.9829,1.0,0.6416,1.097,2
+35063,Mississauga--Erin Mills,Ontario,ON,0.8739,0.7873,0.9385,1.0,0.8469,0.727,2
+35064,Mississauga--Lakeshore,Ontario,ON,1.0779,0.8179,0.9755,1.0,0.9589,0.8767,2
+35065,Mississauga--Malton,Ontario,ON,1.0336,1.5455,1.0642,1.0,0.9935,0.2542,2
+35066,Mississauga--Streetsville,Ontario,ON,0.9438,0.9322,1.2104,1.0,0.9674,0.7993,2
+35067,Nepean,Ontario,ON,1.0757,0.4487,1.6484,1.0,1.0933,0.7097,2
+35068,Newmarket--Aurora,Ontario,ON,0.4367,0.8948,0.8343,1.0,1.1956,0.915,2
+35069,New Tecumseth--Gwillimbury,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35070,Niagara Falls--Niagara-on-the-Lake,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35071,Niagara South/Niagara-Sud,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35072,Niagara West/Niagara-Ouest,Ontario,ON,1.0372,0.6649,0.8148,1.0,1.467,1.2159,2
+35073,Nipissing--Timiskaming,Ontario,ON,0.9004,1.5535,1.2115,1.0,0.6268,0.9628,2
+35074,Northumberland--Clarke,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35075,Oakville East/Oakville-Est,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35076,Oakville West/Oakville-Ouest,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35077,Orléans,Ontario,ON,1.1697,0.4944,1.5074,1.0,0.8603,0.679,2
+35078,Oshawa,Ontario,ON,1.2901,0.8316,0.8859,1.0,0.7654,1.2426,2
+35079,Ottawa Centre/Ottawa-Centre,Ontario,ON,1.324,0.9086,1.8054,1.0,1.2052,0.6513,2
+35080,Ottawa South/Ottawa-Sud,Ontario,ON,1.3432,0.7005,1.6292,1.0,1.026,0.7756,2
+35081,Ottawa--Vanier--Gloucester,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35082,Ottawa West--Nepean/Ottawa-Ouest--Nepean,Ontario,ON,1.0299,0.62,0.898,1.0,1.1254,0.7294,2
+35083,Oxford,Ontario,ON,0.7826,0.4616,0.4505,1.0,1.1807,1.5896,2
+35084,Parry Sound--Muskoka,Ontario,ON,2.1354,1.52,1.8627,1.0,2.2674,1.3442,2
+35085,Perth--Wellington,Ontario,ON,1.2117,0.9151,1.3976,1.0,1.0641,1.5032,2
+35086,Peterborough,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35087,Pickering--Brooklin,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35088,Prescott--Russell--Cumberland,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35089,Richmond Hill South/Richmond Hill-Sud,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35090,Sarnia--Lambton--Bkejwanong,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35091,Sault Ste. Marie--Algoma,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35092,Scarborough--Agincourt,Ontario,ON,0.0784,0.5852,0.9495,1.0,0.9401,0.6946,2
+35093,Scarborough Centre--Don Valley East/Scarborough-Centre--Don Valley-Est,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35094,Scarborough--Guildwood--Rouge Park,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35095,Scarborough North/Scarborough-Nord,Ontario,ON,0.0382,0.5999,0.2996,1.0,0.5734,0.6806,2
+35096,Scarborough Southwest/Scarborough-Sud-Ouest,Ontario,ON,0.5062,0.7506,0.8089,1.0,0.889,0.6716,2
+35097,Scarborough--Woburn,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35098,Simcoe--Grey,Ontario,ON,1.3622,1.1829,1.2186,1.0,1.6012,1.2156,2
+35099,Simcoe North/Simcoe-Nord,Ontario,ON,0.8885,0.5472,1.1125,1.0,1.1729,1.2529,2
+35100,Spadina--Harbourfront,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35101,St. Catharines,Ontario,ON,1.1403,0.8394,0.8675,1.0,1.2276,1.1696,2
+35102,Stormont--Dundas--Glengarry,Ontario,ON,1.1467,0.7033,0.3301,1.0,0.8958,1.2687,2
+35103,Sudbury,Ontario,ON,1.7371,1.9104,1.0649,1.0,1.3011,1.0167,2
+35104,Sudbury East--Manitoulin--Nickel Belt/Sudbury-Est--Manitoulin--Nickel Belt,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35105,Taiaiako'n--Parkdale--High Park,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35106,Thornhill,Ontario,ON,0.1717,0.6252,0.4234,1.0,0.828,1.0123,2
+35107,Thunder Bay--Rainy River,Ontario,ON,0.9744,0.8573,0.7277,1.0,0.8185,1.1189,2
+35108,Thunder Bay--Superior North/Thunder Bay--Supérieur-Nord,Ontario,ON,1.1156,0.5851,2.0104,1.0,1.1266,1.0399,2
+35109,Toronto Centre/Toronto-Centre,Ontario,ON,1.7155,0.7133,1.7335,1.0,1.4656,0.7122,2
+35110,Toronto--Danforth,Ontario,ON,0.8692,0.9567,1.008,1.0,0.9879,0.6798,2
+35111,Toronto--St. Paul's,Ontario,ON,1.4355,1.2525,1.006,1.0,1.6261,0.6454,2
+35112,University--Rosedale,Ontario,ON,1.4253,1.1263,1.6679,1.0,1.3872,0.6958,2
+35113,Vaughan--Woodbridge,Ontario,ON,0.8605,1.6791,0.321,1.0,0.7985,0.9963,2
+35114,Waterloo,Ontario,ON,1.3018,1.0813,1.7859,1.0,1.1109,0.8972,2
+35115,Wellington--Halton Hills North/Wellington--Halton Hills-Nord,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35116,Whitby,Ontario,ON,0.6228,0.734,0.6853,1.0,0.9184,0.9171,2
+35117,Willowdale,Ontario,ON,0.2185,0.4671,0.8637,1.0,1.0728,0.6967,2
+35118,Windsor--Tecumseh--Lakeshore,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35119,Windsor West/Windsor-Ouest,Ontario,ON,1.5969,1.0954,1.9311,1.0,0.419,1.352,2
+35120,York Centre/York-Centre,Ontario,ON,0.6609,1.1494,0.6893,1.0,0.6594,1.0574,2
+35121,York--Durham,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+35122,York South--Weston--Etobicoke/York-Sud--Weston--Etobicoke,Ontario,ON,1.0,1.0,1.0,1.0,1.0,1.0,0
+46001,Brandon--Souris,Manitoba,MB_SK,0.9142,0.7356,1.5633,1.0,1.7694,1.105,2
+46002,Churchill--Keewatinook Aski,Manitoba,MB_SK,1.1645,0.2199,0.4551,1.0,0.8827,0.7771,2
+46003,Elmwood--Transcona,Manitoba,MB_SK,0.8142,1.49,1.3995,1.0,0.8891,0.8983,2
+46004,Kildonan--St. Paul,Manitoba,MB_SK,1.0236,0.8321,1.1533,1.0,1.2477,0.8466,2
+46005,Portage--Lisgar,Manitoba,MB_SK,0.93,2.078,1.3594,1.0,1.4528,2.3096,2
+46006,Provencher,Manitoba,MB_SK,0.8467,2.0628,0.5688,1.0,1.1524,1.8462,2
+46007,Riding Mountain/Mont-Riding,Manitoba,MB_SK,1.0,1.0,1.0,1.0,1.0,1.0,0
+46008,St. Boniface--St. Vital/Saint-Boniface--Saint-Vital,Manitoba,MB_SK,1.0447,0.8445,1.4524,1.0,1.2703,0.7455,2
+46009,Selkirk--Interlake--Eastman,Manitoba,MB_SK,1.0772,0.8437,0.9461,1.0,1.1233,1.0672,2
+46010,Winnipeg Centre/Winnipeg-Centre,Manitoba,MB_SK,0.7947,1.0881,1.8162,1.0,1.0619,0.7063,2
+46011,Winnipeg North/Winnipeg-Nord,Manitoba,MB_SK,0.7547,1.7658,1.3684,1.0,0.8326,0.7509,2
+46012,Winnipeg South/Winnipeg-Sud,Manitoba,MB_SK,0.9211,0.7242,0.6579,1.0,1.0668,0.6647,2
+46013,Winnipeg South Centre/Winnipeg-Centre-Sud,Manitoba,MB_SK,1.102,0.5156,1.2016,1.0,1.1669,0.6177,2
+46014,Winnipeg West/Winnipeg-Ouest,Manitoba,MB_SK,1.0,1.0,1.0,1.0,1.0,1.0,0
+47001,Battlefords--Lloydminster--Meadow Lake,Saskatchewan,MB_SK,1.0,1.0,1.0,1.0,1.0,1.0,0
+47002,Carlton Trail--Eagle Creek/Sentier Carlton--Eagle Creek,Saskatchewan,MB_SK,0.9331,1.3099,0.8181,1.0,0.7648,1.2389,2
+47003,Desnethé--Missinippi--Churchill River/Desnethé--Missinippi--Rivière Churchill,Saskatchewan,MB_SK,1.6612,-0.1429,0.3195,1.0,0.7518,0.8635,2
+47004,Moose Jaw--Lake Centre--Lanigan,Saskatchewan,MB_SK,0.8936,1.471,1.0553,1.0,0.86,1.2265,2
+47005,Prince Albert,Saskatchewan,MB_SK,0.8381,0.8649,0.2737,1.0,0.7696,1.0048,2
+47006,Regina--Lewvan,Saskatchewan,MB_SK,1.4098,0.846,1.9921,1.0,1.0587,0.6959,2
+47007,Regina--Qu'Appelle,Saskatchewan,MB_SK,1.067,0.5817,0.8792,1.0,0.8067,0.8078,2
+47008,Regina--Wascana,Saskatchewan,MB_SK,1.0656,0.4141,1.5427,1.0,0.8084,0.6859,2
+47009,Saskatoon South/Saskatoon-Sud,Saskatchewan,MB_SK,1.0,1.0,1.0,1.0,1.0,1.0,0
+47010,Saskatoon--University,Saskatchewan,MB_SK,1.4481,0.6721,1.9032,1.0,0.9279,0.732,2
+47011,Saskatoon West/Saskatoon-Ouest,Saskatchewan,MB_SK,1.1295,0.8736,0.7331,1.0,0.8617,0.9199,2
+47012,Souris--Moose Mountain,Saskatchewan,MB_SK,0.7561,1.1617,0.5286,1.0,0.8649,1.229,2
+47013,Swift Current--Grasslands--Kindersley,Saskatchewan,MB_SK,1.0,1.0,1.0,1.0,1.0,1.0,0
+47014,Yorkton--Melville,Saskatchewan,MB_SK,0.8253,1.1958,0.5789,1.0,0.7599,1.2122,2
+48001,Airdrie--Cochrane,Alberta,AB,1.0,1.0,1.0,1.0,1.0,1.0,0
+48002,Battle River--Crowfoot,Alberta,AB,0.632,1.125,0.757,1.0,0.9636,1.143,2
+48003,Bow River,Alberta,AB,0.9703,1.0398,0.7074,1.0,0.9082,1.2963,2
+48004,Calgary Centre/Calgary-Centre,Alberta,AB,1.2887,0.5023,0.9828,1.0,1.1526,0.3255,2
+48005,Calgary Confederation,Alberta,AB,1.9348,0.6257,0.9501,1.0,1.6128,0.7471,2
+48006,Calgary Crowfoot,Alberta,AB,1.0,1.0,1.0,1.0,1.0,1.0,0
+48007,Calgary East/Calgary-Est,Alberta,AB,1.0,1.0,1.0,1.0,1.0,1.0,0
+48008,Calgary Heritage,Alberta,AB,1.336,0.8324,1.0785,1.0,1.0273,0.8218,2
+48009,Calgary McKnight,Alberta,AB,1.0,1.0,1.0,1.0,1.0,1.0,0
+48010,Calgary Midnapore,Alberta,AB,1.0646,0.8814,1.1078,1.0,0.9246,0.8753,2
+48011,Calgary Nose Hill,Alberta,AB,1.6384,0.8582,1.0121,1.0,0.9184,0.7806,2
+48012,Calgary Shepard,Alberta,AB,1.2856,0.998,1.0298,1.0,0.8527,0.8636,2
+48013,Calgary Signal Hill,Alberta,AB,1.4264,0.6986,0.9514,1.0,0.9164,0.7779,2
+48014,Calgary Skyview,Alberta,AB,1.4616,1.4425,0.7799,1.0,0.7376,0.726,2
+48015,Edmonton Centre/Edmonton-Centre,Alberta,AB,0.7954,0.8057,1.0393,1.0,1.1403,0.7327,2
+48016,Edmonton Gateway,Alberta,AB,1.0,1.0,1.0,1.0,1.0,1.0,0
+48017,Edmonton Griesbach,Alberta,AB,0.2445,1.0176,1.1607,1.0,0.863,0.8814,2
+48018,Edmonton Manning,Alberta,AB,0.7098,1.1554,1.3811,1.0,1.0746,0.9355,2
+48019,Edmonton Northwest/Edmonton-Nord-Ouest,Alberta,AB,1.0,1.0,1.0,1.0,1.0,1.0,0
+48020,Edmonton Riverbend,Alberta,AB,1.2332,0.8613,1.2562,1.0,0.9287,0.6972,2
+48021,Edmonton Southeast/Edmonton-Sud-Est,Alberta,AB,1.0,1.0,1.0,1.0,1.0,1.0,0
+48022,Edmonton Strathcona,Alberta,AB,0.3809,0.9345,1.2478,1.0,0.7685,0.7612,2
+48023,Edmonton West/Edmonton-Ouest,Alberta,AB,1.3876,1.0251,1.2871,1.0,1.1054,0.8821,2
+48024,Foothills,Alberta,AB,0.8944,0.9437,0.8206,1.0,1.0951,1.0329,2
+48025,Fort McMurray--Cold Lake,Alberta,AB,0.3137,1.1095,0.7661,1.0,0.7479,1.4388,2
+48026,Grande Prairie,Alberta,AB,1.0,1.0,1.0,1.0,1.0,1.0,0
+48027,Lakeland,Alberta,AB,0.6857,1.1304,0.7311,1.0,0.8137,1.3193,2
+48028,Leduc--Wetaskiwin,Alberta,AB,1.0,1.0,1.0,1.0,1.0,1.0,0
+48029,Lethbridge,Alberta,AB,1.1017,0.8272,0.9543,1.0,1.243,1.0031,2
+48030,Medicine Hat--Cardston--Warner,Alberta,AB,0.7787,1.1106,0.8405,1.0,0.7582,1.2152,2
+48031,Parkland,Alberta,AB,1.0,1.0,1.0,1.0,1.0,1.0,0
+48032,Peace River--Westlock,Alberta,AB,0.4188,1.2833,0.798,1.0,0.9883,1.5252,2
+48033,Ponoka--Didsbury,Alberta,AB,1.0,1.0,1.0,1.0,1.0,1.0,0
+48034,Red Deer,Alberta,AB,1.0,1.0,1.0,1.0,1.0,1.0,0
+48035,Sherwood Park--Fort Saskatchewan,Alberta,AB,1.16,1.0625,1.1014,1.0,0.8465,1.0023,2
+48036,St. Albert--Sturgeon River,Alberta,AB,1.0,1.0,1.0,1.0,1.0,1.0,0
+48037,Yellowhead,Alberta,AB,0.9456,0.863,0.7867,1.0,1.0664,1.488,2
+59001,Abbotsford--South Langley/Abbotsford--Langley-Sud,British Columbia,BC,1.0,1.0,1.0,1.0,1.0,1.0,0
+59002,Burnaby Central,British Columbia,BC,1.0,1.0,1.0,1.0,1.0,1.0,0
+59003,Burnaby North--Seymour/Burnaby-Nord--Seymour,British Columbia,BC,1.1231,1.0205,0.6373,1.0,1.0596,0.6273,2
+59004,Cariboo--Prince George,British Columbia,BC,0.9711,1.0727,0.9664,1.0,0.8672,1.4435,2
+59005,Chilliwack--Hope,British Columbia,BC,1.0934,1.0379,1.3554,1.0,0.8359,1.2666,2
+59006,Cloverdale--Langley City,British Columbia,BC,0.7914,1.1822,0.7546,1.0,0.5779,0.9807,2
+59007,Columbia--Kootenay--Southern Rockies,British Columbia,BC,1.0,1.0,1.0,1.0,1.0,1.0,0
+59008,Coquitlam--Port Coquitlam,British Columbia,BC,0.8376,1.2295,0.9972,1.0,0.602,0.973,2
+59009,Courtenay--Alberni,British Columbia,BC,0.8486,0.7548,0.6839,1.0,1.182,1.1601,2
+59010,Cowichan--Malahat--Langford,British Columbia,BC,0.9172,1.0424,0.9997,1.0,1.501,1.2432,2
+59011,Delta,British Columbia,BC,0.8566,1.0638,0.7923,1.0,0.8706,0.6106,2
+59012,Esquimalt--Saanich--Sooke,British Columbia,BC,1.3312,0.9767,1.3629,1.0,1.8862,0.9903,2
+59013,Fleetwood--Port Kells,British Columbia,BC,0.6713,1.2633,0.5079,1.0,0.6596,0.5808,2
+59014,Kamloops--Shuswap--Central Rockies,British Columbia,BC,1.0,1.0,1.0,1.0,1.0,1.0,0
+59015,Kamloops--Thompson--Nicola,British Columbia,BC,1.0,1.0,1.0,1.0,1.0,1.0,0
+59016,Kelowna,British Columbia,BC,1.0,1.0,1.0,1.0,1.0,1.0,0
+59017,Langley Township--Fraser Heights,British Columbia,BC,1.0,1.0,1.0,1.0,1.0,1.0,0
+59018,Mission--Matsqui--Abbotsford,British Columbia,BC,1.0,1.0,1.0,1.0,1.0,1.0,0
+59019,Nanaimo--Ladysmith,British Columbia,BC,0.9813,1.0165,0.9175,1.0,1.6882,1.0205,2
+59020,New Westminster--Burnaby--Maillardville,British Columbia,BC,1.0,1.0,1.0,1.0,1.0,1.0,0
+59021,North Island--Powell River,British Columbia,BC,0.9504,0.7388,0.6483,1.0,1.2573,0.9562,2
+59022,North Vancouver--Capilano,British Columbia,BC,1.0,1.0,1.0,1.0,1.0,1.0,0
+59023,Okanagan Lake West--South Kelowna/Okanagan Lake-Ouest--Kelowna-Sud,British Columbia,BC,1.0,1.0,1.0,1.0,1.0,1.0,0
+59024,Pitt Meadows--Maple Ridge,British Columbia,BC,1.155,1.1349,1.3496,1.0,0.7505,1.0895,2
+59025,Port Moody--Coquitlam,British Columbia,BC,1.0346,1.024,1.1811,1.0,0.6181,0.8125,2
+59026,Prince George--Peace River--Northern Rockies,British Columbia,BC,0.8939,1.1165,0.8125,1.0,0.6938,1.6693,2
+59027,Richmond Centre--Marpole/Richmond-Centre--Marpole,British Columbia,BC,1.0,1.0,1.0,1.0,1.0,1.0,0
+59028,Richmond East--Steveston/Richmond-Est--Steveston,British Columbia,BC,1.0,1.0,1.0,1.0,1.0,1.0,0
+59029,Saanich--Gulf Islands,British Columbia,BC,0.9606,0.7264,1.003,1.0,0.7135,0.7624,2
+59030,Similkameen--South Okanagan--West Kootenay/Similkameen--Okanagan-Sud--Kootenay-Ouest,British Columbia,BC,1.0,1.0,1.0,1.0,1.0,1.0,0
+59031,Skeena--Bulkley Valley,British Columbia,BC,0.6885,1.1499,0.5811,1.0,0.9054,1.4083,2
+59032,South Surrey--White Rock/Surrey-Sud--White Rock,British Columbia,BC,0.9097,0.7602,0.829,1.0,0.5776,0.8857,2
+59033,Surrey Centre/Surrey-Centre,British Columbia,BC,0.7094,1.7017,0.806,1.0,0.7374,0.8516,2
+59034,Surrey Newton,British Columbia,BC,0.4815,2.0063,0.5932,1.0,0.5583,0.6951,2
+59035,Vancouver Centre/Vancouver-Centre,British Columbia,BC,0.9963,1.0309,1.1553,1.0,1.0775,0.7878,2
+59036,Vancouver East/Vancouver-Est,British Columbia,BC,1.022,0.9429,0.8755,1.0,1.3961,0.7099,2
+59037,Vancouver Fraserview--South Burnaby/Vancouver Fraserview--Burnaby-Sud,British Columbia,BC,1.0,1.0,1.0,1.0,1.0,1.0,0
+59038,Vancouver Granville,British Columbia,BC,1.3433,0.6975,2.0264,1.0,0.6716,0.7193,2
+59039,Vancouver Kingsway,British Columbia,BC,0.8464,1.1424,0.8782,1.0,0.8656,0.6318,2
+59040,Vancouver Quadra,British Columbia,BC,1.1245,0.6732,0.9376,1.0,1.196,0.6419,2
+59041,Vernon--Lake Country--Monashee,British Columbia,BC,1.0,1.0,1.0,1.0,1.0,1.0,0
+59042,Victoria,British Columbia,BC,1.3245,0.7632,1.3857,1.0,2.1505,0.7631,2
+59043,West Vancouver--Sunshine Coast--Sea to Sky Country,British Columbia,BC,1.2934,0.7458,1.5069,1.0,1.4359,0.8141,2
+60001,Yukon,Yukon,North,1.1231,0.8939,0.7315,1.0,1.1501,1.0352,2
+61001,Northwest Territories/Territoires du Nord-Ouest,Northwest Territories,North,1.006,1.1837,1.4177,1.0,1.0718,1.1867,2
+62001,Nunavut,Nunavut,North,0.6228,0.9465,1.047,1.0,0.533,0.6,2
