@@ -368,15 +368,23 @@ def build_html(
 
     # Embed all chart data as JSON
     def clean_rows(rows, keys):
-        """Round floats and extract only needed keys."""
+        """Extract needed keys and coerce numeric strings to floats."""
         out = []
         for r in rows:
             row = {}
             for k in keys:
                 v = r.get(k)
-                if isinstance(v, float):
-                    v = round(v, 2)
-                row[k] = v
+                if k == "date" or v is None or v == "":
+                    row[k] = v
+                elif isinstance(v, float):
+                    row[k] = round(v, 2)
+                elif isinstance(v, (int, bool)):
+                    row[k] = v
+                else:
+                    try:
+                        row[k] = round(float(v), 2)
+                    except (ValueError, TypeError):
+                        row[k] = v
             out.append(row)
         return out
 
