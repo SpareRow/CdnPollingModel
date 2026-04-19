@@ -10,23 +10,27 @@ and regional_average.json to be up to date).
 
 Outputs updated:
   seat_projection.json, riding_projections.csv,
-  riding_projections.html, seat_projection.png
+  riding_projections.html, seat_projection.png, docs/index.html
 """
 
 from datetime import date
 
 print(f"=== Projection update — {date.today()} ===\n")
 
-print("[ 1 / 3 ]  Running 10,000-simulation seat projection …")
+print("[ 1 / 4 ]  Running 10,000-simulation seat projection …")
 from seat_projection import main as run_projection
 run_projection()
 
-print("\n[ 2 / 3 ]  Generating riding projections HTML table …")
+print("\n[ 2 / 4 ]  Generating riding projections HTML table …")
 from generate_riding_table import main as generate_table
 generate_table()
 
-print("\n[ 3 / 3 ]  Plotting seat projection chart …")
+print("\n[ 3 / 4 ]  Plotting seat projection chart …")
 from plot_seats import main as plot_seats
 plot_seats()
 
-print("\nDone. Open riding_projections.html to view the updated table.")
+print("\n[ 4 / 4 ]  Building GitHub Pages site …")
+from generate_site import main as generate_site
+generate_site()
+
+print("\nDone. Site updated at docs/index.html")
