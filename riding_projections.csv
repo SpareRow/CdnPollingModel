@@ -1,174 +1,174 @@
 riding_code,riding_name,province,projected_winner,P_LPC,P_CPC,P_NDP,P_BQ,P_GPC,P_PPC
 10001,Avalon,Newfoundland and Labrador,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 10002,Cape Spear,Newfoundland and Labrador,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-10003,Central Newfoundland,Newfoundland and Labrador,CPC,0.127,0.873,0.0,0.0,0.0,0.0
+10003,Central Newfoundland,Newfoundland and Labrador,CPC,0.082,0.918,0.0,0.0,0.0,0.0
 10004,Labrador,Newfoundland and Labrador,LPC,0.996,0.004,0.0,0.0,0.0,0.0
-10005,Long Range Mountains,Newfoundland and Labrador,LPC,0.623,0.377,0.0,0.0,0.0,0.0
+10005,Long Range Mountains,Newfoundland and Labrador,LPC,0.572,0.428,0.0,0.0,0.0,0.0
 10006,St. John's East/St. John's-Est,Newfoundland and Labrador,LPC,0.997,0.003,0.0,0.0,0.0,0.0
-10007,Terra Nova--The Peninsulas/Terra Nova--Les Péninsules,Newfoundland and Labrador,LPC,0.679,0.321,0.0,0.0,0.0,0.0
+10007,Terra Nova--The Peninsulas/Terra Nova--Les Péninsules,Newfoundland and Labrador,LPC,0.613,0.387,0.0,0.0,0.0,0.0
 11001,Cardigan,Prince Edward Island,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 11002,Charlottetown,Prince Edward Island,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-11003,Egmont,Prince Edward Island,LPC,0.91,0.09,0.0,0.0,0.0,0.0
+11003,Egmont,Prince Edward Island,LPC,0.889,0.111,0.0,0.0,0.0,0.0
 11004,Malpeque,Prince Edward Island,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-12001,Acadie--Annapolis,Nova Scotia,LPC,0.613,0.387,0.0,0.0,0.0,0.0
-12002,Cape Breton--Canso--Antigonish,Nova Scotia,LPC,0.96,0.04,0.0,0.0,0.0,0.0
+12001,Acadie--Annapolis,Nova Scotia,LPC,0.541,0.459,0.0,0.0,0.0,0.0
+12002,Cape Breton--Canso--Antigonish,Nova Scotia,LPC,0.949,0.051,0.0,0.0,0.0,0.0
 12003,Central Nova/Nova-Centre,Nova Scotia,LPC,0.997,0.003,0.0,0.0,0.0,0.0
-12004,Cumberland--Colchester,Nova Scotia,LPC,0.932,0.068,0.0,0.0,0.0,0.0
+12004,Cumberland--Colchester,Nova Scotia,LPC,0.918,0.082,0.0,0.0,0.0,0.0
 12005,Dartmouth--Cole Harbour,Nova Scotia,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 12006,Halifax,Nova Scotia,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 12007,Halifax West/Halifax-Ouest,Nova Scotia,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 12008,Kings--Hants,Nova Scotia,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 12009,Sackville--Bedford--Preston,Nova Scotia,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 12010,South Shore--St. Margarets,Nova Scotia,LPC,0.999,0.001,0.0,0.0,0.0,0.0
-12011,Sydney--Glace Bay,Nova Scotia,LPC,0.998,0.002,0.0,0.0,0.0,0.0
+12011,Sydney--Glace Bay,Nova Scotia,LPC,0.997,0.003,0.0,0.0,0.0,0.0
 13001,Acadie--Bathurst,New Brunswick,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 13002,Beauséjour,New Brunswick,LPC,0.999,0.001,0.0,0.0,0.0,0.0
 13003,Fredericton--Oromocto,New Brunswick,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-13004,Fundy Royal,New Brunswick,CPC,0.027,0.973,0.0,0.0,0.0,0.0
-13005,Madawaska--Restigouche,New Brunswick,LPC,0.999,0.001,0.0,0.0,0.0,0.0
-13006,Miramichi--Grand Lake,New Brunswick,LPC,0.731,0.27,0.0,0.0,0.0,0.0
+13004,Fundy Royal,New Brunswick,CPC,0.012,0.988,0.0,0.0,0.0,0.0
+13005,Madawaska--Restigouche,New Brunswick,LPC,0.998,0.002,0.0,0.0,0.0,0.0
+13006,Miramichi--Grand Lake,New Brunswick,LPC,0.675,0.325,0.0,0.0,0.0,0.0
 13007,Moncton--Dieppe,New Brunswick,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 13008,Saint John--Kennebecasis,New Brunswick,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-13009,Saint John--St. Croix,New Brunswick,CPC,0.101,0.899,0.0,0.0,0.0,0.0
+13009,Saint John--St. Croix,New Brunswick,CPC,0.062,0.938,0.0,0.0,0.0,0.0
 13010,Tobique--Mactaquac,New Brunswick,CPC,0.0,1.0,0.0,0.0,0.0,0.0
-24001,Abitibi--Baie-James--Nunavik--Eeyou,Quebec,LPC,0.961,0.0,0.0,0.039,0.0,0.0
+24001,Abitibi--Baie-James--Nunavik--Eeyou,Quebec,LPC,0.976,0.0,0.0,0.024,0.0,0.0
 24002,Abitibi--Témiscamingue,Quebec,BQ,0.0,0.0,0.0,1.0,0.0,0.0
 24003,Ahuntsic-Cartierville,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 24004,Alfred-Pellan,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 24005,Argenteuil--La Petite-Nation,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 24006,Beauce,Quebec,CPC,0.0,1.0,0.0,0.0,0.0,0.0
-24007,Beauharnois--Salaberry--Soulanges--Huntingdon,Quebec,BQ,0.028,0.0,0.0,0.972,0.0,0.0
-24008,Beauport--Limoilou,Quebec,LPC,0.966,0.01,0.0,0.024,0.0,0.0
-24009,Bécancour--Nicolet--Saurel--Alnôbak,Quebec,BQ,0.003,0.0,0.0,0.997,0.0,0.0
+24007,Beauharnois--Salaberry--Soulanges--Huntingdon,Quebec,BQ,0.02,0.0,0.0,0.98,0.0,0.0
+24008,Beauport--Limoilou,Quebec,LPC,0.981,0.004,0.0,0.015,0.0,0.0
+24009,Bécancour--Nicolet--Saurel--Alnôbak,Quebec,BQ,0.002,0.0,0.0,0.998,0.0,0.0
 24010,Bellechasse--Les Etchemins--Lévis,Quebec,CPC,0.0,1.0,0.0,0.0,0.0,0.0
-24011,Beloeil--Chambly,Quebec,BQ,0.014,0.0,0.0,0.986,0.0,0.0
-24012,Berthier--Maskinongé,Quebec,BQ,0.019,0.0,0.001,0.98,0.0,0.0
+24011,Beloeil--Chambly,Quebec,BQ,0.009,0.0,0.0,0.991,0.0,0.0
+24012,Berthier--Maskinongé,Quebec,BQ,0.012,0.0,0.007,0.981,0.0,0.0
 24013,Bourassa,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 24014,Brome--Missisquoi,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 24015,Brossard--Saint-Lambert,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-24016,Charlesbourg--Haute-Saint-Charles,Quebec,CPC,0.246,0.754,0.0,0.0,0.0,0.0
+24016,Charlesbourg--Haute-Saint-Charles,Quebec,CPC,0.245,0.755,0.0,0.0,0.0,0.0
 24017,Châteauguay--Les Jardins-de-Napierville,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-24018,Chicoutimi--Le Fjord,Quebec,CPC,0.468,0.418,0.0,0.114,0.0,0.0
+24018,Chicoutimi--Le Fjord,Quebec,LPC,0.489,0.402,0.0,0.109,0.0,0.0
 24019,Compton--Stanstead,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-24020,Côte-du-Sud-Rivière-du-Loup-Kataskomiq-Témiscouata,Quebec,CPC,0.006,0.994,0.0,0.0,0.0,0.0
-24021,Côte-Nord--Kawawachikamach--Nitassinan,Quebec,BQ,0.004,0.0,0.0,0.996,0.0,0.0
+24020,Côte-du-Sud-Rivière-du-Loup-Kataskomiq-Témiscouata,Quebec,CPC,0.004,0.996,0.0,0.0,0.0,0.0
+24021,Côte-Nord--Kawawachikamach--Nitassinan,Quebec,BQ,0.001,0.0,0.0,0.999,0.0,0.0
 24022,Dorval--Lachine--LaSalle,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-24023,Drummond,Quebec,BQ,0.01,0.0,0.0,0.99,0.0,0.0
+24023,Drummond,Quebec,BQ,0.006,0.0,0.0,0.994,0.0,0.0
 24024,Gaspésie--Les Îles-de-la-Madeleine--Listuguj,Quebec,BQ,0.0,0.0,0.0,1.0,0.0,0.0
 24025,Gatineau,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 24026,Hochelaga--Rosemont-Est,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 24027,Honoré-Mercier,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 24028,Hull--Aylmer,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 24029,Joliette--Manawan,Quebec,BQ,0.001,0.0,0.0,0.999,0.0,0.0
-24030,Jonquière,Quebec,BQ,0.002,0.0,0.0,0.998,0.0,0.0
-24031,La Pointe-de-l'Île,Quebec,BQ,0.202,0.0,0.0,0.798,0.0,0.0
-24032,La Prairie--Atateken,Quebec,LPC,0.992,0.0,0.0,0.009,0.0,0.0
+24030,Jonquière,Quebec,BQ,0.001,0.0,0.0,0.999,0.0,0.0
+24031,La Pointe-de-l'Île,Quebec,BQ,0.189,0.0,0.0,0.811,0.0,0.0
+24032,La Prairie--Atateken,Quebec,LPC,0.996,0.0,0.0,0.004,0.0,0.0
 24033,Lac-Saint-Jean,Quebec,BQ,0.0,0.0,0.0,1.0,0.0,0.0
 24034,Lac-Saint-Louis,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 24035,LaSalle--Émard--Verdun,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-24036,Laurentides--Labelle,Quebec,BQ,0.085,0.0,0.0,0.915,0.0,0.0
+24036,Laurentides--Labelle,Quebec,BQ,0.069,0.0,0.0,0.931,0.0,0.0
 24037,Laurier--Sainte-Marie,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 24038,Laval--Les Îles,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-24039,Les Pays-d'en-Haut,Quebec,LPC,0.937,0.0,0.0,0.063,0.0,0.0
-24040,Lévis--Lotbinière,Quebec,CPC,0.006,0.994,0.0,0.0,0.0,0.0
+24039,Les Pays-d'en-Haut,Quebec,LPC,0.956,0.0,0.0,0.044,0.0,0.0
+24040,Lévis--Lotbinière,Quebec,CPC,0.004,0.997,0.0,0.0,0.0,0.0
 24041,Longueuil--Charles-LeMoyne,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-24042,Longueuil--Saint-Hubert,Quebec,LPC,0.801,0.0,0.0,0.199,0.0,0.0
+24042,Longueuil--Saint-Hubert,Quebec,LPC,0.832,0.0,0.0,0.168,0.0,0.0
 24043,Louis-Hébert,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-24044,Louis-Saint-Laurent--Akiawenhrahk,Quebec,CPC,0.036,0.964,0.0,0.0,0.0,0.0
+24044,Louis-Saint-Laurent--Akiawenhrahk,Quebec,CPC,0.028,0.972,0.0,0.0,0.0,0.0
 24045,Marc-Aurèle-Fortin,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 24046,Mégantic--L'Érable--Lotbinière,Quebec,CPC,0.0,1.0,0.0,0.0,0.0,0.0
-24047,Mirabel,Quebec,BQ,0.226,0.0,0.0,0.774,0.0,0.0
+24047,Mirabel,Quebec,BQ,0.213,0.0,0.0,0.786,0.0,0.0
 24048,Mount Royal/Mont-Royal,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-24049,Mont-Saint-Bruno--L'Acadie,Quebec,LPC,0.998,0.0,0.0,0.002,0.0,0.0
-24050,Montcalm,Quebec,BQ,0.001,0.0,0.0,0.999,0.0,0.0
-24051,Montmorency--Charlevoix,Quebec,BQ,0.296,0.255,0.0,0.449,0.0,0.0
+24049,Mont-Saint-Bruno--L'Acadie,Quebec,LPC,0.999,0.0,0.0,0.001,0.0,0.0
+24050,Montcalm,Quebec,BQ,0.0,0.0,0.0,1.0,0.0,0.0
+24051,Montmorency--Charlevoix,Quebec,BQ,0.304,0.224,0.0,0.471,0.0,0.0
 24052,Notre-Dame-de-Grâce--Westmount,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 24053,Outremont,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 24054,Papineau,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-24055,Pierre-Boucher--Les Patriotes--Verchères,Quebec,BQ,0.233,0.0,0.0,0.767,0.0,0.0
+24055,Pierre-Boucher--Les Patriotes--Verchères,Quebec,BQ,0.22,0.0,0.0,0.78,0.0,0.0
 24056,Pierrefonds--Dollard,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 24057,Pontiac--Kitigan Zibi,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-24058,Portneuf--Jacques-Cartier,Quebec,CPC,0.003,0.997,0.0,0.0,0.0,0.0
-24059,Québec Centre/Québec-Centre,Quebec,LPC,0.999,0.0,0.0,0.001,0.0,0.0
-24060,Repentigny,Quebec,BQ,0.458,0.0,0.0,0.542,0.0,0.0
-24061,Richmond--Arthabaska,Quebec,LPC,0.559,0.441,0.0,0.0,0.0,0.0
-24062,Rimouski--La Matapédia,Quebec,BQ,0.046,0.0,0.0,0.954,0.0,0.0
-24063,Rivière-des-Mille-Îles,Quebec,LPC,0.997,0.0,0.0,0.004,0.0,0.0
-24064,Rivière-du-Nord,Quebec,BQ,0.053,0.0,0.0,0.947,0.0,0.0
-24065,Rosemont--La Petite-Patrie,Quebec,NDP,0.011,0.0,0.989,0.0,0.0,0.0
-24066,Saint-Hyacinthe--Bagot--Acton,Quebec,BQ,0.057,0.0,0.0,0.943,0.0,0.0
-24067,Saint-Jean,Quebec,BQ,0.021,0.0,0.0,0.979,0.0,0.0
+24058,Portneuf--Jacques-Cartier,Quebec,CPC,0.002,0.998,0.0,0.0,0.0,0.0
+24059,Québec Centre/Québec-Centre,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
+24060,Repentigny,Quebec,BQ,0.467,0.0,0.0,0.533,0.0,0.0
+24061,Richmond--Arthabaska,Quebec,LPC,0.587,0.413,0.0,0.0,0.0,0.0
+24062,Rimouski--La Matapédia,Quebec,BQ,0.035,0.0,0.0,0.966,0.0,0.0
+24063,Rivière-des-Mille-Îles,Quebec,LPC,0.998,0.0,0.0,0.002,0.0,0.0
+24064,Rivière-du-Nord,Quebec,BQ,0.041,0.0,0.0,0.959,0.0,0.0
+24065,Rosemont--La Petite-Patrie,Quebec,NDP,0.005,0.0,0.995,0.0,0.0,0.0
+24066,Saint-Hyacinthe--Bagot--Acton,Quebec,BQ,0.043,0.0,0.0,0.957,0.0,0.0
+24067,Saint-Jean,Quebec,BQ,0.014,0.0,0.0,0.986,0.0,0.0
 24068,Saint-Laurent,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 24069,Saint-Léonard--Saint-Michel,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 24070,Saint-Maurice--Champlain,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-24071,Shefford,Quebec,LPC,0.595,0.0,0.0,0.406,0.0,0.0
+24071,Shefford,Quebec,LPC,0.612,0.0,0.0,0.388,0.0,0.0
 24072,Sherbrooke,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-24073,Terrebonne,Quebec,LPC,0.676,0.0,0.0,0.324,0.0,0.0
-24074,Thérèse-De Blainville,Quebec,LPC,0.997,0.0,0.0,0.003,0.0,0.0
+24073,Terrebonne,Quebec,LPC,0.701,0.0,0.0,0.299,0.0,0.0
+24074,Thérèse-De Blainville,Quebec,LPC,0.998,0.0,0.0,0.002,0.0,0.0
 24075,Trois-Rivières,Quebec,LPC,0.999,0.0,0.0,0.001,0.0,0.0
 24076,Vaudreuil,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 24077,Ville-Marie--Le Sud-Ouest--Île-des-Soeurs,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 24078,Vimy,Quebec,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35001,Ajax,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35002,Algonquin--Renfrew--Pembroke,Ontario,CPC,0.001,0.999,0.0,0.0,0.0,0.0
+35002,Algonquin--Renfrew--Pembroke,Ontario,CPC,0.002,0.998,0.0,0.0,0.0,0.0
 35003,Aurora--Oak Ridges--Richmond Hill,Ontario,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 35004,Barrie South--Innisfil/Barrie-Sud--Innisfil,Ontario,CPC,0.0,1.0,0.0,0.0,0.0,0.0
-35005,Barrie--Springwater--Oro-Medonte,Ontario,LPC,0.819,0.181,0.0,0.0,0.0,0.0
+35005,Barrie--Springwater--Oro-Medonte,Ontario,LPC,0.874,0.126,0.0,0.0,0.0,0.0
 35006,Bay of Quinte,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35007,Beaches--East York,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35008,Bowmanville--Oshawa North/Bowmanville--Oshawa-Nord,Ontario,LPC,0.819,0.181,0.0,0.0,0.0,0.0
-35009,Brampton Centre/Brampton-Centre,Ontario,LPC,0.999,0.001,0.0,0.0,0.0,0.0
+35008,Bowmanville--Oshawa North/Bowmanville--Oshawa-Nord,Ontario,LPC,0.87,0.13,0.0,0.0,0.0,0.0
+35009,Brampton Centre/Brampton-Centre,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35010,Brampton--Chinguacousy Park,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35011,Brampton East/Brampton-Est,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35012,Brampton North--Caledon/Brampton-Nord--Caledon,Ontario,LPC,0.998,0.002,0.0,0.0,0.0,0.0
+35012,Brampton North--Caledon/Brampton-Nord--Caledon,Ontario,LPC,0.999,0.001,0.0,0.0,0.0,0.0
 35013,Brampton South/Brampton-Sud,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35014,Brampton West/Brampton-Ouest,Ontario,LPC,0.992,0.008,0.0,0.0,0.0,0.0
-35015,Brantford--Brant South--Six Nations/Brantford--Brant-Sud--Six Nations,Ontario,CPC,0.096,0.904,0.0,0.0,0.0,0.0
-35016,Bruce--Grey--Owen Sound,Ontario,CPC,0.087,0.913,0.0,0.0,0.0,0.0
+35014,Brampton West/Brampton-Ouest,Ontario,LPC,0.996,0.004,0.0,0.0,0.0,0.0
+35015,Brantford--Brant South--Six Nations/Brantford--Brant-Sud--Six Nations,Ontario,CPC,0.133,0.867,0.0,0.0,0.0,0.0
+35016,Bruce--Grey--Owen Sound,Ontario,CPC,0.13,0.87,0.0,0.0,0.0,0.0
 35017,Burlington,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35018,Burlington North--Milton West/Burlington-Nord--Milton-Ouest,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35019,Cambridge,Ontario,LPC,0.986,0.014,0.0,0.0,0.0,0.0
+35019,Cambridge,Ontario,LPC,0.993,0.007,0.0,0.0,0.0,0.0
 35020,Carleton,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35021,Chatham-Kent--Leamington,Ontario,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 35022,Davenport,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35023,Don Valley North/Don Valley-Nord,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35024,Don Valley West/Don Valley-Ouest,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35025,Dufferin--Caledon,Ontario,CPC,0.015,0.985,0.0,0.0,0.0,0.0
-35026,Eglinton--Lawrence,Ontario,LPC,0.998,0.002,0.0,0.0,0.0,0.0
-35027,Elgin--St. Thomas--London South/Elgin--St. Thomas--London-Sud,Ontario,LPC,0.499,0.501,0.0,0.0,0.0,0.0
-35028,Essex,Ontario,CPC,0.0,1.0,0.0,0.0,0.0,0.0
+35025,Dufferin--Caledon,Ontario,CPC,0.019,0.981,0.0,0.0,0.0,0.0
+35026,Eglinton--Lawrence,Ontario,LPC,1.0,0.001,0.0,0.0,0.0,0.0
+35027,Elgin--St. Thomas--London South/Elgin--St. Thomas--London-Sud,Ontario,LPC,0.584,0.416,0.0,0.0,0.0,0.0
+35028,Essex,Ontario,CPC,0.001,0.999,0.0,0.0,0.0,0.0
 35029,Etobicoke Centre/Etobicoke-Centre,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35030,Etobicoke--Lakeshore,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35031,Etobicoke North/Etobicoke-Nord,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35032,Flamborough--Glanbrook--Brant North/Flamborough--Glanbrook--Brant-Nord,Ontario,CPC,0.222,0.778,0.0,0.0,0.0,0.0
+35032,Flamborough--Glanbrook--Brant North/Flamborough--Glanbrook--Brant-Nord,Ontario,CPC,0.293,0.707,0.0,0.0,0.0,0.0
 35033,Guelph,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35034,Haldimand--Norfolk,Ontario,CPC,0.0,1.0,0.0,0.0,0.0,0.0
-35035,Haliburton--Kawartha Lakes,Ontario,CPC,0.004,0.996,0.0,0.0,0.0,0.0
-35036,Hamilton Centre/Hamilton-Centre,Ontario,LPC,0.748,0.0,0.253,0.0,0.0,0.0
-35037,Hamilton East--Stoney Creek/Hamilton-Est--Stoney Creek,Ontario,LPC,0.985,0.015,0.0,0.0,0.0,0.0
+35035,Haliburton--Kawartha Lakes,Ontario,CPC,0.01,0.99,0.0,0.0,0.0,0.0
+35036,Hamilton Centre/Hamilton-Centre,Ontario,LPC,0.809,0.0,0.191,0.0,0.0,0.0
+35037,Hamilton East--Stoney Creek/Hamilton-Est--Stoney Creek,Ontario,LPC,0.992,0.008,0.0,0.0,0.0,0.0
 35038,Hamilton Mountain,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35039,Hamilton West--Ancaster--Dundas/Hamilton-Ouest--Ancaster--Dundas,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35040,Hastings--Lennox and Addington--Tyendinaga,Ontario,CPC,0.021,0.979,0.0,0.0,0.0,0.0
+35040,Hastings--Lennox and Addington--Tyendinaga,Ontario,CPC,0.032,0.968,0.0,0.0,0.0,0.0
 35041,Humber River--Black Creek,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35042,Huron--Bruce,Ontario,CPC,0.102,0.898,0.0,0.0,0.0,0.0
+35042,Huron--Bruce,Ontario,CPC,0.16,0.84,0.0,0.0,0.0,0.0
 35043,Kanata,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35044,Kapuskasing--Timmins--Mushkegowuk,Ontario,CPC,0.18,0.82,0.0,0.0,0.0,0.0
-35045,Kenora--Kiiwetinoong,Ontario,CPC,0.026,0.974,0.0,0.0,0.0,0.0
+35044,Kapuskasing--Timmins--Mushkegowuk,Ontario,CPC,0.241,0.759,0.0,0.0,0.0,0.0
+35045,Kenora--Kiiwetinoong,Ontario,CPC,0.041,0.959,0.0,0.0,0.0,0.0
 35046,Kingston and the Islands/Kingston et les Îles,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35047,King--Vaughan,Ontario,CPC,0.0,1.0,0.0,0.0,0.0,0.0
-35048,Kitchener Centre/Kitchener-Centre,Ontario,GPC,0.169,0.002,0.0,0.0,0.829,0.0
-35049,Kitchener--Conestoga,Ontario,LPC,0.996,0.004,0.0,0.0,0.0,0.0
-35050,Kitchener South--Hespeler/Kitchener-Sud--Hespeler,Ontario,LPC,0.974,0.026,0.0,0.0,0.0,0.0
-35051,Lanark--Frontenac,Ontario,LPC,0.761,0.239,0.0,0.0,0.0,0.0
-35052,Leeds--Grenville--Thousand Islands--Rideau Lakes,Ontario,LPC,0.669,0.331,0.0,0.0,0.0,0.0
+35048,Kitchener Centre/Kitchener-Centre,Ontario,GPC,0.249,0.001,0.0,0.0,0.75,0.0
+35049,Kitchener--Conestoga,Ontario,LPC,0.998,0.003,0.0,0.0,0.0,0.0
+35050,Kitchener South--Hespeler/Kitchener-Sud--Hespeler,Ontario,LPC,0.986,0.014,0.0,0.0,0.0,0.0
+35051,Lanark--Frontenac,Ontario,LPC,0.825,0.175,0.0,0.0,0.0,0.0
+35052,Leeds--Grenville--Thousand Islands--Rideau Lakes,Ontario,LPC,0.744,0.256,0.0,0.0,0.0,0.0
 35053,London Centre/London-Centre,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35054,London--Fanshawe,Ontario,NDP,0.033,0.482,0.485,0.0,0.0,0.0
+35054,London--Fanshawe,Ontario,NDP,0.062,0.461,0.477,0.0,0.0,0.0
 35055,London West/London-Ouest,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35056,Markham--Stouffville,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35057,Markham--Thornhill,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35058,Markham--Unionville,Ontario,CPC,0.207,0.793,0.0,0.0,0.0,0.0
-35059,Middlesex--London,Ontario,CPC,0.212,0.788,0.0,0.0,0.0,0.0
-35060,Milton East--Halton Hills South/Milton-Est--Halton Hills-Sud,Ontario,LPC,0.992,0.008,0.0,0.0,0.0,0.0
+35058,Markham--Unionville,Ontario,CPC,0.234,0.766,0.0,0.0,0.0,0.0
+35059,Middlesex--London,Ontario,CPC,0.281,0.72,0.0,0.0,0.0,0.0
+35060,Milton East--Halton Hills South/Milton-Est--Halton Hills-Sud,Ontario,LPC,0.996,0.004,0.0,0.0,0.0,0.0
 35061,Mississauga Centre/Mississauga-Centre,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35062,Mississauga East--Cooksville/Mississauga-Est--Cooksville,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35063,Mississauga--Erin Mills,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
@@ -176,43 +176,43 @@ riding_code,riding_name,province,projected_winner,P_LPC,P_CPC,P_NDP,P_BQ,P_GPC,P
 35065,Mississauga--Malton,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35066,Mississauga--Streetsville,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35067,Nepean,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35068,Newmarket--Aurora,Ontario,LPC,0.867,0.133,0.0,0.0,0.0,0.0
+35068,Newmarket--Aurora,Ontario,LPC,0.911,0.089,0.0,0.0,0.0,0.0
 35069,New Tecumseth--Gwillimbury,Ontario,CPC,0.0,1.0,0.0,0.0,0.0,0.0
-35070,Niagara Falls--Niagara-on-the-Lake,Ontario,LPC,0.819,0.181,0.0,0.0,0.0,0.0
-35071,Niagara South/Niagara-Sud,Ontario,LPC,0.85,0.15,0.0,0.0,0.0,0.0
-35072,Niagara West/Niagara-Ouest,Ontario,CPC,0.064,0.936,0.0,0.0,0.0,0.0
+35070,Niagara Falls--Niagara-on-the-Lake,Ontario,LPC,0.871,0.129,0.0,0.0,0.0,0.0
+35071,Niagara South/Niagara-Sud,Ontario,LPC,0.894,0.106,0.0,0.0,0.0,0.0
+35072,Niagara West/Niagara-Ouest,Ontario,CPC,0.106,0.894,0.0,0.0,0.0,0.0
 35073,Nipissing--Timiskaming,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35074,Northumberland--Clarke,Ontario,LPC,0.902,0.098,0.0,0.0,0.0,0.0
+35074,Northumberland--Clarke,Ontario,LPC,0.936,0.064,0.0,0.0,0.0,0.0
 35075,Oakville East/Oakville-Est,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35076,Oakville West/Oakville-Ouest,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35077,Orléans,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35078,Oshawa,Ontario,LPC,0.586,0.414,0.0,0.0,0.0,0.0
+35078,Oshawa,Ontario,LPC,0.668,0.332,0.0,0.0,0.0,0.0
 35079,Ottawa Centre/Ottawa-Centre,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35080,Ottawa South/Ottawa-Sud,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35081,Ottawa--Vanier--Gloucester,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35082,Ottawa West--Nepean/Ottawa-Ouest--Nepean,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35083,Oxford,Ontario,CPC,0.0,1.0,0.0,0.0,0.0,0.0
-35084,Parry Sound--Muskoka,Ontario,LPC,0.612,0.388,0.0,0.0,0.0,0.0
-35085,Perth--Wellington,Ontario,CPC,0.047,0.953,0.0,0.0,0.0,0.0
+35084,Parry Sound--Muskoka,Ontario,LPC,0.694,0.306,0.0,0.0,0.0,0.0
+35085,Perth--Wellington,Ontario,CPC,0.074,0.926,0.0,0.0,0.0,0.0
 35086,Peterborough,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35087,Pickering--Brooklin,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35088,Prescott--Russell--Cumberland,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35089,Richmond Hill South/Richmond Hill-Sud,Ontario,CPC,0.398,0.602,0.0,0.0,0.0,0.0
-35090,Sarnia--Lambton--Bkejwanong,Ontario,CPC,0.009,0.991,0.0,0.0,0.0,0.0
-35091,Sault Ste. Marie--Algoma,Ontario,LPC,1.0,0.001,0.0,0.0,0.0,0.0
+35089,Richmond Hill South/Richmond Hill-Sud,Ontario,CPC,0.479,0.521,0.0,0.0,0.0,0.0
+35090,Sarnia--Lambton--Bkejwanong,Ontario,CPC,0.014,0.986,0.0,0.0,0.0,0.0
+35091,Sault Ste. Marie--Algoma,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35092,Scarborough--Agincourt,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35093,Scarborough Centre--Don Valley East/Scarborough-Centre--Don Valley-Est,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35094,Scarborough--Guildwood--Rouge Park,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35095,Scarborough North/Scarborough-Nord,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35096,Scarborough Southwest/Scarborough-Sud-Ouest,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35097,Scarborough--Woburn,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35098,Simcoe--Grey,Ontario,CPC,0.477,0.523,0.0,0.0,0.0,0.0
-35099,Simcoe North/Simcoe-Nord,Ontario,LPC,0.52,0.48,0.0,0.0,0.0,0.0
+35098,Simcoe--Grey,Ontario,LPC,0.562,0.438,0.0,0.0,0.0,0.0
+35099,Simcoe North/Simcoe-Nord,Ontario,LPC,0.607,0.394,0.0,0.0,0.0,0.0
 35100,Spadina--Harbourfront,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35101,St. Catharines,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35102,Stormont--Dundas--Glengarry,Ontario,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 35103,Sudbury,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35104,Sudbury East--Manitoulin--Nickel Belt/Sudbury-Est--Manitoulin--Nickel Belt,Ontario,LPC,0.531,0.469,0.0,0.0,0.0,0.0
+35104,Sudbury East--Manitoulin--Nickel Belt/Sudbury-Est--Manitoulin--Nickel Belt,Ontario,LPC,0.615,0.385,0.0,0.0,0.0,0.0
 35105,Taiaiako'n--Parkdale--High Park,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35106,Thornhill,Ontario,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 35107,Thunder Bay--Rainy River,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
@@ -221,26 +221,26 @@ riding_code,riding_name,province,projected_winner,P_LPC,P_CPC,P_NDP,P_BQ,P_GPC,P
 35110,Toronto--Danforth,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35111,Toronto--St. Paul's,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35112,University--Rosedale,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35113,Vaughan--Woodbridge,Ontario,CPC,0.037,0.963,0.0,0.0,0.0,0.0
+35113,Vaughan--Woodbridge,Ontario,CPC,0.045,0.955,0.0,0.0,0.0,0.0
 35114,Waterloo,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35115,Wellington--Halton Hills North/Wellington--Halton Hills-Nord,Ontario,LPC,0.603,0.397,0.0,0.0,0.0,0.0
+35115,Wellington--Halton Hills North/Wellington--Halton Hills-Nord,Ontario,LPC,0.684,0.316,0.0,0.0,0.0,0.0
 35116,Whitby,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 35117,Willowdale,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-35118,Windsor--Tecumseh--Lakeshore,Ontario,LPC,0.992,0.008,0.0,0.0,0.0,0.0
-35119,Windsor West/Windsor-Ouest,Ontario,NDP,0.092,0.089,0.819,0.0,0.0,0.0
-35120,York Centre/York-Centre,Ontario,CPC,0.109,0.891,0.0,0.0,0.0,0.0
-35121,York--Durham,Ontario,CPC,0.004,0.996,0.0,0.0,0.0,0.0
+35118,Windsor--Tecumseh--Lakeshore,Ontario,LPC,0.996,0.004,0.0,0.0,0.0,0.0
+35119,Windsor West/Windsor-Ouest,Ontario,NDP,0.138,0.065,0.796,0.0,0.0,0.0
+35120,York Centre/York-Centre,Ontario,CPC,0.137,0.863,0.0,0.0,0.0,0.0
+35121,York--Durham,Ontario,CPC,0.008,0.992,0.0,0.0,0.0,0.0
 35122,York South--Weston--Etobicoke/York-Sud--Weston--Etobicoke,Ontario,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 46001,Brandon--Souris,Manitoba,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 46002,Churchill--Keewatinook Aski,Manitoba,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-46003,Elmwood--Transcona,Manitoba,NDP,0.093,0.259,0.648,0.0,0.0,0.0
-46004,Kildonan--St. Paul,Manitoba,LPC,0.896,0.103,0.0,0.0,0.0,0.0
-46005,Portage--Lisgar,Manitoba,CPC,0.026,0.974,0.0,0.0,0.0,0.0
-46006,Provencher,Manitoba,CPC,0.063,0.937,0.0,0.0,0.0,0.0
+46003,Elmwood--Transcona,Manitoba,NDP,0.139,0.289,0.572,0.0,0.0,0.0
+46004,Kildonan--St. Paul,Manitoba,LPC,0.915,0.085,0.0,0.0,0.0,0.0
+46005,Portage--Lisgar,Manitoba,CPC,0.023,0.977,0.0,0.0,0.0,0.0
+46006,Provencher,Manitoba,CPC,0.057,0.943,0.0,0.0,0.0,0.0
 46007,Riding Mountain/Mont-Riding,Manitoba,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 46008,St. Boniface--St. Vital/Saint-Boniface--Saint-Vital,Manitoba,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-46009,Selkirk--Interlake--Eastman,Manitoba,CPC,0.006,0.994,0.0,0.0,0.0,0.0
-46010,Winnipeg Centre/Winnipeg-Centre,Manitoba,NDP,0.43,0.0,0.57,0.0,0.0,0.0
+46009,Selkirk--Interlake--Eastman,Manitoba,CPC,0.007,0.993,0.0,0.0,0.0,0.0
+46010,Winnipeg Centre/Winnipeg-Centre,Manitoba,LPC,0.526,0.0,0.474,0.0,0.0,0.0
 46011,Winnipeg North/Winnipeg-Nord,Manitoba,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 46012,Winnipeg South/Winnipeg-Sud,Manitoba,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 46013,Winnipeg South Centre/Winnipeg-Centre-Sud,Manitoba,LPC,1.0,0.0,0.0,0.0,0.0,0.0
@@ -250,95 +250,95 @@ riding_code,riding_name,province,projected_winner,P_LPC,P_CPC,P_NDP,P_BQ,P_GPC,P
 47003,Desnethé--Missinippi--Churchill River/Desnethé--Missinippi--Rivière Churchill,Saskatchewan,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 47004,Moose Jaw--Lake Centre--Lanigan,Saskatchewan,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 47005,Prince Albert,Saskatchewan,CPC,0.0,1.0,0.0,0.0,0.0,0.0
-47006,Regina--Lewvan,Saskatchewan,LPC,0.732,0.268,0.0,0.0,0.0,0.0
+47006,Regina--Lewvan,Saskatchewan,LPC,0.766,0.234,0.0,0.0,0.0,0.0
 47007,Regina--Qu'Appelle,Saskatchewan,CPC,0.0,1.0,0.0,0.0,0.0,0.0
-47008,Regina--Wascana,Saskatchewan,LPC,0.539,0.461,0.0,0.0,0.0,0.0
-47009,Saskatoon South/Saskatoon-Sud,Saskatchewan,LPC,0.662,0.338,0.0,0.0,0.0,0.0
-47010,Saskatoon--University,Saskatchewan,LPC,0.658,0.342,0.0,0.0,0.0,0.0
-47011,Saskatoon West/Saskatoon-Ouest,Saskatchewan,CPC,0.035,0.965,0.0,0.0,0.0,0.0
+47008,Regina--Wascana,Saskatchewan,LPC,0.59,0.41,0.0,0.0,0.0,0.0
+47009,Saskatoon South/Saskatoon-Sud,Saskatchewan,LPC,0.694,0.306,0.0,0.0,0.0,0.0
+47010,Saskatoon--University,Saskatchewan,LPC,0.704,0.296,0.0,0.0,0.0,0.0
+47011,Saskatoon West/Saskatoon-Ouest,Saskatchewan,CPC,0.041,0.959,0.0,0.0,0.0,0.0
 47012,Souris--Moose Mountain,Saskatchewan,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 47013,Swift Current--Grasslands--Kindersley,Saskatchewan,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 47014,Yorkton--Melville,Saskatchewan,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 48001,Airdrie--Cochrane,Alberta,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 48002,Battle River--Crowfoot,Alberta,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 48003,Bow River,Alberta,CPC,0.0,1.0,0.0,0.0,0.0,0.0
-48004,Calgary Centre/Calgary-Centre,Alberta,LPC,0.942,0.058,0.0,0.0,0.0,0.0
-48005,Calgary Confederation,Alberta,LPC,0.996,0.004,0.0,0.0,0.0,0.0
-48006,Calgary Crowfoot,Alberta,CPC,0.282,0.718,0.0,0.0,0.0,0.0
-48007,Calgary East/Calgary-Est,Alberta,CPC,0.053,0.947,0.0,0.0,0.0,0.0
+48004,Calgary Centre/Calgary-Centre,Alberta,LPC,0.956,0.044,0.0,0.0,0.0,0.0
+48005,Calgary Confederation,Alberta,LPC,0.997,0.003,0.0,0.0,0.0,0.0
+48006,Calgary Crowfoot,Alberta,CPC,0.298,0.702,0.0,0.0,0.0,0.0
+48007,Calgary East/Calgary-Est,Alberta,CPC,0.054,0.946,0.0,0.0,0.0,0.0
 48008,Calgary Heritage,Alberta,CPC,0.095,0.905,0.0,0.0,0.0,0.0
-48009,Calgary McKnight,Alberta,LPC,0.99,0.01,0.0,0.0,0.0,0.0
+48009,Calgary McKnight,Alberta,LPC,0.994,0.006,0.0,0.0,0.0,0.0
 48010,Calgary Midnapore,Alberta,CPC,0.002,0.998,0.0,0.0,0.0,0.0
-48011,Calgary Nose Hill,Alberta,CPC,0.34,0.66,0.0,0.0,0.0,0.0
-48012,Calgary Shepard,Alberta,CPC,0.005,0.995,0.0,0.0,0.0,0.0
+48011,Calgary Nose Hill,Alberta,CPC,0.354,0.645,0.0,0.0,0.0,0.0
+48012,Calgary Shepard,Alberta,CPC,0.004,0.996,0.0,0.0,0.0,0.0
 48013,Calgary Signal Hill,Alberta,CPC,0.143,0.857,0.0,0.0,0.0,0.0
-48014,Calgary Skyview,Alberta,LPC,0.81,0.19,0.0,0.0,0.0,0.0
+48014,Calgary Skyview,Alberta,LPC,0.84,0.16,0.0,0.0,0.0,0.0
 48015,Edmonton Centre/Edmonton-Centre,Alberta,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-48016,Edmonton Gateway,Alberta,LPC,0.727,0.273,0.0,0.0,0.0,0.0
-48017,Edmonton Griesbach,Alberta,NDP,0.0,0.31,0.69,0.0,0.0,0.0
-48018,Edmonton Manning,Alberta,CPC,0.493,0.507,0.0,0.0,0.0,0.0
-48019,Edmonton Northwest/Edmonton-Nord-Ouest,Alberta,LPC,0.635,0.365,0.0,0.0,0.0,0.0
-48020,Edmonton Riverbend,Alberta,LPC,0.966,0.034,0.0,0.0,0.0,0.0
-48021,Edmonton Southeast/Edmonton-Sud-Est,Alberta,LPC,0.689,0.311,0.0,0.0,0.0,0.0
+48016,Edmonton Gateway,Alberta,LPC,0.766,0.234,0.0,0.0,0.0,0.0
+48017,Edmonton Griesbach,Alberta,NDP,0.0,0.293,0.707,0.0,0.0,0.0
+48018,Edmonton Manning,Alberta,LPC,0.527,0.472,0.0,0.0,0.0,0.0
+48019,Edmonton Northwest/Edmonton-Nord-Ouest,Alberta,LPC,0.667,0.333,0.0,0.0,0.0,0.0
+48020,Edmonton Riverbend,Alberta,LPC,0.976,0.024,0.0,0.0,0.0,0.0
+48021,Edmonton Southeast/Edmonton-Sud-Est,Alberta,LPC,0.722,0.278,0.0,0.0,0.0,0.0
 48022,Edmonton Strathcona,Alberta,NDP,0.0,0.0,1.0,0.0,0.0,0.0
-48023,Edmonton West/Edmonton-Ouest,Alberta,LPC,0.848,0.152,0.0,0.0,0.0,0.0
+48023,Edmonton West/Edmonton-Ouest,Alberta,LPC,0.874,0.126,0.0,0.0,0.0,0.0
 48024,Foothills,Alberta,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 48025,Fort McMurray--Cold Lake,Alberta,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 48026,Grande Prairie,Alberta,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 48027,Lakeland,Alberta,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 48028,Leduc--Wetaskiwin,Alberta,CPC,0.0,1.0,0.0,0.0,0.0,0.0
-48029,Lethbridge,Alberta,CPC,0.027,0.973,0.0,0.0,0.0,0.0
+48029,Lethbridge,Alberta,CPC,0.026,0.974,0.0,0.0,0.0,0.0
 48030,Medicine Hat--Cardston--Warner,Alberta,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 48031,Parkland,Alberta,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 48032,Peace River--Westlock,Alberta,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 48033,Ponoka--Didsbury,Alberta,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 48034,Red Deer,Alberta,CPC,0.0,1.0,0.0,0.0,0.0,0.0
 48035,Sherwood Park--Fort Saskatchewan,Alberta,CPC,0.005,0.995,0.0,0.0,0.0,0.0
-48036,St. Albert--Sturgeon River,Alberta,CPC,0.01,0.99,0.0,0.0,0.0,0.0
+48036,St. Albert--Sturgeon River,Alberta,CPC,0.009,0.991,0.0,0.0,0.0,0.0
 48037,Yellowhead,Alberta,CPC,0.0,1.0,0.0,0.0,0.0,0.0
-59001,Abbotsford--South Langley/Abbotsford--Langley-Sud,British Columbia,CPC,0.22,0.78,0.0,0.0,0.0,0.0
-59002,Burnaby Central,British Columbia,LPC,0.987,0.013,0.0,0.0,0.0,0.0
+59001,Abbotsford--South Langley/Abbotsford--Langley-Sud,British Columbia,CPC,0.26,0.741,0.0,0.0,0.0,0.0
+59002,Burnaby Central,British Columbia,LPC,0.995,0.005,0.0,0.0,0.0,0.0
 59003,Burnaby North--Seymour/Burnaby-Nord--Seymour,British Columbia,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 59004,Cariboo--Prince George,British Columbia,CPC,0.0,1.0,0.0,0.0,0.0,0.0
-59005,Chilliwack--Hope,British Columbia,CPC,0.006,0.994,0.0,0.0,0.0,0.0
-59006,Cloverdale--Langley City,British Columbia,LPC,0.868,0.133,0.0,0.0,0.0,0.0
+59005,Chilliwack--Hope,British Columbia,CPC,0.008,0.992,0.0,0.0,0.0,0.0
+59006,Cloverdale--Langley City,British Columbia,LPC,0.902,0.098,0.0,0.0,0.0,0.0
 59007,Columbia--Kootenay--Southern Rockies,British Columbia,CPC,0.001,1.0,0.0,0.0,0.0,0.0
-59008,Coquitlam--Port Coquitlam,British Columbia,LPC,0.995,0.005,0.0,0.0,0.0,0.0
+59008,Coquitlam--Port Coquitlam,British Columbia,LPC,0.998,0.002,0.0,0.0,0.0,0.0
 59009,Courtenay--Alberni,British Columbia,NDP,0.0,0.001,0.999,0.0,0.0,0.0
-59010,Cowichan--Malahat--Langford,British Columbia,CPC,0.153,0.434,0.412,0.0,0.0,0.0
+59010,Cowichan--Malahat--Langford,British Columbia,NDP,0.184,0.393,0.423,0.0,0.0,0.0
 59011,Delta,British Columbia,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 59012,Esquimalt--Saanich--Sooke,British Columbia,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-59013,Fleetwood--Port Kells,British Columbia,LPC,0.994,0.006,0.0,0.0,0.0,0.0
-59014,Kamloops--Shuswap--Central Rockies,British Columbia,CPC,0.054,0.946,0.0,0.0,0.0,0.0
-59015,Kamloops--Thompson--Nicola,British Columbia,CPC,0.113,0.887,0.0,0.0,0.0,0.0
-59016,Kelowna,British Columbia,LPC,0.963,0.037,0.0,0.0,0.0,0.0
-59017,Langley Township--Fraser Heights,British Columbia,CPC,0.269,0.732,0.0,0.0,0.0,0.0
+59013,Fleetwood--Port Kells,British Columbia,LPC,0.998,0.002,0.0,0.0,0.0,0.0
+59014,Kamloops--Shuswap--Central Rockies,British Columbia,CPC,0.067,0.933,0.0,0.0,0.0,0.0
+59015,Kamloops--Thompson--Nicola,British Columbia,CPC,0.136,0.864,0.0,0.0,0.0,0.0
+59016,Kelowna,British Columbia,LPC,0.978,0.022,0.0,0.0,0.0,0.0
+59017,Langley Township--Fraser Heights,British Columbia,CPC,0.31,0.69,0.0,0.0,0.0,0.0
 59018,Mission--Matsqui--Abbotsford,British Columbia,CPC,0.002,0.998,0.0,0.0,0.0,0.0
-59019,Nanaimo--Ladysmith,British Columbia,CPC,0.323,0.663,0.0,0.0,0.014,0.0
-59020,New Westminster--Burnaby--Maillardville,British Columbia,LPC,0.893,0.007,0.1,0.0,0.0,0.0
-59021,North Island--Powell River,British Columbia,CPC,0.029,0.856,0.116,0.0,0.0,0.0
+59019,Nanaimo--Ladysmith,British Columbia,CPC,0.376,0.617,0.0,0.0,0.007,0.0
+59020,New Westminster--Burnaby--Maillardville,British Columbia,LPC,0.912,0.003,0.086,0.0,0.0,0.0
+59021,North Island--Powell River,British Columbia,CPC,0.037,0.846,0.117,0.0,0.0,0.0
 59022,North Vancouver--Capilano,British Columbia,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-59023,Okanagan Lake West--South Kelowna/Okanagan Lake-Ouest--Kelowna-Sud,British Columbia,CPC,0.404,0.596,0.0,0.0,0.0,0.0
-59024,Pitt Meadows--Maple Ridge,British Columbia,LPC,0.832,0.169,0.0,0.0,0.0,0.0
-59025,Port Moody--Coquitlam,British Columbia,LPC,0.981,0.019,0.0,0.0,0.0,0.0
+59023,Okanagan Lake West--South Kelowna/Okanagan Lake-Ouest--Kelowna-Sud,British Columbia,CPC,0.456,0.544,0.0,0.0,0.0,0.0
+59024,Pitt Meadows--Maple Ridge,British Columbia,LPC,0.875,0.125,0.0,0.0,0.0,0.0
+59025,Port Moody--Coquitlam,British Columbia,LPC,0.99,0.01,0.0,0.0,0.0,0.0
 59026,Prince George--Peace River--Northern Rockies,British Columbia,CPC,0.0,1.0,0.0,0.0,0.0,0.0
-59027,Richmond Centre--Marpole/Richmond-Centre--Marpole,British Columbia,LPC,0.575,0.425,0.0,0.0,0.0,0.0
-59028,Richmond East--Steveston/Richmond-Est--Steveston,British Columbia,LPC,0.968,0.032,0.0,0.0,0.0,0.0
-59029,Saanich--Gulf Islands,British Columbia,GPC,0.022,0.0,0.0,0.0,0.978,0.0
-59030,Similkameen--South Okanagan--West Kootenay/Similkameen--Okanagan-Sud--Kootenay-Ouest,British Columbia,CPC,0.4,0.6,0.0,0.0,0.0,0.0
-59031,Skeena--Bulkley Valley,British Columbia,CPC,0.0,0.787,0.213,0.0,0.0,0.0
-59032,South Surrey--White Rock/Surrey-Sud--White Rock,British Columbia,LPC,0.997,0.003,0.0,0.0,0.0,0.0
-59033,Surrey Centre/Surrey-Centre,British Columbia,LPC,0.994,0.006,0.0,0.0,0.0,0.0
-59034,Surrey Newton,British Columbia,LPC,0.994,0.006,0.0,0.0,0.0,0.0
+59027,Richmond Centre--Marpole/Richmond-Centre--Marpole,British Columbia,LPC,0.629,0.371,0.0,0.0,0.0,0.0
+59028,Richmond East--Steveston/Richmond-Est--Steveston,British Columbia,LPC,0.981,0.019,0.0,0.0,0.0,0.0
+59029,Saanich--Gulf Islands,British Columbia,GPC,0.028,0.0,0.0,0.0,0.972,0.0
+59030,Similkameen--South Okanagan--West Kootenay/Similkameen--Okanagan-Sud--Kootenay-Ouest,British Columbia,CPC,0.452,0.548,0.0,0.0,0.0,0.0
+59031,Skeena--Bulkley Valley,British Columbia,CPC,0.0,0.777,0.223,0.0,0.0,0.0
+59032,South Surrey--White Rock/Surrey-Sud--White Rock,British Columbia,LPC,0.999,0.002,0.0,0.0,0.0,0.0
+59033,Surrey Centre/Surrey-Centre,British Columbia,LPC,0.998,0.002,0.0,0.0,0.0,0.0
+59034,Surrey Newton,British Columbia,LPC,0.998,0.002,0.0,0.0,0.0,0.0
 59035,Vancouver Centre/Vancouver-Centre,British Columbia,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-59036,Vancouver East/Vancouver-Est,British Columbia,NDP,0.035,0.0,0.965,0.0,0.0,0.0
+59036,Vancouver East/Vancouver-Est,British Columbia,NDP,0.043,0.0,0.957,0.0,0.0,0.0
 59037,Vancouver Fraserview--South Burnaby/Vancouver Fraserview--Burnaby-Sud,British Columbia,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 59038,Vancouver Granville,British Columbia,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-59039,Vancouver Kingsway,British Columbia,LPC,0.541,0.0,0.459,0.0,0.0,0.0
+59039,Vancouver Kingsway,British Columbia,LPC,0.578,0.0,0.422,0.0,0.0,0.0
 59040,Vancouver Quadra,British Columbia,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-59041,Vernon--Lake Country--Monashee,British Columbia,CPC,0.335,0.665,0.0,0.0,0.0,0.0
+59041,Vernon--Lake Country--Monashee,British Columbia,CPC,0.385,0.615,0.0,0.0,0.0,0.0
 59042,Victoria,British Columbia,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 59043,West Vancouver--Sunshine Coast--Sea to Sky Country,British Columbia,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 60001,Yukon,Yukon,LPC,1.0,0.0,0.0,0.0,0.0,0.0
 61001,Northwest Territories/Territoires du Nord-Ouest,Northwest Territories,LPC,1.0,0.0,0.0,0.0,0.0,0.0
-62001,Nunavut,Nunavut,NDP,0.065,0.0,0.935,0.0,0.0,0.0
+62001,Nunavut,Nunavut,NDP,0.047,0.0,0.953,0.0,0.0,0.0
