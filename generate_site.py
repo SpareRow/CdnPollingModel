@@ -88,6 +88,15 @@ def load_riding_projections() -> list[dict]:
         return list(csv.DictReader(f))
 
 
+def load_prev_winners() -> dict[str, str]:
+    """Return {riding_code: projected_winner} from the previous run, or {}."""
+    prev = RIDING_CSV.with_name("riding_projections_prev.csv")
+    if not prev.exists():
+        return {}
+    with open(prev, newline="", encoding="utf-8") as f:
+        return {r["riding_code"]: r["projected_winner"] for r in csv.DictReader(f)}
+
+
 # ── Seat history ──────────────────────────────────────────────────────────────
 
 def update_seat_history(seat_data: dict) -> None:
@@ -203,7 +212,7 @@ def compute_regional_rolling(days: int = 90) -> dict[str, list[dict]]:
 
 # ── HTML generation ───────────────────────────────────────────────────────────
 
-def _riding_table_html(ridings: list[dict], seat_data: dict) -> str:
+def _riding_table_html(ridings: list[dict], seat_data: dict, prev_winners: dict[str, str] | None = None) -> str:
     """Return the riding projections table + controls HTML fragment."""
     parties_data = seat_data.get("parties", {})
     as_of = seat_data.get("as_of", "")
@@ -263,6 +272,20 @@ def _riding_table_html(ridings: list[dict], seat_data: dict) -> str:
             else:
                 comp_cls, comp_lbl = "comp-safe",   "Safe"
 
+            # Change indicator
+            prev_winner = (prev_winners or {}).get(r["riding_code"])
+            changed = prev_winner and prev_winner != winner
+            change_badge = ""
+            if changed:
+                prev_color = PARTY_COLORS.get(prev_winner, "#aaa")
+                change_badge = (
+                    f' <span class="change-badge" title="Previously projected: {prev_winner}">'
+                    f'<span class="change-from" style="background:{prev_color}">{prev_winner}</span>'
+                    f'<span class="change-arrow">→</span>'
+                    f'<span class="change-to" style="background:{w_color}">{winner}</span>'
+                    f'</span>'
+                )
+
             badge = (
                 f'<span class="winner-badge" style="background:{w_color}">{winner}</span>'
             )
@@ -283,12 +306,12 @@ def _riding_table_html(ridings: list[dict], seat_data: dict) -> str:
                     )
 
             table_rows += (
-                f'<tr class="riding-row" '
+                f'<tr class="riding-row{"  changed" if changed else ""}" '
                 f'data-riding="{r["riding_name"].lower()}" '
                 f'data-province="{prov.lower()}" '
                 f'data-winner="{winner}" '
                 f'data-top="{top_p:.3f}">\n'
-                f'  <td class="riding-name">{r["riding_name"]}</td>\n'
+                f'  <td class="riding-name">{r["riding_name"]}{change_badge}</td>\n'
                 f'  <td class="prov-code">{short}</td>\n'
                 f'  <td class="winner-td">{badge}</td>\n'
                 f'  <td class="comp-td"><span class="comp-label {comp_cls}">{comp_lbl}</span></td>\n'
@@ -323,6 +346,10 @@ def _riding_table_html(ridings: list[dict], seat_data: dict) -> str:
     <option value="likely">Likely (60–80%)</option>
     <option value="safe">Safe (≥80%)</option>
   </select>
+  <select id="change-filter" onchange="filterTable()">
+    <option value="">All ridings</option>
+    <option value="changed">Changed this week</option>
+  </select>
 </div>
 <div class="result-count" id="result-count"></div>
 <div class="table-wrap">
@@ -350,6 +377,7 @@ def build_html(
     seat_hist: list[dict],
     regional: dict[str, list[dict]],
     ridings: list[dict],
+    prev_winners: dict[str, str] | None = None,
 ) -> str:
     as_of = seat_proj.get("as_of", date.today().isoformat())
 
@@ -410,7 +438,7 @@ def build_html(
         "regionalPolling": regional_clean,
     }, separators=(",", ":"))
 
-    riding_table = _riding_table_html(ridings, seat_proj)
+    riding_table = _riding_table_html(ridings, seat_proj, prev_winners)
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -492,6 +520,11 @@ td{{padding:5px 9px;vertical-align:middle}}
 .comp-safe{{background:#e8f5e9;color:#2e7d32}}
 .comp-likely{{background:#fff8e1;color:#f57f17}}
 .comp-tossup{{background:#fce4ec;color:#c62828}}
+.change-badge{{display:inline-flex;align-items:center;gap:2px;margin-left:5px;vertical-align:middle}}
+.change-from,.change-to{{font-size:0.65rem;padding:0px 4px;border-radius:3px;color:#fff;font-weight:700}}
+.change-arrow{{font-size:0.65rem;color:#888}}
+tr.riding-row.changed{{background:#fffbeb}}
+tr.riding-row.changed:hover{{background:#fef3c7}}
 .prob-td{{min-width:75px;padding:3px 7px}}
 .prob-cell{{display:flex;align-items:center;gap:4px}}
 .bar-wrap{{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden;min-width:36px}}
@@ -733,12 +766,13 @@ updateRegionalChart();
 let sortCol = -1, sortAsc = true;
 
 function filterTable() {{
-  const search = document.getElementById("search").value.toLowerCase();
-  const provF  = document.getElementById("prov-filter").value;
-  const winF   = document.getElementById("winner-filter").value;
-  const compF  = document.getElementById("comp-filter").value;
-  const rows   = document.querySelectorAll("tr.riding-row");
-  let visible  = 0;
+  const search  = document.getElementById("search").value.toLowerCase();
+  const provF   = document.getElementById("prov-filter").value;
+  const winF    = document.getElementById("winner-filter").value;
+  const compF   = document.getElementById("comp-filter").value;
+  const changeF = document.getElementById("change-filter").value;
+  const rows    = document.querySelectorAll("tr.riding-row");
+  let visible   = 0;
   rows.forEach(r => {{
     const top = parseFloat(r.dataset.top || "1");
     let compMatch = true;
@@ -746,9 +780,10 @@ function filterTable() {{
     else if (compF === "likely") compMatch = top >= 0.60 && top < 0.80;
     else if (compF === "safe") compMatch = top >= 0.80;
     const show = (
-      (!search || (r.dataset.riding||"").includes(search)) &&
-      (!provF  || (r.dataset.province||"").includes(provF)) &&
-      (!winF   || r.dataset.winner === winF) &&
+      (!search  || (r.dataset.riding||"").includes(search)) &&
+      (!provF   || (r.dataset.province||"").includes(provF)) &&
+      (!winF    || r.dataset.winner === winF) &&
+      (!changeF || r.classList.contains("changed")) &&
       compMatch
     );
     r.classList.toggle("hidden", !show);
@@ -803,10 +838,11 @@ def main() -> None:
     (DOCS_DIR / ".nojekyll").touch()
 
     print("  Loading data …")
-    national  = load_national_rolling()
-    current   = load_current_averages()
-    seat_proj = load_seat_projection()
-    ridings   = load_riding_projections()
+    national     = load_national_rolling()
+    current      = load_current_averages()
+    seat_proj    = load_seat_projection()
+    ridings      = load_riding_projections()
+    prev_winners = load_prev_winners()
 
     print("  Updating seat history …")
     if seat_proj:
@@ -817,7 +853,7 @@ def main() -> None:
     regional = compute_regional_rolling()
 
     print("  Building HTML …")
-    html = build_html(national, current, seat_proj, seat_hist, regional, ridings)
+    html = build_html(national, current, seat_proj, seat_hist, regional, ridings, prev_winners)
     out = DOCS_DIR / "index.html"
     out.write_text(html, encoding="utf-8")
     print(f"  Saved → {out}  ({len(html)//1024}KB)")

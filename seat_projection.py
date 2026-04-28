@@ -418,6 +418,11 @@ def main() -> None:
         ["riding_code", "riding_name", "province", "projected_winner"]
         + [f"P_{p}" for p in PARTIES]
     )
+    # Preserve previous projection for change tracking
+    prev_csv = OUTPUT_CSV.with_name("riding_projections_prev.csv")
+    if OUTPUT_CSV.exists():
+        import shutil
+        shutil.copy2(OUTPUT_CSV, prev_csv)
     with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
