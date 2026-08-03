@@ -9,7 +9,7 @@ Methodology:
   3. Compute regional swing vs the 2025 election result.
   4. Apply additive swing to each riding, then add an incumbency bonus.
   5. Run 10,000 Monte Carlo simulations sampling from polling uncertainty
-     to produce seat-count distributions and per-riding win probabilities.
+     to produce seat-count distributions and per-riding expected vote shares.
 """
 
 import csv
@@ -264,19 +264,19 @@ def run_simulations(
     regional_2025: dict[str, dict[str, float]],
     national_2025_pcts: dict[str, float],
     elasticity_map: dict[str, dict[str, float]] | None = None,
-) -> tuple[dict[str, list[int]], dict[str, dict[str, int]]]:
+) -> tuple[dict[str, list[int]], dict[str, dict[str, float]]]:
     """
     Run N_SIMULATIONS Monte Carlo draws.
 
     Returns:
       party_seat_counts: {party: [seat_count_per_sim]}  (length N_SIMULATIONS)
-      riding_wins:       {riding_code: {party: win_count}}
+      riding_share_sums: {riding_code: {party: sum_of_projected_pct_across_sims}}
     """
     emap = elasticity_map or {}
     rng = random.Random(42)
     party_seat_counts: dict[str, list[int]] = {p: [] for p in PARTIES}
-    riding_wins: dict[str, dict[str, int]] = {
-        r["code"]: defaultdict(int) for r in ridings
+    riding_share_sums: dict[str, dict[str, float]] = {
+        r["code"]: {p: 0.0 for p in PARTIES} for r in ridings
     }
 
     print(f"Running {N_SIMULATIONS:,} simulations…", end="", flush=True)
@@ -297,13 +297,15 @@ def run_simulations(
             proj = project_riding(riding["baseline"], sw, riding["winner"], elasticity)
             winner = max(PARTIES, key=lambda p: proj.get(p, 0.0))
             sim_seats[winner] += 1
-            riding_wins[riding["code"]][winner] += 1
+            sums = riding_share_sums[riding["code"]]
+            for p in PARTIES:
+                sums[p] += proj.get(p, 0.0)
 
         for p in PARTIES:
             party_seat_counts[p].append(sim_seats.get(p, 0))
 
     print(" done.")
-    return party_seat_counts, riding_wins
+    return party_seat_counts, riding_share_sums
 
 
 # ── Statistics ────────────────────────────────────────────────────────────────
@@ -344,13 +346,8 @@ def main() -> None:
     else:
         print("No riding_elasticity.csv found — using uniform swing (elasticity=1.0).")
 
-    # Deterministic swing (for point estimate)
-    det_swings = compute_swings(
-        regional_polling, national_polling, regional_2025, national_2025_pcts
-    )
-
     # Monte Carlo
-    party_seat_counts, riding_wins = run_simulations(
+    party_seat_counts, riding_share_sums = run_simulations(
         ridings, regional_polling, national_polling,
         regional_2025, national_2025_pcts, elasticity_map
     )
@@ -367,26 +364,19 @@ def main() -> None:
             "high95": int(percentile(counts, 97.5)),
         }
 
-    # Per-riding point-estimate winner + win probabilities
+    # Per-riding expected vote share (mean projected share across simulations)
     riding_output = []
     for riding in ridings:
-        region = riding["region"]
-        sw = det_swings.get(region, det_swings.get("Atlantic", {}))
-        elasticity = elasticity_map.get(riding["code"])
-        proj = project_riding(riding["baseline"], sw, riding["winner"], elasticity)
-        det_winner = max(PARTIES, key=lambda p: proj.get(p, 0.0))
-
-        wins = riding_wins[riding["code"]]
-        total = sum(wins.values())
-        probs = {p: round(wins.get(p, 0) / total, 3) if total else 0.0
-                 for p in PARTIES}
+        sums = riding_share_sums[riding["code"]]
+        mean_shares = {p: sums[p] / N_SIMULATIONS for p in PARTIES}
+        winner = max(PARTIES, key=lambda p: mean_shares[p])
 
         riding_output.append({
             "riding_code": riding["code"],
             "riding_name": riding["name"],
             "province": riding["province"],
-            "projected_winner": det_winner,
-            **{f"P_{p}": probs[p] for p in PARTIES},
+            "projected_winner": winner,
+            **{f"Share_{p}": round(mean_shares[p], 1) for p in PARTIES},
         })
 
     # Print summary table
@@ -416,7 +406,7 @@ def main() -> None:
 
     fieldnames = (
         ["riding_code", "riding_name", "province", "projected_winner"]
-        + [f"P_{p}" for p in PARTIES]
+        + [f"Share_{p}" for p in PARTIES]
     )
     # Preserve previous projection for change tracking
     prev_csv = OUTPUT_CSV.with_name("riding_projections_prev.csv")

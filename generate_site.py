@@ -261,13 +261,14 @@ def _riding_table_html(ridings: list[dict], seat_data: dict, prev_winners: dict[
 
         for r in prov_ridings:
             winner = r["projected_winner"]
-            probs  = {p: float(r.get(f"P_{p}", 0) or 0) for p in PARTIES}
-            top_p  = probs.get(winner, 0)
+            shares = {p: float(r.get(f"Share_{p}", 0) or 0) for p in PARTIES}
+            sorted_shares = sorted(shares.values(), reverse=True)
+            margin = sorted_shares[0] - (sorted_shares[1] if len(sorted_shares) > 1 else 0.0)
             w_color = PARTY_COLORS.get(winner, "#888")
 
-            if top_p < 0.60:
+            if margin < 5:
                 comp_cls, comp_lbl = "comp-tossup", "Toss-up"
-            elif top_p < 0.80:
+            elif margin < 15:
                 comp_cls, comp_lbl = "comp-likely", "Likely"
             else:
                 comp_cls, comp_lbl = "comp-safe",   "Safe"
@@ -291,17 +292,16 @@ def _riding_table_html(ridings: list[dict], seat_data: dict, prev_winners: dict[
             )
             party_cells = ""
             for p in PARTIES:
-                prob = probs.get(p, 0)
-                if prob < 0.005:
+                share = shares.get(p, 0)
+                if share < 0.5:
                     party_cells += '<td class="prob-td"></td>\n'
                 else:
-                    pct = round(prob * 100, 1)
                     color = PARTY_COLORS.get(p, "#aaa")
                     party_cells += (
                         f'<td class="prob-td">'
                         f'<div class="prob-cell">'
-                        f'<div class="bar-wrap"><div class="bar" style="width:{min(pct,100):.1f}%;background:{color}"></div></div>'
-                        f'<span class="prob-label">{pct:.0f}%</span>'
+                        f'<div class="bar-wrap"><div class="bar" style="width:{min(share,100):.1f}%;background:{color}"></div></div>'
+                        f'<span class="prob-label">{share:.0f}%</span>'
                         f'</div></td>\n'
                     )
 
@@ -310,7 +310,7 @@ def _riding_table_html(ridings: list[dict], seat_data: dict, prev_winners: dict[
                 f'data-riding="{r["riding_name"].lower()}" '
                 f'data-province="{prov.lower()}" '
                 f'data-winner="{winner}" '
-                f'data-top="{top_p:.3f}">\n'
+                f'data-margin="{margin:.1f}">\n'
                 f'  <td class="riding-name">{r["riding_name"]}{change_badge}</td>\n'
                 f'  <td class="prov-code">{short}</td>\n'
                 f'  <td class="winner-td">{badge}</td>\n'
@@ -342,9 +342,9 @@ def _riding_table_html(ridings: list[dict], seat_data: dict, prev_winners: dict[
   </select>
   <select id="comp-filter" onchange="filterTable()">
     <option value="">All races</option>
-    <option value="tossup">Toss-ups (&lt;60%)</option>
-    <option value="likely">Likely (60–80%)</option>
-    <option value="safe">Safe (≥80%)</option>
+    <option value="tossup">Toss-ups (&lt;5pt margin)</option>
+    <option value="likely">Likely (5–15pt margin)</option>
+    <option value="safe">Safe (≥15pt margin)</option>
   </select>
   <select id="change-filter" onchange="filterTable()">
     <option value="">All ridings</option>
@@ -774,11 +774,11 @@ function filterTable() {{
   const rows    = document.querySelectorAll("tr.riding-row");
   let visible   = 0;
   rows.forEach(r => {{
-    const top = parseFloat(r.dataset.top || "1");
+    const margin = parseFloat(r.dataset.margin || "100");
     let compMatch = true;
-    if (compF === "tossup") compMatch = top < 0.60;
-    else if (compF === "likely") compMatch = top >= 0.60 && top < 0.80;
-    else if (compF === "safe") compMatch = top >= 0.80;
+    if (compF === "tossup") compMatch = margin < 5;
+    else if (compF === "likely") compMatch = margin >= 5 && margin < 15;
+    else if (compF === "safe") compMatch = margin >= 15;
     const show = (
       (!search  || (r.dataset.riding||"").includes(search)) &&
       (!provF   || (r.dataset.province||"").includes(provF)) &&

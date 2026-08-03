@@ -40,33 +40,32 @@ PROVINCE_SHORT = {
 }
 
 
-def tossup_class(top_prob: float) -> str:
-    if top_prob < 0.60:
+def tossup_class(margin: float) -> str:
+    if margin < 5:
         return "tossup"
-    if top_prob < 0.80:
+    if margin < 15:
         return "likely"
     return "safe"
 
 
-def tossup_label(top_prob: float) -> str:
-    if top_prob < 0.60:
+def tossup_label(margin: float) -> str:
+    if margin < 5:
         return "Toss-up"
-    if top_prob < 0.80:
+    if margin < 15:
         return "Likely"
     return "Safe"
 
 
-def prob_bar_html(party: str, prob: float) -> str:
-    if prob < 0.005:
+def share_bar_html(party: str, share: float) -> str:
+    if share < 0.5:
         return ""
-    pct = round(prob * 100, 1)
     color = PARTY_COLORS.get(party, "#aaa")
     return (
         f'<div class="prob-cell">'
         f'<div class="bar-wrap">'
-        f'<div class="bar" style="width:{min(pct, 100):.1f}%;background:{color}"></div>'
+        f'<div class="bar" style="width:{min(share, 100):.1f}%;background:{color}"></div>'
         f'</div>'
-        f'<span class="prob-label">{pct:.0f}%</span>'
+        f'<span class="prob-label">{share:.0f}%</span>'
         f'</div>'
     )
 
@@ -126,10 +125,11 @@ def build_html(ridings: list[dict], seat_data: dict) -> str:
 
         for r in prov_ridings:
             winner = r["projected_winner"]
-            probs  = {p: float(r.get(f"P_{p}", 0)) for p in PARTIES}
-            top_p  = probs.get(winner, 0)
-            tc     = tossup_class(top_p)
-            tl     = tossup_label(top_p)
+            shares = {p: float(r.get(f"Share_{p}", 0)) for p in PARTIES}
+            sorted_shares = sorted(shares.values(), reverse=True)
+            margin = sorted_shares[0] - (sorted_shares[1] if len(sorted_shares) > 1 else 0.0)
+            tc     = tossup_class(margin)
+            tl     = tossup_label(margin)
             w_color = PARTY_COLORS.get(winner, "#888")
 
             badge = (
@@ -144,14 +144,14 @@ def build_html(ridings: list[dict], seat_data: dict) -> str:
                 f'data-riding="{r["riding_name"].lower()}" '
                 f'data-province="{prov.lower()}" '
                 f'data-winner="{winner}" '
-                f'data-top="{top_p:.3f}"'
+                f'data-margin="{margin:.1f}"'
             )
 
-            # Only show parties with non-zero probability
+            # Only show parties with a meaningful vote share
             party_cells = ""
             for p in PARTIES:
-                prob = probs.get(p, 0)
-                party_cells += f'<td class="prob-td">{prob_bar_html(p, prob)}</td>\n'
+                share = shares.get(p, 0)
+                party_cells += f'<td class="prob-td">{share_bar_html(p, share)}</td>\n'
 
             table_rows += (
                 f'<tr class="riding-row" {row_data_attrs}>\n'
@@ -264,7 +264,7 @@ def build_html(ridings: list[dict], seat_data: dict) -> str:
   <p class="subtitle">
     Based on weighted polling average as of {as_of} &nbsp;·&nbsp;
     {n_sims:,} Monte Carlo simulations &nbsp;·&nbsp;
-    Win probability shown per party
+    Expected vote share shown per party
   </p>
 
   <!-- Seat summary -->
@@ -286,9 +286,9 @@ def build_html(ridings: list[dict], seat_data: dict) -> str:
     </select>
     <select id="comp-filter" onchange="filterTable()">
       <option value="">All races</option>
-      <option value="tossup">Toss-ups only (&lt;60%)</option>
-      <option value="likely">Likely (&lt;80%)</option>
-      <option value="safe">Safe (≥80%)</option>
+      <option value="tossup">Toss-ups only (&lt;5pt margin)</option>
+      <option value="likely">Likely (&lt;15pt margin)</option>
+      <option value="safe">Safe (≥15pt margin)</option>
     </select>
   </div>
   <div class="result-count" id="result-count"></div>
@@ -332,12 +332,12 @@ def build_html(ridings: list[dict], seat_data: dict) -> str:
       const riding  = r.dataset.riding || "";
       const prov    = r.dataset.province || "";
       const winner  = r.dataset.winner || "";
-      const topP    = parseFloat(r.dataset.top || "1");
+      const margin  = parseFloat(r.dataset.margin || "100");
 
       let compMatch = true;
-      if (compF === "tossup") compMatch = topP < 0.60;
-      else if (compF === "likely") compMatch = topP < 0.80;
-      else if (compF === "safe")  compMatch = topP >= 0.80;
+      if (compF === "tossup") compMatch = margin < 5;
+      else if (compF === "likely") compMatch = margin < 15;
+      else if (compF === "safe")  compMatch = margin >= 15;
 
       const show = (
         (!search || riding.includes(search)) &&
@@ -378,7 +378,7 @@ def build_html(ridings: list[dict], seat_data: dict) -> str:
     rows.sort((a, b) => {{
       let va = a.cells[col]?.textContent.trim() ?? "";
       let vb = b.cells[col]?.textContent.trim() ?? "";
-      // Numeric sort for probability columns
+      // Numeric sort for vote share columns
       if (col >= 4) {{
         va = parseFloat(va) || 0;
         vb = parseFloat(vb) || 0;
