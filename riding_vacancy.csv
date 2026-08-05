@@ -1,0 +1,344 @@
+riding_code,riding_name,seat_vacant
+10001,Avalon,False
+10002,Cape Spear,False
+10003,Central Newfoundland,False
+10004,Labrador,False
+10005,Long Range Mountains,False
+10006,St. John's East/St. John's-Est,False
+10007,Terra Nova--The Peninsulas/Terra Nova--Les Péninsules,False
+11001,Cardigan,False
+11002,Charlottetown,False
+11003,Egmont,False
+11004,Malpeque,False
+12001,Acadie--Annapolis,False
+12002,Cape Breton--Canso--Antigonish,False
+12003,Central Nova/Nova-Centre,False
+12004,Cumberland--Colchester,False
+12005,Dartmouth--Cole Harbour,False
+12006,Halifax,False
+12007,Halifax West/Halifax-Ouest,False
+12008,Kings--Hants,False
+12009,Sackville--Bedford--Preston,False
+12010,South Shore--St. Margarets,False
+12011,Sydney--Glace Bay,False
+13001,Acadie--Bathurst,False
+13002,Beauséjour,False
+13003,Fredericton--Oromocto,False
+13004,Fundy Royal,False
+13005,Madawaska--Restigouche,False
+13006,Miramichi--Grand Lake,False
+13007,Moncton--Dieppe,False
+13008,Saint John--Kennebecasis,False
+13009,Saint John--St. Croix,False
+13010,Tobique--Mactaquac,False
+24001,Abitibi--Baie-James--Nunavik--Eeyou,False
+24002,Abitibi--Témiscamingue,False
+24003,Ahuntsic-Cartierville,False
+24004,Alfred-Pellan,False
+24005,Argenteuil--La Petite-Nation,False
+24006,Beauce,False
+24007,Beauharnois--Salaberry--Soulanges--Huntingdon,False
+24008,Beauport--Limoilou,False
+24009,Bécancour--Nicolet--Saurel--Alnôbak,False
+24010,Bellechasse--Les Etchemins--Lévis,False
+24011,Beloeil--Chambly,False
+24012,Berthier--Maskinongé,False
+24013,Bourassa,False
+24014,Brome--Missisquoi,False
+24015,Brossard--Saint-Lambert,False
+24016,Charlesbourg--Haute-Saint-Charles,False
+24017,Châteauguay--Les Jardins-de-Napierville,False
+24018,Chicoutimi--Le Fjord,True
+24019,Compton--Stanstead,False
+24020,Côte-du-Sud-Rivière-du-Loup-Kataskomiq-Témiscouata,False
+24021,Côte-Nord--Kawawachikamach--Nitassinan,False
+24022,Dorval--Lachine--LaSalle,False
+24023,Drummond,False
+24024,Gaspésie--Les Îles-de-la-Madeleine--Listuguj,False
+24025,Gatineau,False
+24026,Hochelaga--Rosemont-Est,False
+24027,Honoré-Mercier,False
+24028,Hull--Aylmer,False
+24029,Joliette--Manawan,False
+24030,Jonquière,False
+24031,La Pointe-de-l'Île,False
+24032,La Prairie--Atateken,False
+24033,Lac-Saint-Jean,False
+24034,Lac-Saint-Louis,False
+24035,LaSalle--Émard--Verdun,False
+24036,Laurentides--Labelle,False
+24037,Laurier--Sainte-Marie,False
+24038,Laval--Les Îles,False
+24039,Les Pays-d'en-Haut,False
+24040,Lévis--Lotbinière,False
+24041,Longueuil--Charles-LeMoyne,False
+24042,Longueuil--Saint-Hubert,False
+24043,Louis-Hébert,False
+24044,Louis-Saint-Laurent--Akiawenhrahk,False
+24045,Marc-Aurèle-Fortin,False
+24046,Mégantic--L'Érable--Lotbinière,False
+24047,Mirabel,False
+24048,Mount Royal/Mont-Royal,False
+24049,Mont-Saint-Bruno--L'Acadie,False
+24050,Montcalm,False
+24051,Montmorency--Charlevoix,False
+24052,Notre-Dame-de-Grâce--Westmount,False
+24053,Outremont,False
+24054,Papineau,False
+24055,Pierre-Boucher--Les Patriotes--Verchères,False
+24056,Pierrefonds--Dollard,False
+24057,Pontiac--Kitigan Zibi,False
+24058,Portneuf--Jacques-Cartier,False
+24059,Québec Centre/Québec-Centre,False
+24060,Repentigny,False
+24061,Richmond--Arthabaska,False
+24062,Rimouski--La Matapédia,False
+24063,Rivière-des-Mille-Îles,False
+24064,Rivière-du-Nord,False
+24065,Rosemont--La Petite-Patrie,False
+24066,Saint-Hyacinthe--Bagot--Acton,True
+24067,Saint-Jean,False
+24068,Saint-Laurent,False
+24069,Saint-Léonard--Saint-Michel,False
+24070,Saint-Maurice--Champlain,False
+24071,Shefford,False
+24072,Sherbrooke,False
+24073,Terrebonne,False
+24074,Thérèse-De Blainville,False
+24075,Trois-Rivières,False
+24076,Vaudreuil,False
+24077,Ville-Marie--Le Sud-Ouest--Île-des-Soeurs,False
+24078,Vimy,False
+35001,Ajax,False
+35002,Algonquin--Renfrew--Pembroke,False
+35003,Aurora--Oak Ridges--Richmond Hill,False
+35004,Barrie South--Innisfil/Barrie-Sud--Innisfil,False
+35005,Barrie--Springwater--Oro-Medonte,False
+35006,Bay of Quinte,False
+35007,Beaches--East York,True
+35008,Bowmanville--Oshawa North/Bowmanville--Oshawa-Nord,False
+35009,Brampton Centre/Brampton-Centre,False
+35010,Brampton--Chinguacousy Park,False
+35011,Brampton East/Brampton-Est,False
+35012,Brampton North--Caledon/Brampton-Nord--Caledon,False
+35013,Brampton South/Brampton-Sud,False
+35014,Brampton West/Brampton-Ouest,False
+35015,Brantford--Brant South--Six Nations/Brantford--Brant-Sud--Six Nations,False
+35016,Bruce--Grey--Owen Sound,False
+35017,Burlington,False
+35018,Burlington North--Milton West/Burlington-Nord--Milton-Ouest,False
+35019,Cambridge,False
+35020,Carleton,False
+35021,Chatham-Kent--Leamington,False
+35022,Davenport,False
+35023,Don Valley North/Don Valley-Nord,False
+35024,Don Valley West/Don Valley-Ouest,False
+35025,Dufferin--Caledon,False
+35026,Eglinton--Lawrence,False
+35027,Elgin--St. Thomas--London South/Elgin--St. Thomas--London-Sud,False
+35028,Essex,False
+35029,Etobicoke Centre/Etobicoke-Centre,False
+35030,Etobicoke--Lakeshore,False
+35031,Etobicoke North/Etobicoke-Nord,False
+35032,Flamborough--Glanbrook--Brant North/Flamborough--Glanbrook--Brant-Nord,False
+35033,Guelph,False
+35034,Haldimand--Norfolk,False
+35035,Haliburton--Kawartha Lakes,False
+35036,Hamilton Centre/Hamilton-Centre,False
+35037,Hamilton East--Stoney Creek/Hamilton-Est--Stoney Creek,False
+35038,Hamilton Mountain,False
+35039,Hamilton West--Ancaster--Dundas/Hamilton-Ouest--Ancaster--Dundas,False
+35040,Hastings--Lennox and Addington--Tyendinaga,False
+35041,Humber River--Black Creek,False
+35042,Huron--Bruce,False
+35043,Kanata,False
+35044,Kapuskasing--Timmins--Mushkegowuk,False
+35045,Kenora--Kiiwetinoong,False
+35046,Kingston and the Islands/Kingston et les Îles,False
+35047,King--Vaughan,False
+35048,Kitchener Centre/Kitchener-Centre,False
+35049,Kitchener--Conestoga,False
+35050,Kitchener South--Hespeler/Kitchener-Sud--Hespeler,False
+35051,Lanark--Frontenac,False
+35052,Leeds--Grenville--Thousand Islands--Rideau Lakes,False
+35053,London Centre/London-Centre,False
+35054,London--Fanshawe,False
+35055,London West/London-Ouest,False
+35056,Markham--Stouffville,False
+35057,Markham--Thornhill,False
+35058,Markham--Unionville,False
+35059,Middlesex--London,False
+35060,Milton East--Halton Hills South/Milton-Est--Halton Hills-Sud,False
+35061,Mississauga Centre/Mississauga-Centre,False
+35062,Mississauga East--Cooksville/Mississauga-Est--Cooksville,False
+35063,Mississauga--Erin Mills,False
+35064,Mississauga--Lakeshore,False
+35065,Mississauga--Malton,False
+35066,Mississauga--Streetsville,False
+35067,Nepean,False
+35068,Newmarket--Aurora,False
+35069,New Tecumseth--Gwillimbury,False
+35070,Niagara Falls--Niagara-on-the-Lake,False
+35071,Niagara South/Niagara-Sud,False
+35072,Niagara West/Niagara-Ouest,False
+35073,Nipissing--Timiskaming,False
+35074,Northumberland--Clarke,False
+35075,Oakville East/Oakville-Est,False
+35076,Oakville West/Oakville-Ouest,False
+35077,Orléans,False
+35078,Oshawa,False
+35079,Ottawa Centre/Ottawa-Centre,False
+35080,Ottawa South/Ottawa-Sud,False
+35081,Ottawa--Vanier--Gloucester,False
+35082,Ottawa West--Nepean/Ottawa-Ouest--Nepean,False
+35083,Oxford,False
+35084,Parry Sound--Muskoka,False
+35085,Perth--Wellington,False
+35086,Peterborough,False
+35087,Pickering--Brooklin,False
+35088,Prescott--Russell--Cumberland,False
+35089,Richmond Hill South/Richmond Hill-Sud,False
+35090,Sarnia--Lambton--Bkejwanong,False
+35091,Sault Ste. Marie--Algoma,False
+35092,Scarborough--Agincourt,False
+35093,Scarborough Centre--Don Valley East/Scarborough-Centre--Don Valley-Est,False
+35094,Scarborough--Guildwood--Rouge Park,False
+35095,Scarborough North/Scarborough-Nord,False
+35096,Scarborough Southwest/Scarborough-Sud-Ouest,False
+35097,Scarborough--Woburn,False
+35098,Simcoe--Grey,False
+35099,Simcoe North/Simcoe-Nord,False
+35100,Spadina--Harbourfront,False
+35101,St. Catharines,False
+35102,Stormont--Dundas--Glengarry,False
+35103,Sudbury,False
+35104,Sudbury East--Manitoulin--Nickel Belt/Sudbury-Est--Manitoulin--Nickel Belt,False
+35105,Taiaiako'n--Parkdale--High Park,False
+35106,Thornhill,False
+35107,Thunder Bay--Rainy River,False
+35108,Thunder Bay--Superior North/Thunder Bay--Supérieur-Nord,False
+35109,Toronto Centre/Toronto-Centre,False
+35110,Toronto--Danforth,False
+35111,Toronto--St. Paul's,False
+35112,University--Rosedale,False
+35113,Vaughan--Woodbridge,False
+35114,Waterloo,False
+35115,Wellington--Halton Hills North/Wellington--Halton Hills-Nord,False
+35116,Whitby,False
+35117,Willowdale,False
+35118,Windsor--Tecumseh--Lakeshore,False
+35119,Windsor West/Windsor-Ouest,False
+35120,York Centre/York-Centre,False
+35121,York--Durham,False
+35122,York South--Weston--Etobicoke/York-Sud--Weston--Etobicoke,False
+46001,Brandon--Souris,False
+46002,Churchill--Keewatinook Aski,False
+46003,Elmwood--Transcona,False
+46004,Kildonan--St. Paul,False
+46005,Portage--Lisgar,False
+46006,Provencher,False
+46007,Riding Mountain/Mont-Riding,False
+46008,St. Boniface--St. Vital/Saint-Boniface--Saint-Vital,False
+46009,Selkirk--Interlake--Eastman,False
+46010,Winnipeg Centre/Winnipeg-Centre,False
+46011,Winnipeg North/Winnipeg-Nord,False
+46012,Winnipeg South/Winnipeg-Sud,False
+46013,Winnipeg South Centre/Winnipeg-Centre-Sud,False
+46014,Winnipeg West/Winnipeg-Ouest,False
+47001,Battlefords--Lloydminster--Meadow Lake,False
+47002,Carlton Trail--Eagle Creek/Sentier Carlton--Eagle Creek,False
+47003,Desnethé--Missinippi--Churchill River/Desnethé--Missinippi--Rivière Churchill,False
+47004,Moose Jaw--Lake Centre--Lanigan,False
+47005,Prince Albert,False
+47006,Regina--Lewvan,False
+47007,Regina--Qu'Appelle,False
+47008,Regina--Wascana,False
+47009,Saskatoon South/Saskatoon-Sud,False
+47010,Saskatoon--University,False
+47011,Saskatoon West/Saskatoon-Ouest,False
+47012,Souris--Moose Mountain,False
+47013,Swift Current--Grasslands--Kindersley,False
+47014,Yorkton--Melville,False
+48001,Airdrie--Cochrane,False
+48002,Battle River--Crowfoot,False
+48003,Bow River,False
+48004,Calgary Centre/Calgary-Centre,False
+48005,Calgary Confederation,False
+48006,Calgary Crowfoot,False
+48007,Calgary East/Calgary-Est,False
+48008,Calgary Heritage,False
+48009,Calgary McKnight,False
+48010,Calgary Midnapore,False
+48011,Calgary Nose Hill,False
+48012,Calgary Shepard,False
+48013,Calgary Signal Hill,False
+48014,Calgary Skyview,False
+48015,Edmonton Centre/Edmonton-Centre,False
+48016,Edmonton Gateway,False
+48017,Edmonton Griesbach,False
+48018,Edmonton Manning,False
+48019,Edmonton Northwest/Edmonton-Nord-Ouest,False
+48020,Edmonton Riverbend,False
+48021,Edmonton Southeast/Edmonton-Sud-Est,False
+48022,Edmonton Strathcona,False
+48023,Edmonton West/Edmonton-Ouest,False
+48024,Foothills,False
+48025,Fort McMurray--Cold Lake,False
+48026,Grande Prairie,False
+48027,Lakeland,False
+48028,Leduc--Wetaskiwin,False
+48029,Lethbridge,False
+48030,Medicine Hat--Cardston--Warner,False
+48031,Parkland,False
+48032,Peace River--Westlock,False
+48033,Ponoka--Didsbury,False
+48034,Red Deer,False
+48035,Sherwood Park--Fort Saskatchewan,False
+48036,St. Albert--Sturgeon River,False
+48037,Yellowhead,False
+59001,Abbotsford--South Langley/Abbotsford--Langley-Sud,False
+59002,Burnaby Central,False
+59003,Burnaby North--Seymour/Burnaby-Nord--Seymour,False
+59004,Cariboo--Prince George,False
+59005,Chilliwack--Hope,False
+59006,Cloverdale--Langley City,False
+59007,Columbia--Kootenay--Southern Rockies,False
+59008,Coquitlam--Port Coquitlam,False
+59009,Courtenay--Alberni,False
+59010,Cowichan--Malahat--Langford,False
+59011,Delta,False
+59012,Esquimalt--Saanich--Sooke,False
+59013,Fleetwood--Port Kells,False
+59014,Kamloops--Shuswap--Central Rockies,False
+59015,Kamloops--Thompson--Nicola,False
+59016,Kelowna,False
+59017,Langley Township--Fraser Heights,False
+59018,Mission--Matsqui--Abbotsford,False
+59019,Nanaimo--Ladysmith,False
+59020,New Westminster--Burnaby--Maillardville,False
+59021,North Island--Powell River,False
+59022,North Vancouver--Capilano,True
+59023,Okanagan Lake West--South Kelowna/Okanagan Lake-Ouest--Kelowna-Sud,False
+59024,Pitt Meadows--Maple Ridge,False
+59025,Port Moody--Coquitlam,False
+59026,Prince George--Peace River--Northern Rockies,False
+59027,Richmond Centre--Marpole/Richmond-Centre--Marpole,False
+59028,Richmond East--Steveston/Richmond-Est--Steveston,False
+59029,Saanich--Gulf Islands,False
+59030,Similkameen--South Okanagan--West Kootenay/Similkameen--Okanagan-Sud--Kootenay-Ouest,False
+59031,Skeena--Bulkley Valley,False
+59032,South Surrey--White Rock/Surrey-Sud--White Rock,False
+59033,Surrey Centre/Surrey-Centre,False
+59034,Surrey Newton,False
+59035,Vancouver Centre/Vancouver-Centre,False
+59036,Vancouver East/Vancouver-Est,False
+59037,Vancouver Fraserview--South Burnaby/Vancouver Fraserview--Burnaby-Sud,False
+59038,Vancouver Granville,False
+59039,Vancouver Kingsway,False
+59040,Vancouver Quadra,False
+59041,Vernon--Lake Country--Monashee,False
+59042,Victoria,False
+59043,West Vancouver--Sunshine Coast--Sea to Sky Country,False
+60001,Yukon,False
+61001,Northwest Territories/Territoires du Nord-Ouest,False
+62001,Nunavut,False

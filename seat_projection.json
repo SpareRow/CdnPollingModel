@@ -4,12 +4,12 @@
   "majority": 172,
   "parties": {
     "LPC": {
-      "mean_seats": 193.8,
+      "mean_seats": 193.9,
       "low95": 173,
-      "high95": 216
+      "high95": 217
     },
     "CPC": {
-      "mean_seats": 111.8,
+      "mean_seats": 111.7,
       "low95": 89,
       "high95": 133
     },

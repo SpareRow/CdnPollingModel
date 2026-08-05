@@ -7,7 +7,10 @@ Methodology:
   2. Load regional polling averages (from wikipedia_scraper.py) and
      national averages (from polling_model.py → current_average.json).
   3. Compute regional swing vs the 2025 election result.
-  4. Apply additive swing to each riding, then add an incumbency bonus.
+  4. Apply additive swing to each riding, then add an incumbency bonus
+     (halved for ridings whose seat is currently vacant — see
+     mp_vacancy_scraper.py — since there's no sitting MP to carry a
+     personal incumbency advantage into the next election).
   5. Run 10,000 Monte Carlo simulations sampling from polling uncertainty
      to produce seat-count distributions and per-riding expected vote shares.
 """
@@ -23,12 +26,14 @@ from pathlib import Path
 RIDING_CSV = Path("riding_results_2025.csv")
 NATIONAL_JSON = Path("current_average.json")
 REGIONAL_JSON = Path("regional_average.json")
+VACANCY_CSV = Path("riding_vacancy.csv")
 OUTPUT_JSON = Path("seat_projection.json")
 OUTPUT_CSV = Path("riding_projections.csv")
 
 PARTIES = ["LPC", "CPC", "NDP", "BQ", "GPC", "PPC"]
 N_SIMULATIONS = 10_000
 INCUMBENCY_BONUS = 4.0  # percentage points added to 2025 winner's share
+OPEN_SEAT_DISCOUNT = 0.5  # multiplier applied to the bonus for vacant seats
 
 
 # ── Data loading ──────────────────────────────────────────────────────────────
@@ -97,6 +102,21 @@ def load_elasticity(path: Path = Path("riding_elasticity.csv")) -> dict[str, dic
                     result[code][p] = float(row.get(f"{p}_e", 1.0) or 1.0)
                 except ValueError:
                     result[code][p] = 1.0
+    return result
+
+
+def load_vacancies(path: Path = VACANCY_CSV) -> dict[str, bool]:
+    """
+    Load per-riding seat-vacancy flags from riding_vacancy.csv
+    (see mp_vacancy_scraper.py). Returns {riding_code: seat_vacant}.
+    Falls back to {} (no known vacancies) if file missing.
+    """
+    if not path.exists():
+        return {}
+    result = {}
+    with open(path, newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            result[row["riding_code"]] = row.get("seat_vacant", "").strip().lower() == "true"
     return result
 
 
@@ -170,7 +190,7 @@ def compute_swings(
 
 # ── Riding projection ─────────────────────────────────────────────────────────
 
-def incumbency_bonus(baseline: dict[str, float], winner: str) -> float:
+def incumbency_bonus(baseline: dict[str, float], winner: str, is_vacant: bool = False) -> float:
     """
     Scale the incumbency bonus proportionally to the winner's actual 2025 margin.
 
@@ -182,12 +202,18 @@ def incumbency_bonus(baseline: dict[str, float], winner: str) -> float:
       margin  5pp → bonus  1.9pp
       margin 10pp → bonus  3.1pp
       margin 20pp → bonus  3.9pp
+
+    If the seat is currently vacant (no sitting MP — see mp_vacancy_scraper.py),
+    the bonus is scaled down by OPEN_SEAT_DISCOUNT: part of the incumbency
+    advantage is the departed MP's personal vote, which doesn't carry over,
+    but some residual party/organizational strength in the riding still does.
     """
     sorted_shares = sorted(baseline.values(), reverse=True)
     runner_up = sorted_shares[1] if len(sorted_shares) > 1 else 0.0
     margin = baseline.get(winner, 0.0) - runner_up
     margin = max(margin, 0.0)
-    return INCUMBENCY_BONUS * math.tanh(margin / 10.0)
+    bonus = INCUMBENCY_BONUS * math.tanh(margin / 10.0)
+    return bonus * OPEN_SEAT_DISCOUNT if is_vacant else bonus
 
 
 def project_riding(
@@ -195,6 +221,7 @@ def project_riding(
     swing: dict[str, float],
     incumbent_party: str,
     elasticity: dict[str, float] | None = None,
+    is_vacant: bool = False,
 ) -> dict[str, float]:
     """
     Apply swing (scaled by per-riding elasticity) to a riding baseline,
@@ -207,9 +234,9 @@ def project_riding(
         val = baseline.get(p, 0.0) + swing.get(p, 0.0) * e.get(p, 1.0)
         projected[p] = max(val, 0.0)
 
-    # Margin-scaled incumbency bonus
+    # Margin-scaled incumbency bonus (discounted for a currently vacant seat)
     if incumbent_party in projected:
-        projected[incumbent_party] += incumbency_bonus(baseline, incumbent_party)
+        projected[incumbent_party] += incumbency_bonus(baseline, incumbent_party, is_vacant)
 
     # Renormalise
     total = sum(projected.values())
@@ -264,6 +291,7 @@ def run_simulations(
     regional_2025: dict[str, dict[str, float]],
     national_2025_pcts: dict[str, float],
     elasticity_map: dict[str, dict[str, float]] | None = None,
+    vacancy_map: dict[str, bool] | None = None,
 ) -> tuple[dict[str, list[int]], dict[str, dict[str, float]]]:
     """
     Run N_SIMULATIONS Monte Carlo draws.
@@ -273,6 +301,7 @@ def run_simulations(
       riding_share_sums: {riding_code: {party: sum_of_projected_pct_across_sims}}
     """
     emap = elasticity_map or {}
+    vmap = vacancy_map or {}
     rng = random.Random(42)
     party_seat_counts: dict[str, list[int]] = {p: [] for p in PARTIES}
     riding_share_sums: dict[str, dict[str, float]] = {
@@ -294,7 +323,8 @@ def run_simulations(
             region = riding["region"]
             sw = swings.get(region, swings.get("Atlantic", {}))
             elasticity = emap.get(riding["code"])
-            proj = project_riding(riding["baseline"], sw, riding["winner"], elasticity)
+            is_vacant = vmap.get(riding["code"], False)
+            proj = project_riding(riding["baseline"], sw, riding["winner"], elasticity, is_vacant)
             winner = max(PARTIES, key=lambda p: proj.get(p, 0.0))
             sim_seats[winner] += 1
             sums = riding_share_sums[riding["code"]]
@@ -346,10 +376,18 @@ def main() -> None:
     else:
         print("No riding_elasticity.csv found — using uniform swing (elasticity=1.0).")
 
+    # Currently-vacant seats (optional — falls back to no known vacancies if file missing)
+    vacancy_map = load_vacancies()
+    n_vacant = sum(vacancy_map.values())
+    if vacancy_map:
+        print(f"Loaded vacancy status for {len(vacancy_map)} ridings ({n_vacant} vacant).")
+    else:
+        print("No riding_vacancy.csv found — assuming no vacant seats.")
+
     # Monte Carlo
     party_seat_counts, riding_share_sums = run_simulations(
         ridings, regional_polling, national_polling,
-        regional_2025, national_2025_pcts, elasticity_map
+        regional_2025, national_2025_pcts, elasticity_map, vacancy_map
     )
 
     # Aggregate seat statistics
