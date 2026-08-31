@@ -67,7 +67,7 @@ riding_code,riding_name,seat_vacant
 24034,Lac-Saint-Louis,False
 24035,LaSalle--Émard--Verdun,False
 24036,Laurentides--Labelle,False
-24037,Laurier--Sainte-Marie,False
+24037,Laurier--Sainte-Marie,True
 24038,Laval--Les Îles,False
 24039,Les Pays-d'en-Haut,False
 24040,Lévis--Lotbinière,False
@@ -95,7 +95,7 @@ riding_code,riding_name,seat_vacant
 24062,Rimouski--La Matapédia,False
 24063,Rivière-des-Mille-Îles,False
 24064,Rivière-du-Nord,False
-24065,Rosemont--La Petite-Patrie,False
+24065,Rosemont--La Petite-Patrie,True
 24066,Saint-Hyacinthe--Bagot--Acton,True
 24067,Saint-Jean,False
 24068,Saint-Laurent,False
