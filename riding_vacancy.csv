@@ -48,7 +48,7 @@ riding_code,riding_name,seat_vacant
 24015,Brossard--Saint-Lambert,False
 24016,Charlesbourg--Haute-Saint-Charles,False
 24017,Châteauguay--Les Jardins-de-Napierville,False
-24018,Chicoutimi--Le Fjord,True
+24018,Chicoutimi--Le Fjord,False
 24019,Compton--Stanstead,False
 24020,Côte-du-Sud-Rivière-du-Loup-Kataskomiq-Témiscouata,False
 24021,Côte-Nord--Kawawachikamach--Nitassinan,False
@@ -115,7 +115,7 @@ riding_code,riding_name,seat_vacant
 35004,Barrie South--Innisfil/Barrie-Sud--Innisfil,False
 35005,Barrie--Springwater--Oro-Medonte,False
 35006,Bay of Quinte,False
-35007,Beaches--East York,True
+35007,Beaches--East York,False
 35008,Bowmanville--Oshawa North/Bowmanville--Oshawa-Nord,False
 35009,Brampton Centre/Brampton-Centre,False
 35010,Brampton--Chinguacousy Park,False
@@ -258,7 +258,7 @@ riding_code,riding_name,seat_vacant
 47011,Saskatoon West/Saskatoon-Ouest,False
 47012,Souris--Moose Mountain,False
 47013,Swift Current--Grasslands--Kindersley,False
-47014,Yorkton--Melville,False
+47014,Yorkton--Melville,True
 48001,Airdrie--Cochrane,False
 48002,Battle River--Crowfoot,False
 48003,Bow River,False
@@ -317,7 +317,7 @@ riding_code,riding_name,seat_vacant
 59019,Nanaimo--Ladysmith,False
 59020,New Westminster--Burnaby--Maillardville,False
 59021,North Island--Powell River,False
-59022,North Vancouver--Capilano,True
+59022,North Vancouver--Capilano,False
 59023,Okanagan Lake West--South Kelowna/Okanagan Lake-Ouest--Kelowna-Sud,False
 59024,Pitt Meadows--Maple Ridge,False
 59025,Port Moody--Coquitlam,False
