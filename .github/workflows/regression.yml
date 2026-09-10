@@ -1,0 +1,29 @@
+name: Golden Regression
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check federal model against frozen goldens
+        run: python3 check_regression.py
+
+      - name: Check Quebec swing pipeline
+        run: python3 check_qc_backtest.py

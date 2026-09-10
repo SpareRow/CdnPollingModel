@@ -7,31 +7,30 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 
-INPUT_JSON = Path("seat_projection.json")
-OUTPUT_PNG = Path("seat_projection.png")
-MAJORITY = 172
+from jurisdictions import FEDERAL, Jurisdiction
 
-PARTY_COLORS = {
-    "LPC": "#D71920",
-    "CPC": "#1A4782",
-    "NDP": "#F4831F",
-    "BQ":  "#00A0C6",
-    "GPC": "#3D9B35",
-    "PPC": "#4B0082",
-}
+MAJORITY = FEDERAL.majority
+PARTY_COLORS = FEDERAL.party_colors
 
 
-def main() -> None:
-    if not INPUT_JSON.exists():
-        print(f"ERROR: {INPUT_JSON} not found. Run seat_projection.py first.")
+def main(cfg: Jurisdiction = FEDERAL) -> None:
+    input_json = cfg.p("seat_projection.json")
+    output_png = cfg.p("seat_projection.png")
+    if not input_json.exists():
+        print(f"ERROR: {input_json} not found. Run seat_projection.py first.")
         return
 
-    with open(INPUT_JSON, encoding="utf-8") as f:
+    with open(input_json, encoding="utf-8") as f:
         data = json.load(f)
 
-    parties_data = data["parties"]
+    # Parties that can't win seats (an "Others" bucket) would render as an
+    # empty bar, so leave them out of the chart.
+    parties_data = {
+        p: s for p, s in data["parties"].items() if p in cfg.seat_eligible
+    }
     as_of = data.get("as_of", "")
-    n_sims = data.get("simulations", 10_000)
+    n_sims = data.get("simulations", cfg.n_simulations)
+    majority = data.get("majority", cfg.majority)
 
     # Sort by mean seats descending
     sorted_parties = sorted(
@@ -42,7 +41,7 @@ def main() -> None:
     means = [s["mean_seats"] for _, s in sorted_parties]
     low95 = [s["low95"] for _, s in sorted_parties]
     high95 = [s["high95"] for _, s in sorted_parties]
-    colors = [PARTY_COLORS.get(p, "#888888") for p in party_names]
+    colors = [cfg.party_colors.get(p, "#888888") for p in party_names]
 
     # Error bar sizes (distance from mean to CI bound)
     xerr_low = [m - lo for m, lo in zip(means, low95)]
@@ -69,12 +68,12 @@ def main() -> None:
 
     # Majority line
     ax.axvline(
-        MAJORITY, color="black", linestyle="--", linewidth=1.2,
-        label=f"Majority ({MAJORITY} seats)", zorder=1,
+        majority, color="black", linestyle="--", linewidth=1.2,
+        label=f"Majority ({majority} seats)", zorder=1,
     )
     ax.text(
-        MAJORITY + 1, len(party_names) - 0.1,
-        f"Majority\n({MAJORITY})",
+        majority + 1, len(party_names) - 0.1,
+        f"Majority\n({majority})",
         fontsize=8, va="top",
     )
 
@@ -92,7 +91,7 @@ def main() -> None:
     ax.set_xlabel("Projected seats")
     ax.set_xlim(0, max(high95) + 60)
     ax.set_title(
-        f"46th Canadian Federal Election — Seat Projection\n"
+        f"{cfg.title} — Seat Projection\n"
         f"as of {as_of}  ({n_sims:,} simulations, 95% CI shown)",
         fontsize=12,
     )
@@ -100,9 +99,14 @@ def main() -> None:
     ax.set_axisbelow(True)
 
     plt.tight_layout()
-    plt.savefig(OUTPUT_PNG, dpi=150)
-    print(f"Saved → {OUTPUT_PNG}")
+    plt.savefig(output_png, dpi=150)
+    print(f"Saved → {output_png}")
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    import jurisdictions
+
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--jurisdiction", default="federal", choices=list(jurisdictions.ALL))
+    main(jurisdictions.get(ap.parse_args().jurisdiction))

@@ -15,29 +15,18 @@ from datetime import date
 from pathlib import Path
 
 from canadianpolling_scraper import fetch_page, parse_polls
+from jurisdictions import FEDERAL, Jurisdiction
 from polling_model import (
-    PARTIES,
     age_weight,
     sample_weight,
     get_pollster_rating,
     weighted_stats,
 )
 
-REGIONAL_URLS: dict[str, str] = {
-    "ON":      "https://canadianpolling.ca/Canada-ON-2025/",
-    "QC":      "https://canadianpolling.ca/Canada-QC-2025/",
-    "BC":      "https://canadianpolling.ca/Canada-BC-2025/",
-    "AB":      "https://canadianpolling.ca/Canada-AB-2025/",
-    "MB_SK":   "https://canadianpolling.ca/Canada-SKMB-2025",
-    "Atlantic": "https://canadianpolling.ca/Canada-ATL-2025",
-}
-
-OUTPUT_JSON = Path("regional_average.json")
-OUTPUT_CSV  = Path("regional_polls.csv")
-CSV_COLS    = ["date", "firm", "region", "LPC", "CPC", "NDP", "BQ", "GPC", "PPC", "sample_size"]
+REGIONAL_URLS = FEDERAL.regional_urls
 
 
-def scrape_region(region: str, url: str) -> list[dict]:
+def scrape_region(region: str, url: str, cfg: Jurisdiction = FEDERAL) -> list[dict]:
     """Fetch and parse one regional page; returns poll dicts tagged with region."""
     print(f"  Fetching {region} — {url} …", end="", flush=True)
     try:
@@ -46,7 +35,13 @@ def scrape_region(region: str, url: str) -> list[dict]:
         print(f" ERROR: {e}")
         return []
 
-    polls = parse_polls(html)
+    polls = parse_polls(
+        html,
+        party_map=cfg.party_label_map,
+        parties=cfg.parties,
+        others_key="OTH" if "OTH" in cfg.parties else None,
+        others_from_residual=cfg.others_from_residual,
+    )
     for p in polls:
         p["region"] = region
     print(f" {len(polls)} polls")
@@ -56,6 +51,7 @@ def scrape_region(region: str, url: str) -> list[dict]:
 def compute_regional_average(
     polls: list[dict],
     reference: date,
+    cfg: Jurisdiction = FEDERAL,
 ) -> dict[str, dict]:
     """Weighted average for a list of regional polls (same weights as polling_model)."""
     party_vw: dict[str, list[tuple[float, float]]] = defaultdict(list)
@@ -65,12 +61,12 @@ def compute_regional_average(
         d = parse_date(poll["date"]) if isinstance(poll["date"], str) else poll["date"]
         if d is None or d > reference:
             continue
-        aw = age_weight(d, reference)
-        sw = sample_weight(int(poll.get("sample_size") or 1000))
-        pr = get_pollster_rating(poll["firm"])
+        aw = age_weight(d, reference, cfg)
+        sw = sample_weight(int(poll.get("sample_size") or cfg.default_sample_n), cfg)
+        pr = get_pollster_rating(poll["firm"], cfg)
         w  = aw * sw * pr
 
-        for p in PARTIES:
+        for p in cfg.parties:
             val = poll.get(p, "")
             if val == "" or val is None:
                 continue
@@ -80,7 +76,7 @@ def compute_regional_average(
                 pass
 
     result = {}
-    for p in PARTIES:
+    for p in cfg.parties:
         stats = weighted_stats(party_vw.get(p, []))
         if stats["mean"] is None:
             continue
@@ -90,43 +86,54 @@ def compute_regional_average(
     return result
 
 
-def main() -> None:
+def main(cfg: Jurisdiction = FEDERAL) -> None:
     today = date.today()
     all_polls: list[dict] = []
-    region_averages: dict[str, dict | None] = {r: None for r in REGIONAL_URLS}
+    region_averages: dict[str, dict | None] = {r: None for r in cfg.regional_urls}
 
     print("Scraping regional pages from canadianpolling.ca:")
-    for region, url in REGIONAL_URLS.items():
-        polls = scrape_region(region, url)
+    for region, url in cfg.regional_urls.items():
+        polls = scrape_region(region, url, cfg)
         if polls:
             all_polls.extend(polls)
-            avg = compute_regional_average(polls, today)
+            avg = compute_regional_average(polls, today, cfg)
             if avg:
                 region_averages[region] = avg
-                lpc = avg.get("LPC", {}).get("mean", "?")
-                cpc = avg.get("CPC", {}).get("mean", "?")
-                print(f"    {region:8s}: LPC {lpc}%  CPC {cpc}%")
+                lead = ", ".join(
+                    f"{p} {avg.get(p, {}).get('mean', '?')}%" for p in cfg.parties[:2]
+                )
+                print(f"    {region:8s}: {lead}")
 
-    # Save regional_polls.csv
-    with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=CSV_COLS)
+    csv_cols = ["date", "firm", "region", *cfg.parties, "sample_size"]
+    output_csv = cfg.p("regional_polls.csv")
+    output_json = cfg.p("regional_average.json")
+    output_csv.parent.mkdir(parents=True, exist_ok=True)
+
+    with open(output_csv, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=csv_cols)
         writer.writeheader()
         for poll in all_polls:
-            writer.writerow({col: poll.get(col, "") for col in CSV_COLS})
-    print(f"\nSaved {len(all_polls)} regional polls → {OUTPUT_CSV}")
+            writer.writerow({col: poll.get(col, "") for col in csv_cols})
+    print(f"\nSaved {len(all_polls)} regional polls → {output_csv}")
 
-    # Save regional_average.json
+    # Swing groups with no page of their own get None, and fall back to the
+    # national swing in seat_projection.compute_swings (federal: "North").
     output = {
         "as_of": today.isoformat(),
         "regions": {
+            **{g: None for g in cfg.swing_groups if g not in region_averages},
             **region_averages,
-            "North": None,   # no regional polling available
         },
     }
-    with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
+    with open(output_json, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2)
-    print(f"Saved → {OUTPUT_JSON}")
+    print(f"Saved → {output_json}")
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    import jurisdictions
+
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--jurisdiction", default="federal", choices=list(jurisdictions.ALL))
+    main(jurisdictions.get(ap.parse_args().jurisdiction))
