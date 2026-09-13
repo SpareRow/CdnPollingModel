@@ -25,20 +25,43 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run poll update
-        run: python3 update_polls.py
+      # ── Federal ──────────────────────────────────────────────────────────
+      - name: Run federal poll update
+        run: python3 update_polls.py --jurisdiction federal
 
-      - name: Run projection update
-        run: python3 update_projections.py
+      - name: Run federal projection update
+        run: python3 update_projections.py --jurisdiction federal
+
+      # ── Quebec ───────────────────────────────────────────────────────────
+      # continue-on-error so a Quebec scraper failure can never block the
+      # federal weekly commit, which has run unattended since April 2026.
+      - name: Run Quebec poll update
+        continue-on-error: true
+        run: python3 update_polls.py --jurisdiction qc
+
+      - name: Run Quebec projection update
+        continue-on-error: true
+        run: python3 update_projections.py --jurisdiction qc
+
+      # ── Guard ────────────────────────────────────────────────────────────
+      # The refactor that made this pipeline multi-jurisdiction is pinned by
+      # golden files; if a scraper or model change breaks federal, fail here
+      # rather than committing bad numbers.
+      - name: Verify federal model against goldens
+        run: python3 check_regression.py
+
+      - name: Verify Quebec swing pipeline
+        run: python3 check_qc_backtest.py
 
       - name: Commit and push updated data
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add raw_polls.csv regional_polls.csv regional_average.json \
-                  current_average.json polling_average.csv polling_averages.png \
-                  riding_vacancy.csv seat_projection.json riding_projections.csv riding_projections_prev.csv \
-                  riding_projections.html seat_projection.png seat_history.csv docs/index.html
+          git add -A raw_polls.csv regional_polls.csv regional_average.json \
+                     current_average.json polling_average.csv polling_averages.png \
+                     riding_vacancy.csv seat_projection.json riding_projections.csv \
+                     riding_projections_prev.csv seat_projection.png seat_history.csv \
+                     qc docs
           git diff --cached --quiet && echo "No changes to commit" || \
             git commit -m "Weekly update — $(date -u '+%Y-%m-%d')"
           git push

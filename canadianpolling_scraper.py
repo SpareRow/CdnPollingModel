@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 """
-Scraper for canadianpolling.ca/canada-2025/
-Extracts federal polling data and saves to raw_polls.csv
+Scraper for canadianpolling.ca poll pages.
+
+Extracts polling data and saves it to <jurisdiction>/raw_polls.csv. The
+provincial pages (e.g. /QC-2022/ for the 2026 Quebec election) use identical
+markup to the federal ones, so the same parser serves both — only the party
+labels and output columns differ, and those come from the jurisdiction config.
 
 Actual HTML structure (confirmed):
   div.pollRow
@@ -18,26 +22,17 @@ import csv
 import re
 import sys
 from datetime import datetime
+from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
 
-URL = "https://canadianpolling.ca/canada-2025/"
+from jurisdictions import FEDERAL, Jurisdiction
 
-PARTY_MAP = {
-    "LPC": "LPC",
-    "CPC": "CPC",
-    "NDP": "NDP",
-    "BQ": "BQ",
-    "GPC": "GPC",
-    "PPC": "PPC",
-    "LIB": "LPC",
-    "CON": "CPC",
-    "GRN": "GPC",
-    "BLQ": "BQ",
-}
+URL = FEDERAL.national_urls[0]
 
-OUTPUT_COLS = ["date", "firm", "LPC", "CPC", "NDP", "BQ", "GPC", "PPC", "sample_size"]
+PARTY_MAP = FEDERAL.party_label_map
+OUTPUT_COLS = ["date", "firm", *FEDERAL.parties, "sample_size"]
 
 
 def fetch_page(url: str) -> str:
@@ -69,7 +64,27 @@ def parse_date(raw: str) -> str:
     return raw
 
 
-def parse_polls(html: str) -> list[dict]:
+def parse_polls(
+    html: str,
+    party_map: dict[str, str] | None = None,
+    parties: tuple[str, ...] | None = None,
+    others_key: str | None = None,
+    others_from_residual: bool = False,
+) -> list[dict]:
+    """
+    Parse a canadianpolling.ca page into poll rows.
+
+    The provincial pages use identical markup to the federal ones, so the only
+    per-jurisdiction differences are the party labels and the output columns.
+
+    others_key / others_from_residual support an explicit "Others" bucket:
+    labels folding into it are summed (PVQ + Others), and when the page omits
+    it the residual 100 - sum(tracked) is used, so rows total 100 and the
+    renormalisation in project_riding isn't silently reallocating untracked vote.
+    """
+    party_map = party_map if party_map is not None else PARTY_MAP
+    parties = parties if parties is not None else tuple(FEDERAL.parties)
+
     soup = BeautifulSoup(html, "html.parser")
     polls = []
 
@@ -95,55 +110,95 @@ def parse_polls(html: str) -> list[dict]:
             if not score_el or not party_el:
                 continue
             party_raw = party_el.get_text(strip=True).upper()
-            party_key = PARTY_MAP.get(party_raw)
+            party_key = party_map.get(party_raw)
             if party_key is None:
-                continue  # skip "Others" etc.
+                continue  # label we don't track
             try:
-                parties_in_poll[party_key] = float(score_el.get_text(strip=True))
+                value = float(score_el.get_text(strip=True))
             except ValueError:
-                pass
+                continue
+            if party_key == others_key:
+                parties_in_poll[party_key] = parties_in_poll.get(party_key, 0.0) + value
+            else:
+                parties_in_poll[party_key] = value
 
         if not parties_in_poll:
             continue
 
-        row_data = {
-            "date": date_str,
-            "firm": firm,
-            "LPC": parties_in_poll.get("LPC", ""),
-            "CPC": parties_in_poll.get("CPC", ""),
-            "NDP": parties_in_poll.get("NDP", ""),
-            "BQ": parties_in_poll.get("BQ", ""),
-            "GPC": parties_in_poll.get("GPC", ""),
-            "PPC": parties_in_poll.get("PPC", ""),
-            "sample_size": "",  # not available in page HTML
-        }
+        if others_from_residual and others_key and others_key not in parties_in_poll:
+            tracked = sum(v for k, v in parties_in_poll.items() if k != others_key)
+            residual = round(100.0 - tracked, 1)
+            if residual > 0:
+                parties_in_poll[others_key] = residual
+
+        row_data = {"date": date_str, "firm": firm}
+        row_data.update({p: parties_in_poll.get(p, "") for p in parties})
+        row_data["sample_size"] = ""  # not available in page HTML
         polls.append(row_data)
 
     return polls
 
 
-def save_csv(polls: list[dict], path: str = "raw_polls.csv") -> None:
+def save_csv(
+    polls: list[dict],
+    path: str | Path = "raw_polls.csv",
+    columns: list[str] | None = None,
+) -> None:
     with open(path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=OUTPUT_COLS)
+        writer = csv.DictWriter(f, fieldnames=columns or OUTPUT_COLS)
         writer.writeheader()
         writer.writerows(polls)
     print(f"Saved {len(polls)} polls → {path}")
 
 
-def main():
-    print(f"Fetching {URL} …")
-    try:
-        html = fetch_page(URL)
-    except requests.RequestException as e:
-        print(f"ERROR fetching page: {e}", file=sys.stderr)
+def count_existing_polls(path: Path) -> int:
+    """How many poll rows the committed CSV already holds (0 if absent)."""
+    if not path.exists():
+        return 0
+    with open(path, newline="", encoding="utf-8") as f:
+        return sum(1 for _ in csv.DictReader(f))
+
+
+def main(cfg: Jurisdiction = FEDERAL):
+    html = None
+    for url in cfg.national_urls:
+        print(f"Fetching {url} …")
+        try:
+            html = fetch_page(url)
+            break
+        except requests.RequestException as e:
+            print(f"  failed: {e}", file=sys.stderr)
+    if html is None:
+        print(f"ERROR: could not fetch any of {list(cfg.national_urls)}", file=sys.stderr)
         sys.exit(1)
 
-    polls = parse_polls(html)
+    others_key = "OTH" if "OTH" in cfg.parties else None
+    polls = parse_polls(
+        html,
+        party_map=cfg.party_label_map,
+        parties=cfg.parties,
+        others_key=others_key,
+        others_from_residual=cfg.others_from_residual,
+    )
     if not polls:
         print("WARNING: no polls parsed — check HTML structure", file=sys.stderr)
         sys.exit(1)
 
-    save_csv(polls)
+    # The scraper overwrites the CSV wholesale, so a partial parse silently
+    # destroys history. Refuse a big unexplained drop.
+    output = cfg.p("raw_polls.csv")
+    previous = count_existing_polls(output)
+    if previous and len(polls) < previous * 0.8:
+        print(
+            f"ERROR: parsed only {len(polls)} polls but {output} holds {previous}. "
+            "Refusing to overwrite — the page markup has probably changed.",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+    columns = ["date", "firm", *cfg.parties, "sample_size"]
+    output.parent.mkdir(parents=True, exist_ok=True)
+    save_csv(polls, output, columns)
 
     dated = [p for p in polls if p["date"]]
     if dated:
@@ -152,4 +207,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    import jurisdictions
+
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--jurisdiction", default="federal", choices=list(jurisdictions.ALL))
+    main(jurisdictions.get(ap.parse_args().jurisdiction))

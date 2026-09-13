@@ -1,0 +1,128 @@
+riding_code,riding_name,province,region,CAQ_pct,PQ_pct,PLQ_pct,QS_pct,PCQ_pct,OTH_pct,winner,total_votes,franco_pct,baseline_quality
+001,Abitibi-Est,Quebec,Abitibi-Témiscamingue,47.17,12.39,14.71,13.71,12.01,0.0,CAQ,20695,94.6,exact
+002,Abitibi-Ouest,Quebec,Abitibi-Témiscamingue,46.75,20.76,5.18,16.29,10.31,0.71,CAQ,22246,98.14,exact
+003,Acadie,Quebec,West Montreal,17.11,9.87,42.26,17.2,11.37,2.19,PLQ,25984,35.48,exact
+004,Anjou–Louis-Riel,Quebec,East Montreal,35.56,11.04,30.52,14.77,7.16,0.96,CAQ,26363,58.63,exact
+005,Argenteuil,Quebec,Laurentides,45.1,16.21,10.18,10.79,14.72,3.0,CAQ,32649,82.92,exact
+006,Arthabaska-L’Érable,Quebec,Centre-du-Québec,51.75,10.02,3.76,9.22,24.69,0.57,CAQ,45309,96.71,rename
+007,Beauce-Nord,Quebec,Chaudière-Appalaches,43.43,5.94,2.83,4.53,42.83,0.43,CAQ,33591,97.94,exact
+008,Beauce-Sud,Quebec,Chaudière-Appalaches,44.55,4.04,2.83,4.35,43.4,0.82,CAQ,37293,97.57,exact
+009,Beauharnois,Quebec,South Shore,53.78,16.96,5.83,12.93,9.36,1.14,CAQ,33252,93.83,exact
+010,Bellechasse,Quebec,Chaudière-Appalaches,45.74,8.83,4.13,6.04,35.26,0.0,CAQ,32933,97.99,exact
+011,Bellefeuille,Quebec,Laurentides,48.63,17.35,6.95,13.8,11.78,1.5,CAQ,38957,94.33,derived
+012,Berthier,Quebec,Lanaudière,50.97,20.82,2.55,14.09,10.99,0.58,CAQ,41706,94.31,exact
+013,Bertrand,Quebec,Laurentides,45.26,20.63,6.01,16.15,9.79,2.16,CAQ,35188,91.83,exact
+014,Blainville,Quebec,Laurentides,49.45,15.43,11.03,14.0,9.76,0.33,CAQ,42769,84.69,exact
+015,Bonaventure,Quebec,Gaspésie–Îles-de-la-Madeleine,44.45,30.06,8.56,10.83,5.46,0.62,CAQ,22313,88.67,exact
+016,Borduas,Quebec,Eastern Montérégie,51.23,19.46,5.24,15.14,7.56,1.38,CAQ,44429,94.3,exact
+017,Bourassa-Sauvé,Quebec,East Montreal,25.01,8.69,40.13,15.45,8.94,1.78,PLQ,24182,49.69,exact
+018,Brome-Missisquoi,Quebec,Estrie,45.87,11.95,11.91,15.91,10.87,3.49,CAQ,44856,81.57,exact
+019,Camille-Laurin,Quebec,East Montreal,31.94,41.68,16.47,0.0,6.51,3.39,PQ,28690,74.83,exact
+020,Chambly,Quebec,Eastern Montérégie,48.47,17.9,7.85,16.37,8.33,1.08,CAQ,38170,89.96,exact
+021,Champlain,Quebec,Mauricie,55.89,12.04,5.08,8.97,17.55,0.46,CAQ,42068,97.51,exact
+022,Chapleau,Quebec,Outaouais,52.3,9.7,13.61,13.2,10.1,1.08,CAQ,31284,82.78,exact
+023,Charlesbourg,Quebec,Capitale-Nationale,45.0,14.19,5.99,13.05,20.37,1.39,CAQ,42042,93.82,exact
+024,Charlevoix–Côte-de-Beaupré,Quebec,Capitale-Nationale,48.17,16.19,4.7,12.53,18.12,0.28,CAQ,37322,98.12,exact
+025,Châteauguay,Quebec,South Shore,39.12,11.84,24.78,12.78,10.09,1.39,CAQ,33332,64.87,exact
+026,Chauveau,Quebec,Capitale-Nationale,46.84,7.63,3.81,8.81,31.84,1.06,CAQ,43318,96.4,exact
+027,Chicoutimi,Quebec,Saguenay–Lac-Saint-Jean,62.28,14.21,3.04,12.04,8.43,0.0,CAQ,31063,97.35,exact
+028,Chomedey,Quebec,Laval,26.7,7.19,36.52,7.89,19.85,1.85,PLQ,32572,34.08,exact
+029,Chutes-de-la-Chaudière,Quebec,Chaudière-Appalaches,47.46,11.11,4.95,9.28,27.2,0.0,CAQ,46467,97.24,exact
+030,Côte-du-Sud,Quebec,Bas-Saint-Laurent,47.69,12.77,6.31,9.33,23.41,0.49,CAQ,33792,98.73,exact
+031,Daniel-Johnson,Quebec,Estrie,52.5,14.41,3.51,13.8,15.13,0.65,CAQ,41800,95.66,rename
+032,D'Arcy-McGee,Quebec,West Montreal,5.91,2.51,51.41,8.52,21.95,9.71,PLQ,25866,21.33,exact
+033,Deux-Montagnes,Quebec,Laurentides,47.08,17.16,10.27,14.15,9.82,1.51,CAQ,33675,83.97,exact
+034,Drummond–Bois-Francs,Quebec,Centre-du-Québec,51.64,15.05,4.01,10.65,17.39,1.26,CAQ,36302,96.32,exact
+035,Dubuc,Quebec,Saguenay–Lac-Saint-Jean,57.6,17.55,2.49,10.58,11.04,0.75,CAQ,26781,98.67,exact
+036,Duplessis,Quebec,Côte-Nord,45.14,24.79,4.02,9.36,15.72,0.98,CAQ,19463,80.21,exact
+037,Fabre,Quebec,Laval,31.81,9.75,30.91,11.13,15.17,1.22,CAQ,34307,51.43,exact
+038,Gaspé,Quebec,Gaspésie–Îles-de-la-Madeleine,41.4,37.5,6.89,8.97,5.25,0.0,CAQ,18219,92.61,exact
+039,Gatineau,Quebec,Outaouais,46.74,9.71,19.56,12.1,10.76,1.14,CAQ,36491,78.05,exact
+040,Gouin,Quebec,East Montreal,12.37,13.63,8.4,59.44,3.11,3.06,QS,29078,78.66,exact
+041,Granby,Quebec,Estrie,58.19,11.84,4.76,14.29,10.11,0.81,CAQ,36971,93.39,exact
+042,Groulx,Quebec,Laurentides,47.75,15.31,11.02,16.21,8.7,1.01,CAQ,36507,80.83,exact
+043,Hochelaga-Maisonneuve,Quebec,East Montreal,18.8,15.97,7.78,50.84,4.62,1.98,QS,25144,81.01,exact
+044,Hull,Quebec,Outaouais,34.64,9.78,25.92,20.75,6.86,2.05,CAQ,31925,68.38,exact
+045,Huntingdon,Quebec,South Shore,46.64,12.02,14.39,11.15,13.39,2.41,CAQ,29294,83.02,exact
+046,Iberville,Quebec,Eastern Montérégie,53.15,15.24,5.64,13.72,11.27,0.99,CAQ,34288,95.06,exact
+047,Îles-de-la-Madeleine,Quebec,Gaspésie–Îles-de-la-Madeleine,39.91,46.35,7.25,5.38,1.11,0.0,PQ,8364,94.7,exact
+048,Jacques-Cartier,Quebec,West Montreal,9.42,3.02,62.57,5.02,11.23,8.74,PLQ,29022,22.81,exact
+049,Jean-Lesage,Quebec,Capitale-Nationale,31.26,11.07,4.4,37.77,14.12,1.38,QS,30154,91.59,exact
+050,Jean-Talon,Quebec,Capitale-Nationale,32.5,18.69,13.51,23.76,10.36,1.17,CAQ,34164,84.03,exact
+051,Jeanne-Mance–Viger,Quebec,East Montreal,16.6,4.18,53.93,10.65,11.6,3.04,PLQ,26834,32.79,exact
+052,Joliette,Quebec,Lanaudière,45.58,31.23,3.0,11.38,8.82,0.0,CAQ,39330,96.4,exact
+053,Jonquière,Quebec,Saguenay–Lac-Saint-Jean,59.39,19.3,2.12,9.07,9.55,0.58,CAQ,30637,98.61,exact
+054,La Peltrie,Quebec,Capitale-Nationale,44.35,9.93,5.66,8.9,29.9,1.25,CAQ,44448,94.9,exact
+055,La Pinière,Quebec,South Shore,31.17,7.82,38.51,10.02,10.15,2.33,PLQ,32950,42.26,exact
+056,La Prairie,Quebec,South Shore,52.71,11.42,13.85,13.1,7.95,0.96,CAQ,34583,78.1,exact
+057,Labelle,Quebec,Laurentides,53.08,19.13,5.05,12.26,9.54,0.94,CAQ,33272,95.22,exact
+058,Lac-Saint-Jean,Quebec,Saguenay–Lac-Saint-Jean,51.47,25.62,3.02,7.58,11.37,0.95,CAQ,28752,99.04,exact
+059,LaFontaine,Quebec,East Montreal,20.01,5.1,51.67,8.87,13.14,1.21,PLQ,25929,41.23,exact
+060,L'Assomption,Quebec,Lanaudière,58.63,13.75,5.68,14.32,7.63,0.0,CAQ,31790,93.95,exact
+061,Laurier-Dorion,Quebec,East Montreal,11.73,10.26,19.57,48.8,5.54,4.11,QS,27303,50.81,exact
+062,Laval-des-Rapides,Quebec,Laval,31.9,12.92,28.73,16.68,8.58,1.2,CAQ,33230,62.06,exact
+063,Laviolette–Saint-Maurice,Quebec,Mauricie,51.72,16.01,4.99,9.5,16.75,1.03,CAQ,37543,93.48,exact
+064,Les Plaines,Quebec,Laurentides,50.54,16.13,6.88,13.32,12.1,1.02,CAQ,27544,90.83,exact
+065,Lévis,Quebec,Chaudière-Appalaches,48.79,12.91,5.13,11.47,20.75,0.95,CAQ,36997,96.09,exact
+066,Lotbinière-Frontenac,Quebec,Chaudière-Appalaches,43.72,8.8,5.92,9.36,32.2,0.0,CAQ,41929,97.66,exact
+067,Louis-Hébert,Quebec,Capitale-Nationale,47.21,16.52,8.71,12.03,14.61,0.93,CAQ,37710,93.3,exact
+068,Marguerite-Bourgeoys,Quebec,West Montreal,23.15,6.97,44.78,10.27,11.0,3.83,PLQ,28216,34.39,exact
+069,Marie-Lacoste-Gérin-Lajoie,Quebec,Centre-du-Québec,50.77,15.35,4.0,11.42,17.77,0.68,CAQ,35921,95.33,derived
+070,Marie-Victorin,Quebec,South Shore,33.11,24.85,10.04,22.67,7.02,2.31,CAQ,27820,78.48,exact
+071,Marquette,Quebec,West Montreal,21.82,8.06,46.73,11.27,9.13,2.98,PLQ,26224,45.29,exact
+072,Maskinongé,Quebec,Mauricie,53.5,14.14,5.07,9.9,16.06,1.33,CAQ,31953,97.7,exact
+073,Masson,Quebec,Lanaudière,51.6,18.24,7.72,13.07,8.43,0.94,CAQ,35264,89.54,exact
+074,Matane-Matapédia-Mitis,Quebec,Bas-Saint-Laurent,17.36,67.43,2.14,4.87,7.79,0.41,PQ,29746,99.04,rename
+075,Maurice-Richard,Quebec,East Montreal,27.16,14.67,17.22,34.67,4.2,2.08,QS,31447,67.91,exact
+076,Mégantic,Quebec,Estrie,46.17,12.77,5.71,12.78,22.25,0.32,CAQ,28098,94.24,exact
+077,Mercier,Quebec,East Montreal,10.28,14.57,14.02,53.92,3.84,3.36,QS,27363,67.65,exact
+078,Mille-Îles,Quebec,Laval,30.93,12.07,32.38,12.88,10.56,1.18,PLQ,29410,62.92,exact
+079,Mirabel,Quebec,Laurentides,50.11,16.78,6.76,14.41,11.43,0.52,CAQ,43184,90.25,exact
+080,Mont-Royal–Outremont,Quebec,West Montreal,15.79,11.42,39.35,20.28,8.51,4.65,PLQ,29629,43.8,exact
+081,Montarville,Quebec,South Shore,45.9,18.69,12.27,16.25,5.12,1.77,CAQ,41488,88.07,exact
+082,Montmorency,Quebec,Capitale-Nationale,45.18,11.28,4.65,12.05,26.06,0.78,CAQ,42326,96.33,exact
+083,Nelligan,Quebec,West Montreal,16.65,4.17,52.03,5.26,15.09,6.8,PLQ,33546,27.28,exact
+084,Nicolet-Bécancour,Quebec,Centre-du-Québec,47.05,17.18,4.74,8.8,22.23,0.0,CAQ,29662,97.85,exact
+085,Notre-Dame-de-Grâce,Quebec,West Montreal,7.33,5.09,50.46,15.49,8.15,13.48,PLQ,25602,25.63,exact
+086,Orford,Quebec,Estrie,42.95,13.61,14.99,16.16,10.88,1.41,CAQ,32792,84.99,exact
+087,Papineau,Quebec,Outaouais,52.83,10.23,8.41,13.78,13.27,1.48,CAQ,37464,91.25,exact
+088,Pierre-Laporte,Quebec,Montérégie,30.76,12.19,28.82,17.72,7.39,3.13,CAQ,33687,64.5,rename
+089,Pointe-aux-Trembles,Quebec,East Montreal,45.88,19.87,10.38,15.41,6.81,1.65,CAQ,26495,83.61,exact
+090,Pontiac,Quebec,Outaouais,24.7,6.61,43.68,10.28,10.92,3.82,PLQ,28564,55.53,exact
+091,Portneuf,Quebec,Capitale-Nationale,47.38,9.85,2.82,8.22,29.74,1.99,CAQ,32529,97.91,exact
+092,Prévost,Quebec,Laurentides,46.23,19.58,6.02,15.1,11.68,1.38,CAQ,34401,93.57,exact
+093,René-Lévesque,Quebec,Côte-Nord,58.92,21.17,1.59,7.56,10.12,0.64,CAQ,19309,93.53,exact
+094,Repentigny,Quebec,Lanaudière,52.36,17.73,9.96,12.68,6.41,0.85,CAQ,37714,88.56,exact
+095,Richelieu,Quebec,Eastern Montérégie,55.89,20.28,4.13,10.08,8.82,0.81,CAQ,30592,97.12,exact
+096,Richmond,Quebec,Estrie,46.75,12.76,5.45,19.86,14.7,0.48,CAQ,45465,93.55,exact
+097,Rimouski,Quebec,Bas-Saint-Laurent,41.75,28.64,3.01,21.37,4.75,0.48,CAQ,32960,98.1,exact
+098,Rivière-du-Loup–Témiscouata–Les Basques,Quebec,Bas-Saint-Laurent,52.06,17.58,3.97,14.61,11.27,0.5,CAQ,34925,98.7,rename
+099,Robert-Baldwin,Quebec,West Montreal,9.75,2.6,57.76,5.02,16.02,8.84,PLQ,29827,20.9,exact
+100,Roberval,Quebec,Saguenay–Lac-Saint-Jean,56.19,20.53,4.55,6.83,11.37,0.53,CAQ,26727,98.92,exact
+101,Rosemont,Quebec,East Montreal,23.06,21.27,11.79,37.62,4.54,1.72,QS,35380,73.0,exact
+102,Rousseau,Quebec,Lanaudière,50.58,17.86,3.45,13.14,14.98,0.0,CAQ,27912,96.37,exact
+103,Rouyn-Noranda–Témiscamingue,Quebec,Abitibi-Témiscamingue,45.16,11.25,4.37,30.94,7.66,0.62,CAQ,28732,92.71,exact
+104,Saint-François,Quebec,Estrie,42.43,9.11,7.91,28.21,11.01,1.33,CAQ,40728,86.54,exact
+105,Saint-Henri–Sainte-Anne,Quebec,West Montreal,17.73,8.27,36.15,27.72,6.36,3.77,PLQ,32440,53.37,exact
+106,Saint-Hyacinthe,Quebec,Eastern Montérégie,54.42,16.7,4.13,13.64,9.84,1.28,CAQ,41321,93.41,exact
+107,Saint-Jean,Quebec,Eastern Montérégie,50.65,19.22,5.98,14.76,8.4,0.99,CAQ,42907,93.86,exact
+108,Saint-Jérôme,Quebec,Laurentides,50.02,18.83,4.53,15.62,9.74,1.26,CAQ,41038,94.16,exact
+109,Saint-Laurent,Quebec,West Montreal,14.29,5.92,49.97,9.92,13.88,6.02,PLQ,28628,31.56,exact
+110,Sainte-Marie–Saint-Jacques,Quebec,East Montreal,14.31,14.72,15.85,47.69,4.98,2.45,QS,22841,64.45,exact
+111,Sainte-Rose,Quebec,Laval,38.5,12.39,23.98,14.33,9.37,1.43,CAQ,36600,65.95,exact
+112,Sanguinet,Quebec,South Shore,48.78,16.3,9.86,13.11,10.57,1.38,CAQ,29944,84.61,exact
+113,Sherbrooke,Quebec,Estrie,35.25,9.09,5.84,41.91,6.74,1.17,QS,37098,85.92,exact
+114,Soulanges,Quebec,South Shore,42.62,10.27,21.82,10.84,12.47,1.98,CAQ,40153,69.23,exact
+115,Taillon,Quebec,South Shore,41.51,20.31,11.62,18.9,6.47,1.2,CAQ,35256,79.63,exact
+116,Taschereau,Quebec,Capitale-Nationale,21.93,22.57,5.89,39.53,8.76,1.31,QS,34370,90.24,exact
+117,Terrebonne,Quebec,Lanaudière,49.44,18.88,10.17,12.65,7.94,0.92,CAQ,42295,87.55,exact
+118,Trois-Rivières,Quebec,Mauricie,50.81,14.34,5.54,16.35,12.26,0.69,CAQ,37115,93.43,exact
+119,Ungava,Quebec,Nord-du-Québec,36.27,12.55,18.19,24.23,8.76,0.0,CAQ,8635,80.8,exact
+120,Vachon,Quebec,South Shore,44.91,13.37,16.07,15.01,8.9,1.74,CAQ,35589,74.06,exact
+121,Vanier-Les Rivières,Quebec,Capitale-Nationale,47.39,13.07,6.28,12.15,19.52,1.58,CAQ,43918,92.64,exact
+122,Vaudreuil,Quebec,South Shore,32.77,7.7,34.22,9.23,11.62,4.46,PLQ,39765,52.76,exact
+123,Verchères,Quebec,Eastern Montérégie,51.28,20.71,5.28,14.44,7.08,1.2,CAQ,46161,94.83,exact
+124,Verdun,Quebec,West Montreal,23.0,8.33,29.27,30.75,5.35,3.3,QS,31093,59.32,exact
+125,Viau,Quebec,East Montreal,15.18,7.58,38.18,30.44,6.14,2.48,PLQ,21082,44.05,exact
+126,Vimont-Auteuil,Quebec,Laval,34.28,10.57,29.85,11.48,12.88,0.94,CAQ,31965,61.54,rename
+127,Westmount–Saint-Louis,Quebec,West Montreal,10.08,6.05,50.48,12.82,9.21,11.36,PLQ,20952,26.57,exact

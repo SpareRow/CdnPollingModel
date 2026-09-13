@@ -1,0 +1,30 @@
+{
+  "source": "2022 election result anchored to the earliest Léger crosstab by IPF",
+  "franco_share_of_votes": 0.8078,
+  "province": {
+    "CAQ": 41.14,
+    "PQ": 14.64,
+    "PLQ": 14.21,
+    "QS": 15.38,
+    "PCQ": 12.94,
+    "OTH": 1.69
+  },
+  "regions": {
+    "FR": {
+      "CAQ": 47.02,
+      "PQ": 17.4,
+      "PLQ": 5.69,
+      "QS": 16.42,
+      "PCQ": 12.36,
+      "OTH": 1.1
+    },
+    "NONFR": {
+      "CAQ": 16.43,
+      "PQ": 3.02,
+      "PLQ": 50.02,
+      "QS": 10.98,
+      "PCQ": 15.35,
+      "OTH": 4.2
+    }
+  }
+}

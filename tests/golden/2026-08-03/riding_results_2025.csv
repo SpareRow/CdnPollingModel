@@ -1,0 +1,344 @@
+riding_code,riding_name,province,region,LPC_pct,CPC_pct,NDP_pct,BQ_pct,GPC_pct,PPC_pct,winner,total_votes
+10001,Avalon,Newfoundland and Labrador,Atlantic,58.61,36.05,4.86,0.0,0.0,0.0,LPC,47030
+10002,Cape Spear,Newfoundland and Labrador,Atlantic,68.25,25.75,5.32,0.0,0.3,0.0,LPC,45988
+10003,Central Newfoundland,Newfoundland and Labrador,Atlantic,43.55,54.08,2.37,0.0,0.0,0.0,CPC,40636
+10004,Labrador,Newfoundland and Labrador,Atlantic,51.5,41.73,6.77,0.0,0.0,0.0,LPC,11284
+10005,Long Range Mountains,Newfoundland and Labrador,Atlantic,42.75,50.35,4.36,0.0,0.0,1.16,CPC,46143
+10006,St. John's East/St. John's-Est,Newfoundland and Labrador,Atlantic,62.28,25.93,11.23,0.0,0.35,0.0,LPC,46051
+10007,Terra Nova--The Peninsulas/Terra Nova--Les Péninsules,Newfoundland and Labrador,Atlantic,47.93,47.96,4.1,0.0,0.0,0.0,CPC,40875
+11001,Cardigan,Prince Edward Island,Atlantic,57.02,37.38,2.0,0.0,1.29,0.71,LPC,25261
+11002,Charlottetown,Prince Edward Island,Atlantic,64.75,29.11,4.3,0.0,1.22,0.62,LPC,21089
+11003,Egmont,Prince Edward Island,Atlantic,51.92,43.4,2.44,0.0,2.24,0.0,LPC,24008
+11004,Malpeque,Prince Edward Island,Atlantic,57.6,36.63,1.38,0.0,3.9,0.49,LPC,26883
+12001,Acadie--Annapolis,Nova Scotia,Atlantic,46.57,47.67,3.66,0.0,1.21,0.89,CPC,48298
+12002,Cape Breton--Canso--Antigonish,Nova Scotia,Atlantic,51.59,43.23,4.0,0.0,0.0,0.69,LPC,48278
+12003,Central Nova/Nova-Centre,Nova Scotia,Atlantic,51.93,42.75,3.28,0.0,0.91,0.66,LPC,50213
+12004,Cumberland--Colchester,Nova Scotia,Atlantic,48.31,45.83,3.78,0.0,1.4,0.67,LPC,49530
+12005,Dartmouth--Cole Harbour,Nova Scotia,Atlantic,67.69,22.73,7.04,0.0,1.05,1.26,LPC,59634
+12006,Halifax,Nova Scotia,Atlantic,63.05,19.05,16.57,0.0,0.81,0.52,LPC,52160
+12007,Halifax West/Halifax-Ouest,Nova Scotia,Atlantic,65.6,27.22,5.59,0.0,0.9,0.7,LPC,55184
+12008,Kings--Hants,Nova Scotia,Atlantic,60.56,33.41,3.64,0.0,1.39,1.0,LPC,59179
+12009,Sackville--Bedford--Preston,Nova Scotia,Atlantic,61.97,32.41,3.99,0.0,0.9,0.72,LPC,58190
+12010,South Shore--St. Margarets,Nova Scotia,Atlantic,54.88,41.14,0.0,0.0,1.61,1.38,LPC,50711
+12011,Sydney--Glace Bay,Nova Scotia,Atlantic,54.63,38.12,3.79,0.0,0.0,1.25,LPC,47166
+13001,Acadie--Bathurst,New Brunswick,Atlantic,67.48,25.99,4.37,0.0,0.0,2.16,LPC,48248
+13002,Beauséjour,New Brunswick,Atlantic,60.6,33.31,2.43,0.0,2.16,0.84,LPC,59631
+13003,Fredericton--Oromocto,New Brunswick,Atlantic,61.29,32.29,1.81,0.0,3.13,0.41,LPC,50169
+13004,Fundy Royal,New Brunswick,Atlantic,40.12,53.37,3.17,0.0,2.02,1.32,CPC,47611
+13005,Madawaska--Restigouche,New Brunswick,Atlantic,55.18,39.63,3.04,0.0,0.0,2.15,LPC,41178
+13006,Miramichi--Grand Lake,New Brunswick,Atlantic,47.15,48.15,2.53,0.0,2.17,0.0,CPC,38257
+13007,Moncton--Dieppe,New Brunswick,Atlantic,63.0,31.22,3.7,0.0,2.07,0.0,LPC,47958
+13008,Saint John--Kennebecasis,New Brunswick,Atlantic,58.11,37.33,2.68,0.0,1.64,0.0,LPC,44967
+13009,Saint John--St. Croix,New Brunswick,Atlantic,41.49,53.08,3.28,0.0,1.59,0.0,CPC,50092
+13010,Tobique--Mactaquac,New Brunswick,Atlantic,35.86,58.79,2.05,0.0,2.03,1.26,CPC,39667
+24001,Abitibi--Baie-James--Nunavik--Eeyou,Quebec,QC,41.16,22.41,2.46,33.97,0.0,0.0,LPC,30561
+24002,Abitibi--Témiscamingue,Quebec,QC,27.04,19.68,2.95,49.43,0.0,0.0,BQ,50115
+24003,Ahuntsic-Cartierville,Quebec,QC,60.96,15.03,6.59,16.88,0.0,0.0,LPC,50577
+24004,Alfred-Pellan,Quebec,QC,54.59,21.0,3.39,20.32,0.0,0.7,LPC,60331
+24005,Argenteuil--La Petite-Nation,Quebec,QC,47.48,24.81,2.53,22.83,1.36,0.99,LPC,59233
+24006,Beauce,Quebec,QC,19.14,59.71,1.75,13.65,0.0,5.76,CPC,62982
+24007,Beauharnois--Salaberry--Soulanges--Huntingdon,Quebec,QC,32.11,19.37,2.43,43.92,1.17,0.99,BQ,68314
+24008,Beauport--Limoilou,Quebec,QC,35.59,30.11,3.41,28.59,1.5,0.64,LPC,61418
+24009,Bécancour--Nicolet--Saurel--Alnôbak,Quebec,QC,27.27,21.57,2.05,46.96,1.36,0.8,BQ,54318
+24010,Bellechasse--Les Etchemins--Lévis,Quebec,QC,28.51,49.08,2.48,18.72,0.0,1.21,CPC,65398
+24011,Beloeil--Chambly,Quebec,QC,34.0,13.52,3.51,48.26,0.0,0.71,BQ,68052
+24012,Berthier--Maskinongé,Quebec,QC,24.3,17.18,21.72,34.99,0.89,0.93,BQ,61956
+24013,Bourassa,Quebec,QC,58.55,16.31,5.9,17.14,0.0,1.2,LPC,36202
+24014,Brome--Missisquoi,Quebec,QC,48.26,19.1,2.22,28.05,1.58,0.78,LPC,71952
+24015,Brossard--Saint-Lambert,Quebec,QC,62.21,18.86,3.49,13.34,1.46,0.65,LPC,58739
+24016,Charlesbourg--Haute-Saint-Charles,Quebec,QC,34.62,42.44,2.68,18.92,0.0,0.79,CPC,65266
+24017,Châteauguay--Les Jardins-de-Napierville,Quebec,QC,45.16,21.66,2.2,29.06,1.24,0.69,LPC,62501
+24018,Chicoutimi--Le Fjord,Quebec,QC,31.12,34.14,1.95,31.19,0.94,0.67,CPC,50839
+24019,Compton--Stanstead,Quebec,QC,45.64,21.78,3.24,26.37,1.77,1.2,LPC,65620
+24020,Côte-du-Sud-Rivière-du-Loup-Kataskomiq-Témiscouata,Quebec,QC,30.32,45.84,1.7,20.0,1.08,0.74,CPC,62992
+24021,Côte-Nord--Kawawachikamach--Nitassinan,Quebec,QC,27.39,25.19,1.72,43.68,0.0,0.0,BQ,37183
+24022,Dorval--Lachine--LaSalle,Quebec,QC,59.36,20.68,4.17,12.57,1.63,0.95,LPC,50420
+24023,Drummond,Quebec,QC,28.45,22.74,4.64,42.8,0.0,1.37,BQ,56239
+24024,Gaspésie--Les Îles-de-la-Madeleine--Listuguj,Quebec,QC,38.29,12.37,1.76,45.79,0.0,0.79,BQ,56984
+24025,Gatineau,Quebec,QC,60.54,19.13,2.81,16.33,0.0,0.88,LPC,57399
+24026,Hochelaga--Rosemont-Est,Quebec,QC,46.14,10.56,13.04,27.18,2.6,0.0,LPC,51147
+24027,Honoré-Mercier,Quebec,QC,60.16,21.48,3.59,12.93,1.14,0.71,LPC,49780
+24028,Hull--Aylmer,Quebec,QC,62.11,16.95,5.55,12.14,2.19,0.66,LPC,51487
+24029,Joliette--Manawan,Quebec,QC,31.26,15.24,2.46,49.27,1.77,0.0,BQ,57229
+24030,Jonquière,Quebec,QC,26.02,30.25,1.84,39.99,0.88,1.02,BQ,50629
+24031,La Pointe-de-l'Île,Quebec,QC,37.68,12.74,4.28,43.11,1.84,0.0,BQ,53209
+24032,La Prairie--Atateken,Quebec,QC,44.06,17.23,2.38,34.8,0.98,0.54,LPC,66761
+24033,Lac-Saint-Jean,Quebec,QC,26.25,24.69,1.71,46.21,0.0,1.13,BQ,47756
+24034,Lac-Saint-Louis,Quebec,QC,67.63,23.67,2.92,3.63,1.42,0.73,LPC,64242
+24035,LaSalle--Émard--Verdun,Quebec,QC,50.86,13.82,10.36,21.25,2.41,0.48,LPC,53953
+24036,Laurentides--Labelle,Quebec,QC,34.94,14.91,2.53,44.57,1.63,1.41,BQ,52983
+24037,Laurier--Sainte-Marie,Quebec,QC,52.07,9.15,18.81,15.42,2.77,0.48,LPC,52401
+24038,Laval--Les Îles,Quebec,QC,49.73,32.25,3.45,14.58,0.0,0.0,LPC,56916
+24039,Les Pays-d'en-Haut,Quebec,QC,41.04,17.98,2.27,36.15,1.58,0.97,LPC,65703
+24040,Lévis--Lotbinière,Quebec,QC,29.43,47.71,2.34,19.52,0.0,1.0,CPC,69821
+24041,Longueuil--Charles-LeMoyne,Quebec,QC,49.39,16.79,5.56,26.69,0.0,0.81,LPC,50900
+24042,Longueuil--Saint-Hubert,Quebec,QC,40.98,14.28,5.05,39.68,0.0,0.0,LPC,59138
+24043,Louis-Hébert,Quebec,QC,55.44,20.12,2.55,21.34,0.0,0.55,LPC,60445
+24044,Louis-Saint-Laurent--Akiawenhrahk,Quebec,QC,32.96,44.86,2.44,18.94,0.0,0.8,CPC,65817
+24045,Marc-Aurèle-Fortin,Quebec,QC,51.99,20.71,3.7,23.6,0.0,0.0,LPC,57563
+24046,Mégantic--L'Érable--Lotbinière,Quebec,QC,21.48,58.79,1.82,16.38,0.0,1.22,CPC,58635
+24047,Mirabel,Quebec,QC,33.35,22.26,2.37,39.91,1.41,0.71,BQ,56359
+24048,Mount Royal/Mont-Royal,Quebec,QC,51.06,40.47,4.7,3.34,0.0,0.0,LPC,50028
+24049,Mont-Saint-Bruno--L'Acadie,Quebec,QC,47.1,13.68,2.33,35.09,1.22,0.58,LPC,68251
+24050,Montcalm,Quebec,QC,26.95,23.22,3.23,46.6,0.0,0.0,BQ,58519
+24051,Montmorency--Charlevoix,Quebec,QC,28.79,34.5,1.52,33.62,0.98,0.6,CPC,59407
+24052,Notre-Dame-de-Grâce--Westmount,Quebec,QC,63.99,19.66,7.4,4.96,2.49,0.48,LPC,53490
+24053,Outremont,Quebec,QC,55.2,12.54,10.66,11.97,9.63,0.0,LPC,47142
+24054,Papineau,Quebec,QC,52.98,10.57,16.32,16.57,0.0,0.98,LPC,46619
+24055,Pierre-Boucher--Les Patriotes--Verchères,Quebec,QC,38.79,11.81,2.47,46.08,0.0,0.85,BQ,62426
+24056,Pierrefonds--Dollard,Quebec,QC,60.08,30.55,2.82,5.42,0.0,0.58,LPC,57136
+24057,Pontiac--Kitigan Zibi,Quebec,QC,54.6,27.6,5.06,10.33,1.27,1.15,LPC,58773
+24058,Portneuf--Jacques-Cartier,Quebec,QC,29.05,49.56,1.59,17.87,1.12,0.81,CPC,64941
+24059,Québec Centre/Québec-Centre,Quebec,QC,49.5,0.0,7.81,35.87,0.0,5.0,LPC,56319
+24060,Repentigny,Quebec,QC,38.75,15.21,2.73,42.2,0.0,0.61,BQ,63015
+24061,Richmond--Arthabaska,Quebec,QC,32.98,35.5,2.0,27.33,0.0,1.13,CPC,62546
+24062,Rimouski--La Matapédia,Quebec,QC,35.53,13.55,1.8,46.16,0.0,0.63,BQ,54040
+24063,Rivière-des-Mille-Îles,Quebec,QC,45.63,17.36,2.12,32.84,1.23,0.51,LPC,59887
+24064,Rivière-du-Nord,Quebec,QC,31.62,21.03,3.5,43.85,0.0,0.0,BQ,58018
+24065,Rosemont--La Petite-Patrie,Quebec,QC,31.57,6.85,40.99,18.28,2.3,0.0,NDP,59420
+24066,Saint-Hyacinthe--Bagot--Acton,Quebec,QC,33.64,17.99,2.37,43.88,1.38,0.74,BQ,57986
+24067,Saint-Jean,Quebec,QC,34.26,16.32,2.57,44.34,1.54,0.97,BQ,64215
+24068,Saint-Laurent,Quebec,QC,58.89,28.24,4.49,5.71,1.57,0.79,LPC,44185
+24069,Saint-Léonard--Saint-Michel,Quebec,QC,65.34,20.59,5.97,7.15,0.0,0.94,LPC,41066
+24070,Saint-Maurice--Champlain,Quebec,QC,49.96,24.62,1.97,21.19,1.13,0.73,LPC,62240
+24071,Shefford,Quebec,QC,39.25,17.12,2.34,40.11,0.0,1.18,BQ,66631
+24072,Sherbrooke,Quebec,QC,51.29,13.1,5.77,26.63,2.27,0.95,LPC,60931
+24073,Terrebonne,Quebec,QC,38.74,18.18,2.58,38.74,1.05,0.71,LPC,60278
+24074,Thérèse-De Blainville,Quebec,QC,45.84,18.66,2.46,32.34,0.0,0.69,LPC,64397
+24075,Trois-Rivières,Quebec,QC,41.01,27.25,2.34,27.6,0.93,0.52,LPC,61317
+24076,Vaudreuil,Quebec,QC,57.87,22.85,2.26,14.93,1.35,0.74,LPC,70818
+24077,Ville-Marie--Le Sud-Ouest--Île-des-Soeurs,Quebec,QC,63.7,18.78,6.04,8.99,2.05,0.0,LPC,48519
+24078,Vimy,Quebec,QC,53.41,24.72,4.71,17.16,0.0,0.0,LPC,49677
+35001,Ajax,Ontario,ON,56.32,39.08,2.68,0.0,0.93,0.0,LPC,65650
+35002,Algonquin--Renfrew--Pembroke,Ontario,ON,37.81,55.71,3.68,0.0,0.92,0.0,CPC,67018
+35003,Aurora--Oak Ridges--Richmond Hill,Ontario,ON,42.77,54.73,1.34,0.0,0.75,0.41,CPC,62169
+35004,Barrie South--Innisfil/Barrie-Sud--Innisfil,Ontario,ON,37.96,57.84,3.16,0.0,0.0,1.03,CPC,67325
+35005,Barrie--Springwater--Oro-Medonte,Ontario,ON,44.36,51.67,2.37,0.0,1.36,0.0,CPC,65709
+35006,Bay of Quinte,Ontario,ON,50.39,44.69,3.64,0.0,1.28,0.0,LPC,65182
+35007,Beaches--East York,Ontario,ON,67.75,23.54,6.85,0.0,1.27,0.0,LPC,58755
+35008,Bowmanville--Oshawa North/Bowmanville--Oshawa-Nord,Ontario,ON,45.51,49.77,2.87,0.0,0.77,0.0,CPC,70788
+35009,Brampton Centre/Brampton-Centre,Ontario,ON,48.37,46.87,2.66,0.0,1.15,0.71,LPC,40760
+35010,Brampton--Chinguacousy Park,Ontario,ON,48.85,44.44,2.66,0.0,1.18,1.68,LPC,44080
+35011,Brampton East/Brampton-Est,Ontario,ON,48.59,44.71,1.69,0.0,0.0,4.74,LPC,48605
+35012,Brampton North--Caledon/Brampton-Nord--Caledon,Ontario,ON,49.03,47.44,2.16,0.0,0.0,1.36,LPC,46595
+35013,Brampton South/Brampton-Sud,Ontario,ON,49.33,47.51,1.74,0.0,0.0,0.8,LPC,44603
+35014,Brampton West/Brampton-Ouest,Ontario,ON,47.64,49.81,1.67,0.0,0.66,0.0,CPC,42387
+35015,Brantford--Brant South--Six Nations/Brantford--Brant-Sud--Six Nations,Ontario,ON,41.09,52.44,3.66,0.0,1.69,0.6,CPC,65793
+35016,Bruce--Grey--Owen Sound,Ontario,ON,40.11,53.03,3.09,0.0,2.16,0.78,CPC,66911
+35017,Burlington,Ontario,ON,55.8,40.56,1.98,0.0,0.76,0.67,LPC,78126
+35018,Burlington North--Milton West/Burlington-Nord--Milton-Ouest,Ontario,ON,52.75,44.25,2.14,0.0,0.0,0.86,LPC,70441
+35019,Cambridge,Ontario,ON,46.33,48.56,3.34,0.0,1.61,0.0,CPC,65419
+35020,Carleton,Ontario,ON,50.95,45.7,1.42,0.0,0.65,0.0,LPC,86060
+35021,Chatham-Kent--Leamington,Ontario,ON,35.91,57.51,4.07,0.0,1.05,1.47,CPC,72351
+35022,Davenport,Ontario,ON,57.81,23.19,17.09,0.0,1.28,0.0,LPC,61174
+35023,Don Valley North/Don Valley-Nord,Ontario,ON,53.21,42.34,2.45,0.0,0.92,0.54,LPC,48527
+35024,Don Valley West/Don Valley-Ouest,Ontario,ON,62.63,33.21,2.36,0.0,1.05,0.0,LPC,58664
+35025,Dufferin--Caledon,Ontario,ON,35.16,60.14,1.95,0.0,1.31,1.07,CPC,70595
+35026,Eglinton--Lawrence,Ontario,ON,49.29,47.83,1.64,0.0,0.71,0.54,LPC,60761
+35027,Elgin--St. Thomas--London South/Elgin--St. Thomas--London-Sud,Ontario,ON,43.13,50.14,4.8,0.0,0.0,1.93,CPC,64949
+35028,Essex,Ontario,ON,36.65,57.52,4.77,0.0,0.0,1.05,CPC,80181
+35029,Etobicoke Centre/Etobicoke-Centre,Ontario,ON,53.6,44.01,2.39,0.0,0.0,0.0,LPC,67510
+35030,Etobicoke--Lakeshore,Ontario,ON,57.41,38.8,2.55,0.0,0.0,0.94,LPC,65338
+35031,Etobicoke North/Etobicoke-Nord,Ontario,ON,52.58,40.98,3.2,0.0,0.93,2.0,LPC,42355
+35032,Flamborough--Glanbrook--Brant North/Flamborough--Glanbrook--Brant-Nord,Ontario,ON,43.23,52.7,2.44,0.0,0.89,0.75,CPC,66884
+35033,Guelph,Ontario,ON,54.67,30.74,3.2,0.0,10.18,0.75,LPC,66593
+35034,Haldimand--Norfolk,Ontario,ON,36.37,57.56,3.37,0.0,1.05,0.92,CPC,71606
+35035,Haliburton--Kawartha Lakes,Ontario,ON,38.7,56.56,3.48,0.0,0.0,1.26,CPC,75503
+35036,Hamilton Centre/Hamilton-Centre,Ontario,ON,37.55,29.99,29.11,0.0,1.44,1.04,LPC,56952
+35037,Hamilton East--Stoney Creek/Hamilton-Est--Stoney Creek,Ontario,ON,46.51,48.7,3.66,0.0,0.0,1.13,CPC,67468
+35038,Hamilton Mountain,Ontario,ON,45.58,41.5,11.76,0.0,0.0,0.83,LPC,59893
+35039,Hamilton West--Ancaster--Dundas/Hamilton-Ouest--Ancaster--Dundas,Ontario,ON,56.1,36.78,5.25,0.0,1.19,0.44,LPC,69464
+35040,Hastings--Lennox and Addington--Tyendinaga,Ontario,ON,40.35,54.32,3.55,0.0,1.21,0.57,CPC,66281
+35041,Humber River--Black Creek,Ontario,ON,55.62,35.8,6.38,0.0,0.0,1.62,LPC,38398
+35042,Huron--Bruce,Ontario,ON,41.54,53.16,3.3,0.0,1.33,0.0,CPC,69657
+35043,Kanata,Ontario,ON,60.76,35.67,2.29,0.0,1.12,0.0,LPC,74460
+35044,Kapuskasing--Timmins--Mushkegowuk,Ontario,ON,38.96,48.93,10.38,0.0,0.0,1.73,CPC,47137
+35045,Kenora--Kiiwetinoong,Ontario,ON,35.16,48.75,13.75,0.0,1.06,0.76,CPC,26892
+35046,Kingston and the Islands/Kingston et les Îles,Ontario,ON,63.23,30.64,4.74,0.0,1.39,0.0,LPC,76993
+35047,King--Vaughan,Ontario,ON,35.95,61.53,1.14,0.0,0.85,0.54,CPC,67747
+35048,Kitchener Centre/Kitchener-Centre,Ontario,ON,29.27,34.25,1.96,0.0,33.61,0.57,CPC,59084
+35049,Kitchener--Conestoga,Ontario,ON,48.32,47.48,2.93,0.0,0.0,1.27,LPC,62087
+35050,Kitchener South--Hespeler/Kitchener-Sud--Hespeler,Ontario,ON,46.24,47.94,3.02,0.0,2.0,0.64,CPC,60431
+35051,Lanark--Frontenac,Ontario,ON,45.57,50.41,2.93,0.0,1.09,0.0,CPC,67813
+35052,Leeds--Grenville--Thousand Islands--Rideau Lakes,Ontario,ON,44.39,50.05,3.5,0.0,1.17,0.89,CPC,66811
+35053,London Centre/London-Centre,Ontario,ON,56.74,31.09,9.66,0.0,1.47,0.87,LPC,59923
+35054,London--Fanshawe,Ontario,ON,30.52,40.58,27.57,0.0,0.0,1.33,CPC,58523
+35055,London West/London-Ouest,Ontario,ON,56.22,37.0,5.51,0.0,0.68,0.0,LPC,62808
+35056,Markham--Stouffville,Ontario,ON,51.36,45.26,1.82,0.0,0.7,0.64,LPC,61644
+35057,Markham--Thornhill,Ontario,ON,54.54,41.65,2.03,0.0,0.0,1.48,LPC,50429
+35058,Markham--Unionville,Ontario,ON,47.05,50.65,1.35,0.0,0.94,0.0,CPC,53414
+35059,Middlesex--London,Ontario,ON,42.09,51.67,4.13,0.0,1.0,0.83,CPC,69847
+35060,Milton East--Halton Hills South/Milton-Est--Halton Hills-Sud,Ontario,ON,48.25,48.22,1.54,0.0,1.01,0.71,LPC,66685
+35061,Mississauga Centre/Mississauga-Centre,Ontario,ON,53.85,41.85,2.73,0.0,0.0,1.1,LPC,54976
+35062,Mississauga East--Cooksville/Mississauga-Est--Cooksville,Ontario,ON,50.2,44.61,2.79,0.0,0.0,1.78,LPC,54056
+35063,Mississauga--Erin Mills,Ontario,ON,55.71,39.97,2.18,0.0,0.61,1.22,LPC,60039
+35064,Mississauga--Lakeshore,Ontario,ON,52.35,44.04,1.88,0.0,0.88,0.5,LPC,66797
+35065,Mississauga--Malton,Ontario,ON,53.3,42.18,2.57,0.0,0.0,1.96,LPC,50268
+35066,Mississauga--Streetsville,Ontario,ON,51.53,44.86,2.29,0.0,0.72,0.6,LPC,60731
+35067,Nepean,Ontario,ON,63.78,33.25,1.97,0.0,0.64,0.36,LPC,72237
+35068,Newmarket--Aurora,Ontario,ON,47.02,50.62,2.36,0.0,0.0,0.0,CPC,62312
+35069,New Tecumseth--Gwillimbury,Ontario,ON,36.97,59.35,1.85,0.0,1.08,0.75,CPC,66125
+35070,Niagara Falls--Niagara-on-the-Lake,Ontario,ON,44.89,49.14,3.85,0.0,0.85,0.79,CPC,60595
+35071,Niagara South/Niagara-Sud,Ontario,ON,43.91,47.81,5.61,0.0,0.89,1.49,CPC,76763
+35072,Niagara West/Niagara-Ouest,Ontario,ON,43.21,51.72,3.21,0.0,0.0,0.83,CPC,70413
+35073,Nipissing--Timiskaming,Ontario,ON,47.24,44.59,6.06,0.0,1.0,1.11,LPC,58576
+35074,Northumberland--Clarke,Ontario,ON,45.86,48.97,2.94,0.0,0.88,0.73,CPC,71192
+35075,Oakville East/Oakville-Est,Ontario,ON,51.14,44.85,2.79,0.0,0.58,0.55,LPC,60872
+35076,Oakville West/Oakville-Ouest,Ontario,ON,53.08,44.41,1.38,0.0,0.6,0.42,LPC,60043
+35077,Orléans,Ontario,ON,67.44,28.01,2.62,0.0,0.83,0.42,LPC,78803
+35078,Oshawa,Ontario,ON,42.96,48.17,7.66,0.0,1.21,0.0,CPC,66700
+35079,Ottawa Centre/Ottawa-Centre,Ontario,ON,62.73,15.6,19.59,0.0,1.13,0.0,LPC,81338
+35080,Ottawa South/Ottawa-Sud,Ontario,ON,65.18,27.06,6.03,0.0,0.96,0.0,LPC,66564
+35081,Ottawa--Vanier--Gloucester,Ontario,ON,67.37,21.46,7.57,0.0,1.97,0.51,LPC,68183
+35082,Ottawa West--Nepean/Ottawa-Ouest--Nepean,Ontario,ON,63.64,27.05,7.08,0.0,1.14,0.75,LPC,68445
+35083,Oxford,Ontario,ON,38.17,53.38,4.26,0.0,1.25,0.9,CPC,71551
+35084,Parry Sound--Muskoka,Ontario,ON,42.63,52.19,3.56,0.0,0.0,1.62,CPC,64653
+35085,Perth--Wellington,Ontario,ON,40.79,53.01,4.54,0.0,0.0,1.67,CPC,64092
+35086,Peterborough,Ontario,ON,54.25,41.04,3.04,0.0,0.83,0.34,LPC,79059
+35087,Pickering--Brooklin,Ontario,ON,54.16,41.16,2.58,0.0,0.75,0.9,LPC,71232
+35088,Prescott--Russell--Cumberland,Ontario,ON,54.78,40.35,2.42,0.0,1.1,1.02,LPC,71393
+35089,Richmond Hill South/Richmond Hill-Sud,Ontario,ON,44.4,52.26,1.8,0.0,0.84,0.42,CPC,58584
+35090,Sarnia--Lambton--Bkejwanong,Ontario,ON,37.89,53.15,5.35,0.0,0.0,1.49,CPC,76389
+35091,Sault Ste. Marie--Algoma,Ontario,ON,47.36,44.72,6.62,0.0,0.83,0.0,LPC,65317
+35092,Scarborough--Agincourt,Ontario,ON,54.31,42.84,2.86,0.0,0.0,0.0,LPC,50733
+35093,Scarborough Centre--Don Valley East/Scarborough-Centre--Don Valley-Est,Ontario,ON,57.31,38.07,3.25,0.0,0.0,1.37,LPC,48088
+35094,Scarborough--Guildwood--Rouge Park,Ontario,ON,63.96,31.68,3.21,0.0,1.15,0.0,LPC,55185
+35095,Scarborough North/Scarborough-Nord,Ontario,ON,62.95,33.14,3.91,0.0,0.0,0.0,LPC,46732
+35096,Scarborough Southwest/Scarborough-Sud-Ouest,Ontario,ON,61.49,30.57,5.01,0.0,1.38,1.04,LPC,54476
+35097,Scarborough--Woburn,Ontario,ON,60.38,34.13,3.5,0.0,1.19,0.0,LPC,41868
+35098,Simcoe--Grey,Ontario,ON,43.38,52.08,2.32,0.0,1.46,0.77,CPC,67907
+35099,Simcoe North/Simcoe-Nord,Ontario,ON,44.69,48.41,3.77,0.0,1.89,0.96,CPC,66605
+35100,Spadina--Harbourfront,Ontario,ON,60.07,30.73,7.75,0.0,0.85,0.36,LPC,52990
+35101,St. Catharines,Ontario,ON,52.01,40.43,6.02,0.0,0.0,0.78,LPC,66810
+35102,Stormont--Dundas--Glengarry,Ontario,ON,39.77,56.32,2.49,0.0,1.01,0.0,CPC,66407
+35103,Sudbury,Ontario,ON,51.86,39.18,7.69,0.0,0.0,1.27,LPC,60839
+35104,Sudbury East--Manitoulin--Nickel Belt/Sudbury-Est--Manitoulin--Nickel Belt,Ontario,ON,41.57,48.33,7.99,0.0,0.77,0.81,CPC,60323
+35105,Taiaiako'n--Parkdale--High Park,Ontario,ON,55.79,19.39,22.97,0.0,1.07,0.0,LPC,65313
+35106,Thornhill,Ontario,ON,31.19,66.38,1.24,0.0,0.53,0.66,CPC,66918
+35107,Thunder Bay--Rainy River,Ontario,ON,48.53,42.92,6.79,0.0,0.77,0.99,LPC,43531
+35108,Thunder Bay--Superior North/Thunder Bay--Supérieur-Nord,Ontario,ON,55.22,35.74,7.11,0.0,0.92,1.01,LPC,45512
+35109,Toronto Centre/Toronto-Centre,Ontario,ON,64.33,20.91,12.49,0.0,1.13,0.4,LPC,58922
+35110,Toronto--Danforth,Ontario,ON,66.56,19.0,12.95,0.0,1.06,0.0,LPC,58881
+35111,Toronto--St. Paul's,Ontario,ON,61.91,33.11,3.49,0.0,0.77,0.46,LPC,71581
+35112,University--Rosedale,Ontario,ON,64.0,23.49,9.91,0.0,1.71,0.0,LPC,62265
+35113,Vaughan--Woodbridge,Ontario,ON,38.03,60.01,1.32,0.0,0.0,0.63,CPC,67355
+35114,Waterloo,Ontario,ON,59.47,32.55,4.14,0.0,2.53,0.55,LPC,63193
+35115,Wellington--Halton Hills North/Wellington--Halton Hills-Nord,Ontario,ON,44.43,50.62,2.02,0.0,2.08,0.85,CPC,66646
+35116,Whitby,Ontario,ON,52.7,43.82,2.42,0.0,0.75,0.0,LPC,67594
+35117,Willowdale,Ontario,ON,53.45,43.99,2.57,0.0,0.0,0.0,LPC,47689
+35118,Windsor--Tecumseh--Lakeshore,Ontario,ON,45.75,45.75,6.05,0.0,0.67,1.18,CPC,70138
+35119,Windsor West/Windsor-Ouest,Ontario,ON,30.95,39.01,27.79,0.0,0.72,1.01,CPC,54888
+35120,York Centre/York-Centre,Ontario,ON,42.67,54.83,2.5,0.0,0.0,0.0,CPC,47619
+35121,York--Durham,Ontario,ON,39.58,55.56,2.52,0.0,1.1,1.24,CPC,72582
+35122,York South--Weston--Etobicoke/York-Sud--Weston--Etobicoke,Ontario,ON,55.3,39.79,4.91,0.0,0.0,0.0,LPC,44599
+46001,Brandon--Souris,Manitoba,MB_SK,23.39,62.19,14.42,0.0,0.0,0.0,CPC,46027
+46002,Churchill--Keewatinook Aski,Manitoba,MB_SK,45.5,24.07,28.73,0.0,0.0,1.71,LPC,20469
+46003,Elmwood--Transcona,Manitoba,MB_SK,22.45,41.56,34.46,0.0,0.69,0.85,CPC,46830
+46004,Kildonan--St. Paul,Manitoba,MB_SK,44.68,47.48,6.96,0.0,0.0,0.88,CPC,55521
+46005,Portage--Lisgar,Manitoba,MB_SK,22.83,69.38,4.38,0.0,1.29,2.13,CPC,45965
+46006,Provencher,Manitoba,MB_SK,25.86,66.34,4.63,0.0,1.36,1.82,CPC,51803
+46007,Riding Mountain/Mont-Riding,Manitoba,MB_SK,22.16,67.85,7.34,0.0,1.31,1.35,CPC,41873
+46008,St. Boniface--St. Vital/Saint-Boniface--Saint-Vital,Manitoba,MB_SK,59.79,32.33,6.92,0.0,0.0,0.96,LPC,54520
+46009,Selkirk--Interlake--Eastman,Manitoba,MB_SK,30.42,60.18,6.49,0.0,1.3,0.87,CPC,54479
+46010,Winnipeg Centre/Winnipeg-Centre,Manitoba,MB_SK,35.4,22.33,39.44,0.0,1.13,1.07,NDP,34289
+46011,Winnipeg North/Winnipeg-Nord,Manitoba,MB_SK,57.92,34.35,6.03,0.0,0.57,0.8,LPC,34173
+46012,Winnipeg South/Winnipeg-Sud,Manitoba,MB_SK,59.02,35.09,4.56,0.0,0.5,0.83,LPC,46319
+46013,Winnipeg South Centre/Winnipeg-Centre-Sud,Manitoba,MB_SK,63.62,27.73,6.51,0.0,0.85,0.51,LPC,53178
+46014,Winnipeg West/Winnipeg-Ouest,Manitoba,MB_SK,54.46,40.76,3.99,0.0,0.79,0.0,LPC,55591
+47001,Battlefords--Lloydminster--Meadow Lake,Saskatchewan,MB_SK,18.72,75.78,4.81,0.0,0.0,0.0,CPC,37787
+47002,Carlton Trail--Eagle Creek/Sentier Carlton--Eagle Creek,Saskatchewan,MB_SK,17.02,77.42,5.56,0.0,0.0,0.0,CPC,47051
+47003,Desnethé--Missinippi--Churchill River/Desnethé--Missinippi--Rivière Churchill,Saskatchewan,MB_SK,65.09,25.49,9.42,0.0,0.0,0.0,LPC,9027
+47004,Moose Jaw--Lake Centre--Lanigan,Saskatchewan,MB_SK,16.7,71.91,7.54,0.0,0.9,2.96,CPC,45879
+47005,Prince Albert,Saskatchewan,MB_SK,19.18,71.47,9.35,0.0,0.0,0.0,CPC,38844
+47006,Regina--Lewvan,Saskatchewan,MB_SK,42.97,50.01,5.85,0.0,0.62,0.55,CPC,43969
+47007,Regina--Qu'Appelle,Saskatchewan,MB_SK,26.96,63.97,8.02,0.0,0.0,1.04,CPC,42244
+47008,Regina--Wascana,Saskatchewan,MB_SK,43.68,50.08,4.85,0.0,0.66,0.74,CPC,44077
+47009,Saskatoon South/Saskatoon-Sud,Saskatchewan,MB_SK,40.41,49.27,9.07,0.0,0.62,0.62,CPC,49756
+47010,Saskatoon--University,Saskatchewan,MB_SK,41.37,48.87,8.51,0.0,0.55,0.69,CPC,47425
+47011,Saskatoon West/Saskatoon-Ouest,Saskatchewan,MB_SK,27.25,52.65,19.1,0.0,1.0,0.0,CPC,37631
+47012,Souris--Moose Mountain,Saskatchewan,MB_SK,9.78,83.98,4.56,0.0,0.57,0.0,CPC,41428
+47013,Swift Current--Grasslands--Kindersley,Saskatchewan,MB_SK,11.22,81.98,5.71,0.0,0.0,0.0,CPC,39388
+47014,Yorkton--Melville,Saskatchewan,MB_SK,14.42,77.55,5.5,0.0,1.93,0.0,CPC,37013
+48001,Airdrie--Cochrane,Alberta,AB,23.69,71.22,3.67,0.0,0.0,0.0,CPC,70560
+48002,Battle River--Crowfoot,Alberta,AB,11.67,82.84,3.18,0.0,0.73,1.58,CPC,64807
+48003,Bow River,Alberta,AB,16.91,78.87,2.99,0.0,0.0,0.0,CPC,56554
+48004,Calgary Centre/Calgary-Centre,Alberta,AB,45.79,50.21,2.65,0.0,0.58,0.58,CPC,62946
+48005,Calgary Confederation,Alberta,AB,48.1,46.25,4.13,0.0,0.58,0.44,LPC,68839
+48006,Calgary Crowfoot,Alberta,AB,37.37,58.84,2.56,0.0,0.51,0.53,CPC,67935
+48007,Calgary East/Calgary-Est,Alberta,AB,31.79,60.53,3.9,0.0,1.24,1.69,CPC,53674
+48008,Calgary Heritage,Alberta,AB,34.56,61.45,2.47,0.0,0.72,0.0,CPC,68493
+48009,Calgary McKnight,Alberta,AB,46.01,49.11,2.83,0.0,0.64,0.76,CPC,42478
+48010,Calgary Midnapore,Alberta,AB,29.93,65.54,3.09,0.0,0.67,0.76,CPC,73432
+48011,Calgary Nose Hill,Alberta,AB,36.17,59.42,3.21,0.0,0.7,0.0,CPC,61592
+48012,Calgary Shepard,Alberta,AB,28.23,67.99,2.73,0.0,0.46,0.59,CPC,65249
+48013,Calgary Signal Hill,Alberta,AB,36.37,60.15,2.39,0.0,0.0,0.71,CPC,69225
+48014,Calgary Skyview,Alberta,AB,37.57,55.45,2.69,0.0,0.0,0.0,CPC,50152
+48015,Edmonton Centre/Edmonton-Centre,Alberta,AB,44.35,37.9,15.51,0.0,0.0,0.86,LPC,54428
+48016,Edmonton Gateway,Alberta,AB,37.27,50.59,4.92,0.0,0.0,0.91,CPC,52152
+48017,Edmonton Griesbach,Alberta,AB,18.32,45.45,34.14,0.0,0.62,0.65,CPC,48966
+48018,Edmonton Manning,Alberta,AB,35.34,53.09,9.91,0.0,0.0,1.65,CPC,49807
+48019,Edmonton Northwest/Edmonton-Nord-Ouest,Alberta,AB,38.27,53.44,6.58,0.0,0.61,1.09,CPC,54626
+48020,Edmonton Riverbend,Alberta,AB,44.83,50.24,4.24,0.0,0.0,0.68,CPC,60391
+48021,Edmonton Southeast/Edmonton-Sud-Est,Alberta,AB,38.77,52.88,5.32,0.0,0.0,1.85,CPC,47664
+48022,Edmonton Strathcona,Alberta,AB,17.94,33.12,46.96,0.0,0.61,0.65,NDP,59687
+48023,Edmonton West/Edmonton-Ouest,Alberta,AB,40.66,52.87,5.36,0.0,0.0,0.9,CPC,59015
+48024,Foothills,Alberta,AB,19.07,76.33,2.67,0.0,0.82,1.11,CPC,71888
+48025,Fort McMurray--Cold Lake,Alberta,AB,14.54,80.15,2.7,0.0,0.59,1.81,CPC,49466
+48026,Grande Prairie,Alberta,AB,11.84,81.67,4.19,0.0,0.0,1.41,CPC,58652
+48027,Lakeland,Alberta,AB,12.17,80.97,3.8,0.0,0.73,1.74,CPC,56593
+48028,Leduc--Wetaskiwin,Alberta,AB,17.36,74.73,6.12,0.0,0.0,1.07,CPC,64161
+48029,Lethbridge,Alberta,AB,32.72,61.05,3.63,0.0,0.68,0.71,CPC,66937
+48030,Medicine Hat--Cardston--Warner,Alberta,AB,17.66,76.74,4.78,0.0,0.81,0.0,CPC,54100
+48031,Parkland,Alberta,AB,17.85,75.19,4.15,0.0,0.63,1.5,CPC,71107
+48032,Peace River--Westlock,Alberta,AB,11.76,77.07,5.46,0.0,0.0,0.0,CPC,53369
+48033,Ponoka--Didsbury,Alberta,AB,0.0,81.81,10.81,0.0,0.0,1.88,CPC,68579
+48034,Red Deer,Alberta,AB,21.94,71.55,3.84,0.0,1.0,1.31,CPC,61828
+48035,Sherwood Park--Fort Saskatchewan,Alberta,AB,27.17,66.32,5.07,0.0,0.55,0.61,CPC,81627
+48036,St. Albert--Sturgeon River,Alberta,AB,29.86,63.95,4.79,0.0,0.0,1.07,CPC,76961
+48037,Yellowhead,Alberta,AB,25.21,69.08,3.97,0.0,0.0,1.37,CPC,69290
+59001,Abbotsford--South Langley/Abbotsford--Langley-Sud,British Columbia,BC,33.89,43.09,3.76,0.0,1.03,0.82,CPC,55972
+59002,Burnaby Central,British Columbia,BC,42.23,38.62,18.16,0.0,0.0,0.98,LPC,51493
+59003,Burnaby North--Seymour/Burnaby-Nord--Seymour,British Columbia,BC,59.05,33.94,6.43,0.0,0.0,0.57,LPC,64058
+59004,Cariboo--Prince George,British Columbia,BC,30.4,60.32,6.16,0.0,1.82,0.69,CPC,63291
+59005,Chilliwack--Hope,British Columbia,BC,35.37,54.79,7.27,0.0,1.65,0.73,CPC,65754
+59006,Cloverdale--Langley City,British Columbia,BC,46.35,47.8,4.39,0.0,0.92,0.54,CPC,53566
+59007,Columbia--Kootenay--Southern Rockies,British Columbia,BC,28.21,50.43,17.99,0.0,1.49,0.68,CPC,71542
+59008,Coquitlam--Port Coquitlam,British Columbia,BC,47.37,42.99,7.39,0.0,0.88,0.0,LPC,57522
+59009,Courtenay--Alberni,British Columbia,BC,22.66,35.14,39.64,0.0,1.69,0.54,NDP,79766
+59010,Cowichan--Malahat--Langford,British Columbia,BC,28.2,37.24,32.59,0.0,1.97,0.0,CPC,76174
+59011,Delta,British Columbia,BC,51.83,43.15,4.4,0.0,0.0,0.62,LPC,63293
+59012,Esquimalt--Saanich--Sooke,British Columbia,BC,49.34,28.75,18.64,0.0,2.67,0.0,LPC,73335
+59013,Fleetwood--Port Kells,British Columbia,BC,47.91,44.17,5.94,0.0,0.95,1.03,LPC,48533
+59014,Kamloops--Shuswap--Central Rockies,British Columbia,BC,38.98,52.25,5.48,0.0,2.41,0.88,CPC,68056
+59015,Kamloops--Thompson--Nicola,British Columbia,BC,40.19,51.54,5.93,0.0,1.51,0.83,CPC,62102
+59016,Kelowna,British Columbia,BC,48.78,46.94,3.3,0.0,0.98,0.0,LPC,58841
+59017,Langley Township--Fraser Heights,British Columbia,BC,42.89,51.37,3.99,0.0,0.75,0.46,CPC,65360
+59018,Mission--Matsqui--Abbotsford,British Columbia,BC,36.64,56.7,4.61,0.0,1.21,0.84,CPC,59599
+59019,Nanaimo--Ladysmith,British Columbia,BC,27.76,35.46,18.26,0.0,18.13,0.39,CPC,74397
+59020,New Westminster--Burnaby--Maillardville,British Columbia,BC,35.09,31.43,31.55,0.0,1.24,0.0,LPC,55703
+59021,North Island--Powell River,British Columbia,BC,26.22,38.75,32.57,0.0,1.86,0.42,CPC,80929
+59022,North Vancouver--Capilano,British Columbia,BC,59.82,33.68,4.24,0.0,1.7,0.4,LPC,63364
+59023,Okanagan Lake West--South Kelowna/Okanagan Lake-Ouest--Kelowna-Sud,British Columbia,BC,44.19,50.92,3.36,0.0,0.92,0.47,CPC,65234
+59024,Pitt Meadows--Maple Ridge,British Columbia,BC,45.64,47.41,6.15,0.0,0.0,0.55,CPC,67333
+59025,Port Moody--Coquitlam,British Columbia,BC,43.53,40.4,15.05,0.0,0.83,0.0,LPC,62196
+59026,Prince George--Peace River--Northern Rockies,British Columbia,BC,19.57,71.12,6.0,0.0,2.13,1.17,CPC,58992
+59027,Richmond Centre--Marpole/Richmond-Centre--Marpole,British Columbia,BC,44.71,49.56,4.44,0.0,0.88,0.41,CPC,47486
+59028,Richmond East--Steveston/Richmond-Est--Steveston,British Columbia,BC,48.45,46.38,4.24,0.0,0.93,0.0,LPC,53055
+59029,Saanich--Gulf Islands,British Columbia,BC,31.85,25.09,3.96,0.0,39.1,0.0,GPC,79786
+59030,Similkameen--South Okanagan--West Kootenay/Similkameen--Okanagan-Sud--Kootenay-Ouest,British Columbia,BC,37.28,44.06,16.17,0.0,1.53,0.96,CPC,68216
+59031,Skeena--Bulkley Valley,British Columbia,BC,10.96,47.19,39.34,0.0,1.18,0.0,CPC,44932
+59032,South Surrey--White Rock/Surrey-Sud--White Rock,British Columbia,BC,50.5,45.67,2.49,0.0,1.34,0.0,LPC,65527
+59033,Surrey Centre/Surrey-Centre,British Columbia,BC,48.01,43.23,6.78,0.0,0.95,0.59,LPC,41454
+59034,Surrey Newton,British Columbia,BC,49.45,43.99,6.02,0.0,0.0,0.0,LPC,40975
+59035,Vancouver Centre/Vancouver-Centre,British Columbia,BC,55.22,30.28,12.59,0.0,1.4,0.39,LPC,54061
+59036,Vancouver East/Vancouver-Est,British Columbia,BC,35.5,17.78,43.65,0.0,1.92,0.58,NDP,57151
+59037,Vancouver Fraserview--South Burnaby/Vancouver Fraserview--Burnaby-Sud,British Columbia,BC,52.3,35.68,9.81,0.0,1.27,0.93,LPC,51845
+59038,Vancouver Granville,British Columbia,BC,62.12,28.76,7.53,0.0,1.59,0.0,LPC,59577
+59039,Vancouver Kingsway,British Columbia,BC,36.64,24.49,37.24,0.0,0.99,0.64,NDP,50446
+59040,Vancouver Quadra,British Columbia,BC,63.19,30.37,4.27,0.0,1.84,0.33,LPC,55997
+59041,Vernon--Lake Country--Monashee,British Columbia,BC,42.85,50.42,5.09,0.0,1.65,0.0,CPC,67141
+59042,Victoria,British Columbia,BC,54.28,16.99,24.91,0.0,3.1,0.37,LPC,75768
+59043,West Vancouver--Sunshine Coast--Sea to Sky Country,British Columbia,BC,59.74,32.97,3.22,0.0,3.43,0.48,LPC,64247
+60001,Yukon,Yukon,North,53.05,38.52,6.34,0.0,2.09,0.0,LPC,22636
+61001,Northwest Territories/Territoires du Nord-Ouest,Northwest Territories,North,53.51,33.31,12.15,0.0,1.03,0.0,LPC,16549
+62001,Nunavut,Nunavut,North,36.72,26.02,37.26,0.0,0.0,0.0,NDP,7657
