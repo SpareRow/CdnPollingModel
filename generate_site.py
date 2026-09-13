@@ -788,8 +788,15 @@ const baseOptions = (yLabel) => ({{
   }}
   const histDates = hist.map(r => r.date);
   const histDatasets = [];
-  for (const p of ["LPC","CPC","NDP","BQ"]) {{
-    const color = COLORS[p];
+  // Parties that actually appear in the history. Hardcoding a federal list here
+  // threw on any other jurisdiction (COLORS[p] undefined -> hexToRgba crashes),
+  // and because that aborted the whole script it also took out every chart
+  // rendered after this one.
+  const histParties = DATA.seatEligible.filter(
+    p => hist.some(r => r[p+"_mean"] != null && +r[p+"_mean"] > 0)
+  );
+  for (const p of histParties) {{
+    const color = COLORS[p] || "#888";
     const mean = hist.map(r => r[p+"_mean"] != null ? +r[p+"_mean"] : null);
     const low  = hist.map(r => r[p+"_low"]  != null ? +r[p+"_low"]  : null);
     const high = hist.map(r => r[p+"_high"] != null ? +r[p+"_high"] : null);
