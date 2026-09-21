@@ -1,11 +1,11 @@
 riding_code,riding_name,seat_vacant
 10001,Avalon,False
-10002,Cape Spear,False
-10003,Central Newfoundland,False
+10002,Cape Spear,True
+10003,Central Newfoundland,True
 10004,Labrador,False
 10005,Long Range Mountains,False
 10006,St. John's East/St. John's-Est,False
-10007,Terra Nova--The Peninsulas/Terra Nova--Les Péninsules,False
+10007,Terra Nova--The Peninsulas/Terra Nova--Les Péninsules,True
 11001,Cardigan,False
 11002,Charlottetown,False
 11003,Egmont,False
@@ -16,7 +16,7 @@ riding_code,riding_name,seat_vacant
 12004,Cumberland--Colchester,False
 12005,Dartmouth--Cole Harbour,False
 12006,Halifax,False
-12007,Halifax West/Halifax-Ouest,False
+12007,Halifax West/Halifax-Ouest,True
 12008,Kings--Hants,False
 12009,Sackville--Bedford--Preston,False
 12010,South Shore--St. Margarets,False
@@ -29,15 +29,15 @@ riding_code,riding_name,seat_vacant
 13006,Miramichi--Grand Lake,False
 13007,Moncton--Dieppe,False
 13008,Saint John--Kennebecasis,False
-13009,Saint John--St. Croix,False
+13009,Saint John--St. Croix,True
 13010,Tobique--Mactaquac,False
 24001,Abitibi--Baie-James--Nunavik--Eeyou,False
 24002,Abitibi--Témiscamingue,False
 24003,Ahuntsic-Cartierville,False
 24004,Alfred-Pellan,False
-24005,Argenteuil--La Petite-Nation,False
+24005,Argenteuil--La Petite-Nation,True
 24006,Beauce,False
-24007,Beauharnois--Salaberry--Soulanges--Huntingdon,False
+24007,Beauharnois--Salaberry--Soulanges--Huntingdon,True
 24008,Beauport--Limoilou,False
 24009,Bécancour--Nicolet--Saurel--Alnôbak,False
 24010,Bellechasse--Les Etchemins--Lévis,False
@@ -60,7 +60,7 @@ riding_code,riding_name,seat_vacant
 24027,Honoré-Mercier,False
 24028,Hull--Aylmer,False
 24029,Joliette--Manawan,False
-24030,Jonquière,False
+24030,Jonquière,True
 24031,La Pointe-de-l'Île,False
 24032,La Prairie--Atateken,False
 24033,Lac-Saint-Jean,False
@@ -71,7 +71,7 @@ riding_code,riding_name,seat_vacant
 24038,Laval--Les Îles,False
 24039,Les Pays-d'en-Haut,False
 24040,Lévis--Lotbinière,False
-24041,Longueuil--Charles-LeMoyne,False
+24041,Longueuil--Charles-LeMoyne,True
 24042,Longueuil--Saint-Hubert,False
 24043,Louis-Hébert,False
 24044,Louis-Saint-Laurent--Akiawenhrahk,False
@@ -88,11 +88,11 @@ riding_code,riding_name,seat_vacant
 24055,Pierre-Boucher--Les Patriotes--Verchères,False
 24056,Pierrefonds--Dollard,False
 24057,Pontiac--Kitigan Zibi,False
-24058,Portneuf--Jacques-Cartier,False
+24058,Portneuf--Jacques-Cartier,True
 24059,Québec Centre/Québec-Centre,False
 24060,Repentigny,False
-24061,Richmond--Arthabaska,False
-24062,Rimouski--La Matapédia,False
+24061,Richmond--Arthabaska,True
+24062,Rimouski--La Matapédia,True
 24063,Rivière-des-Mille-Îles,False
 24064,Rivière-du-Nord,False
 24065,Rosemont--La Petite-Patrie,True
@@ -123,7 +123,7 @@ riding_code,riding_name,seat_vacant
 35012,Brampton North--Caledon/Brampton-Nord--Caledon,False
 35013,Brampton South/Brampton-Sud,False
 35014,Brampton West/Brampton-Ouest,False
-35015,Brantford--Brant South--Six Nations/Brantford--Brant-Sud--Six Nations,False
+35015,Brantford--Brant South--Six Nations/Brantford--Brant-Sud--Six Nations,True
 35016,Bruce--Grey--Owen Sound,False
 35017,Burlington,False
 35018,Burlington North--Milton West/Burlington-Nord--Milton-Ouest,False
@@ -177,7 +177,7 @@ riding_code,riding_name,seat_vacant
 35066,Mississauga--Streetsville,False
 35067,Nepean,False
 35068,Newmarket--Aurora,False
-35069,New Tecumseth--Gwillimbury,False
+35069,New Tecumseth--Gwillimbury,True
 35070,Niagara Falls--Niagara-on-the-Lake,False
 35071,Niagara South/Niagara-Sud,False
 35072,Niagara West/Niagara-Ouest,False
@@ -228,7 +228,7 @@ riding_code,riding_name,seat_vacant
 35117,Willowdale,False
 35118,Windsor--Tecumseh--Lakeshore,False
 35119,Windsor West/Windsor-Ouest,False
-35120,York Centre/York-Centre,False
+35120,York Centre/York-Centre,True
 35121,York--Durham,False
 35122,York South--Weston--Etobicoke/York-Sud--Weston--Etobicoke,False
 46001,Brandon--Souris,False
@@ -254,7 +254,7 @@ riding_code,riding_name,seat_vacant
 47007,Regina--Qu'Appelle,False
 47008,Regina--Wascana,False
 47009,Saskatoon South/Saskatoon-Sud,False
-47010,Saskatoon--University,False
+47010,Saskatoon--University,True
 47011,Saskatoon West/Saskatoon-Ouest,False
 47012,Souris--Moose Mountain,False
 47013,Swift Current--Grasslands--Kindersley,False
@@ -299,7 +299,7 @@ riding_code,riding_name,seat_vacant
 59001,Abbotsford--South Langley/Abbotsford--Langley-Sud,False
 59002,Burnaby Central,False
 59003,Burnaby North--Seymour/Burnaby-Nord--Seymour,False
-59004,Cariboo--Prince George,False
+59004,Cariboo--Prince George,True
 59005,Chilliwack--Hope,False
 59006,Cloverdale--Langley City,False
 59007,Columbia--Kootenay--Southern Rockies,False
