@@ -1,30 +1,30 @@
 {
-  "as_of": "2026-10-19",
+  "as_of": "2026-10-26",
   "simulations": 10000,
   "majority": 172,
   "parties": {
     "LPC": {
-      "mean_seats": 226.2,
-      "low95": 202,
-      "high95": 249
+      "mean_seats": 228.2,
+      "low95": 205,
+      "high95": 251
     },
     "CPC": {
-      "mean_seats": 83.3,
+      "mean_seats": 82.1,
       "low95": 64,
-      "high95": 105
+      "high95": 103
     },
     "NDP": {
-      "mean_seats": 12.3,
+      "mean_seats": 12.2,
       "low95": 8,
       "high95": 16
     },
     "BQ": {
-      "mean_seats": 19.6,
-      "low95": 11,
+      "mean_seats": 18.8,
+      "low95": 9,
       "high95": 26
     },
     "GPC": {
-      "mean_seats": 1.5,
+      "mean_seats": 1.6,
       "low95": 1,
       "high95": 2
     },
